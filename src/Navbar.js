@@ -4,7 +4,7 @@ import { Link, useMatch, useResolvedPath } from 'react-router-dom'
 function Navbar() {
   return (
     <nav className='nav'>
-        <Link to = "/" className='site-title'>Equitable Syllabus Project</Link>
+        <Link to = "/" className='logo'>Equitable Syllabus Project</Link>
         <ul>
             <CustomLink to = "/team">Team</CustomLink>      
             <CustomLink to = "/contribute">Contribute</CustomLink>    

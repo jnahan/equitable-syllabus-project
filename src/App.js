@@ -1,11 +1,11 @@
 import './App.css';
 import Navbar from './Navbar';
-import Contribute from './pages/Contribute';
-import Database from './pages/Database';
-import Home from './pages/Home';
-import ResearchService from './pages/ResearchService';
-import SyllabusGuide from './pages/SyllabusGuide';
-import Team from './pages/Team';
+import Home from './pages/Home/Home';
+import Team from './pages/Team/Team';
+import Contribute from './pages/Contribute/Contribute';
+import ResearchService from './pages/ResearchService/ResearchService';
+import Database from './pages/Database/Database';
+import SyllabusGuide from './pages/SyllabusGuide/SyllabusGuide';
 import { Route, Routes } from "react-router-dom"
 
 function App() {

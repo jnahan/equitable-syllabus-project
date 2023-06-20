@@ -2,7 +2,7 @@ import React from 'react'
 
 function DBCard({data, loading}) {
   return (
-    <div>
+    <>
       {
         loading ? <h1>Loading...</h1> :
         data.map((item => {
@@ -19,11 +19,12 @@ function DBCard({data, loading}) {
                   <p><span>o</span>{item.Format}</p>
                   <p><span>o</span>{item.Continent}</p>
               </div>
+              <img src={item.Image} alt="" />
             </div>
           )
         }))
       }
-    </div>
+    </>
   )
 }
 

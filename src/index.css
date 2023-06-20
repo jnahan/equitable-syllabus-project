@@ -19,6 +19,13 @@
   --grey--dark: #606060;
   --grey--darkest: #444444;
 }
+button{
+
+}
+.logo{
+  font-size: 24px;
+  font-weight: bold;
+}
 .dot {
   height: 4px;
   width: 4px;
@@ -48,7 +55,8 @@
 .nav{
   display: flex;
   justify-content: space-between;
-  padding: 32px 160px;
+  padding: 16px 160px;
+  align-items: center;
 }
 .nav a{
   display: flex;
@@ -71,4 +79,8 @@
 }
 .nav li:hover{
   background-color: var(--accent-light);
+}
+.db-card img{
+  width: 150px;
+  height: auto;
 }
