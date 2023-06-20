@@ -1,6 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+:root{
+  /* Color styles */
+  --white: #FFFFFF;
+  --beige: #F8F7F1;
+  --accent: #4D40E4;
+  --accent-light: #E8EBFC;
+  --black: #111111;
+  --grey--lightest: #F8F8F8;
+  --grey--light: #EFEFEF;
+  --grey--default: #BCBCBC;
+  --grey--dark: #606060;
+  --grey--darkest: #444444;
 }
 .dot {
   height: 4px;
@@ -27,4 +44,30 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+.nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 160px;
+}
+.nav a{
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0.25rem;
+  align-items: stretch;
+}
+.nav ul{
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+.nav .active{
+  background-color: #bbb;
+}
+.nav li:hover{
+  background-color: #bbb;
 }
