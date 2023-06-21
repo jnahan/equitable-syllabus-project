@@ -6,6 +6,9 @@
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
 }
+html {
+  font-size: 16px;
+} 
 :root{
   /* Color styles */
   --white: #FFFFFF;
@@ -18,39 +21,62 @@
   --grey--default: #BCBCBC;
   --grey--dark: #606060;
   --grey--darkest: #444444;
-}
-button{
 
+  /* Text-size styles */
+  /* base size: body-default--regular (16px) */
+  --h1--bold: 5rem;
+  --h2--bold: 3rem;
+  --h3--bold: 2.25rem;
+  --h4--regular: 1.25rem;
+  --h4--bold: 1.25rem;
+  --body-large: 1.12rem;
+  --body-default: 1rem;
+  --body-small: 0.88rem;
+  --body-x-small: 0.75rem;
+
+  --margin: 160px;
+}
+h1{
+  font-size: var(--h1--bold);
+}
+h2{
+  font-size: var(--h2--bold);
+}
+h3{
+  font-size: var(--h3--bold);
+}
+h4{
+  font-size: var(--h4--bold);
+}
+p{
+  font-size: var(--body-large);
+}
+.primary-bttn{
+  padding: 16px 28px;
+  border-radius: 8px;
+  border: none;
+  background-color: var(--accent);
+  color: var(--white);
+  font-size: 18px;
+  font-weight: bold;
+}
+.secondary-bttn{
+  padding: 16px 28px;
+  border-radius: 8px;
+  border: 1px solid var(--grey--dark);
+  background-color: var(--white);
+  color: var(--grey--dark);
+  font-size: 18px;
+  font-weight: bold;
+}
+.vl {
+  width: 1px;
+  border-left: 1px solid var(--grey--light);
+  min-height: 100%;
 }
 .logo{
   font-size: 24px;
   font-weight: bold;
-}
-.dot {
-  height: 4px;
-  width: 4px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-}
-
-.db-card{
-  margin: 32px 0;
-}
-.metadata{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 8px;
-}
-.chips p{
-  background-color: var(--grey--lightest);
-  border-radius: 16px;
-}
-.sort-categories{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
 }
 .nav{
   display: flex;
@@ -80,7 +106,150 @@ button{
 .nav li:hover{
   background-color: var(--accent-light);
 }
-.db-card img{
+.icon-small{
+  width: 16px;
+  height: 16px;
+}
+.center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home-hero{
+  margin: 120px 240px;
+  gap: 32px;
+}
+.home-hero h1{
+  text-align: center;
+}
+.home-hero p{
+  max-width: 750px;
+  text-align: center;
+}
+.home-buttons{
+  display: flex;
+  gap: 12px;
+}
+.section{
+  display: flex;
+  flex-direction: row;
+  margin: 120px 160px;
+
+}
+.section-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  text-align: left;
+  gap: 16px;
+}
+
+/*research database*/
+.sort-categories{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 28px;
+}
+.sort-categories p{
+  font-size: var(--body-small);
+}
+
+.db{
+  border-top: 1px solid var(--grey--light);
+  margin: 0px 160px;
+  display: flex;
+  flex-direction: row;
+  gap: 64px;
+}
+.db-content{
+  margin-top: 48px;
+}
+.db-card{
+  padding: 32px 0;
+  display: flex;
+  gap: 48px;
+  border-bottom: 1px solid var(--grey--light);
+}
+.db-image{
+  height: 150px;
   width: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.dot {
+  height: 4px;
+  width: 4px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+.metadata{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+.db-card h4{
+  margin-bottom: 4px;
+}
+.db-card p{
+  font-size: var(--body-small--regular);
+  margin-bottom: 12px;
+}
+.chips p{
+  background-color: var(--grey--lightest);
+  border-radius: 16px;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 8px;
+}
+.section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 72px;
+}
+.section-text{
+  max-width: 50%;
+}
+.section-image{
+  max-width: 50%;
+}
+.section-image img{
+  max-width:100%;
+}
+
+/* Team */
+.team-avatars img{
+  max-width: 120px;
+}
+.team-wrapper{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  column-gap: 24px;
+}
+.team-card{
+  flex: 30%;
+}
+.team-card img{
+  border-radius: 8px;
+  max-width: 100%;
   height: auto;
+}
+.team{
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+  margin: var(--margin)
+}
+.team h3{
+  margin-bottom: 24px;
+}
+.team-mission{
+  gap: 32px;
 }

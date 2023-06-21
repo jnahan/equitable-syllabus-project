@@ -2,6 +2,7 @@ import React from 'react'
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import DBCard from './DBCard';
+import DBFilter from './DBFilter';
 
 function Database() {
     const [data, setData] = useState([])
@@ -23,14 +24,22 @@ function Database() {
     }, [url])
 
     return (
-    <div>
-        <div className="sort-categories">
-            <p>Featured</p>
-            <p>Date Added</p>
-            <p>Title</p>
-            <p>{`${data.length} results`}</p>
+    <div className='db'>
+        <div className="db-content">
+            <DBFilter/>
         </div>
-        <DBCard data = {data} loading = {loading} />
+        <div className='vl'></div>
+        <div className='db-content'>
+            <div className="sort-categories">
+                <ul>
+                    <p>Featured</p>
+                    <p>Date Added</p>
+                    <p>Title</p>
+                </ul>
+                <p>{`${data.length} results`}</p>
+            </div>
+            <DBCard data = {data} loading = {loading} />
+        </div>
     </div>
     )
 }
