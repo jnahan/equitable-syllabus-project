@@ -7,20 +7,23 @@ function Footer() {
       <div className="footer-logo">
         <Link to = "/" className='logo'>Equitable Syllabus Project</Link>
         <div className="footer-description">
-          <p>esp@nyu.edu</p>
-          <p>ITP/IMA New York University</p>
+          <a href="mailto:esp@nyu.edu">esp@nyu.edu</a>
+          <div className="vl"></div>
+          <p>ITP/IMA</p>
+          <div className="vl"></div>
+          <p>New York University</p>
         </div>
       </div>
       <div className="footer-links">
         <ul>
-          <h5>ITP/IMA Community</h5>
+          <h5 className='body-default'>ITP/IMA Community</h5>
           <li><a href="https://tisch.nyu.edu/itp" target='_blank'>About ITP/IMA</a></li>
           <li><a href="https://itpnyu.github.io/ITP-IMA-Code-of-Conduct/index" target='_blank'>Code of Conduct</a></li>
           <li><a href="https://itp-techandsociety.github.io/online/" target='_blank'>Tech and Society</a></li>
           <li><a href="https://itp.nyu.edu/groups/equitable/" target='_blank'>Equitable Working Group</a></li>   
         </ul>
         <ul>
-          <h5>NYU Diversity Resources</h5>
+          <h5 className='body-default'>NYU Diversity Resources</h5>
           <li><a href="https://tisch.nyu.edu/diversity" target='_blank'>Tisch Office of Diversity</a></li>
           <li><a href="https://tisch.nyu.edu/diversity/IDBEA_Commitments" target='_blank'>Tisch Commitments to Diversity</a></li>
           <li><a href="https://www.nyu.edu/life/global-inclusion-and-diversity.html" target='_blank'>NYU Global Inclusion and Diversity</a></li>
