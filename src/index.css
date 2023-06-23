@@ -15,7 +15,7 @@ html {
   --white: rgba(255, 255, 255, 1);
   --accent: rgba(77, 64, 228, 1);
   --accent-light: rgba(232, 235, 252, 1);
-  --blue-dark: rgba(103, 155, 255, 1);
+  --blue: rgba(103, 155, 255, 1);
   --blue-light: rgba(233, 243, 255, 1);
   --purple: rgba(155, 117, 208, 1);
   --purple-light: rgba(245, 238, 255, 1);
@@ -35,7 +35,7 @@ html {
   --heading-2: 3rem;
   --heading-3: 2.25rem;
   --heading-4: 1.5rem;
-  --subheading: 1.5rem;
+  --subtitle: 1.5rem;
   --logo: 1.5rem;
   --handwritten: 1.25rem;
   --body-x-large--regular: 1.25rem;
@@ -55,6 +55,31 @@ html {
 
   /* Margin */
   --margin: 160px;
+}
+.heading-1{
+  font-size: var(--heading-1);
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+.heading-2{
+  font-size: var(--heading-2);
+  font-weight: 700;
+}
+.heading-3{
+  font-size: var(--heading-3);
+  font-weight: 700;
+}
+.heading-4{
+  font-size: var(--heading-4);
+  font-weight: 600;
+}
+.subtitle{
+  font-size: var(--subtitle);
+  font-weight: 400;
+}
+p{
+  font-size: var(--body-large--regular);
+  font-weight: 400;
 }
 .primary-bttn{
   padding: 16px 28px;
@@ -78,6 +103,81 @@ html {
   width: 1px;
   border-left: 1px solid var(--grey--light);
   min-height: 100%;
+}
+.circle{
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: var(--blue);
+  border-radius: 100%;
+}
+
+/*site wide*/
+
+.hero .bttn-primary{
+  background-color: var(--accent);
+  color: var(--white);
+  padding: 20px 48px;
+  border-radius: 12px;
+  border: none;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.hero .bttn-secondary{
+  background-color: var(--white);
+  color: var(--accent);
+  padding: 20px 48px;
+  border-radius: 12px;
+  border: 2px solid var(--accent);
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.hero--bttn-wrapper{
+  margin-top: 64px;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.hero{
+  max-width: 600px;
+}
+
+.hero--chip{
+  display: flex;
+  padding: 12px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--grey--light);
+  border-radius: 32px;
+}
+
+.handwritten-text p{
+  font-size: var(--handwritten);
+  font-family: 'Shadows Into Light', cursive;
+}
+
+.home--card-wrapper{
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.home--card{
+  border: 1px solid var(--grey--lightest);
+  background-color: var(--white);
+  box-shadow: var(--light-shadow);
+  padding: 28px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.home--card p{
+  text-align: center;
 }
 
 /*nav*/
@@ -182,21 +282,7 @@ html {
   gap: 8px;
   padding: 4px 8px;
 }
-.section{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 72px;
-}
-.section-text{
-  max-width: 50%;
-}
-.section-image{
-  max-width: 50%;
-}
-.section-image img{
-  max-width:100%;
-}
+
 
 /* Team */
 .team-avatars img{
