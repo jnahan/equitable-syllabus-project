@@ -5,7 +5,7 @@ function Team() {
   return (
     <div className='team'>
       <div className='center team-mission'>
-        <h2>Equitable Syllabus Project Team</h2>
+        <h2 className='heading-2'>Equitable Syllabus Project Team</h2>
         <p>The Equitable Syllabus Project team strives to help faculty re-engage their course material with an equitable lens.</p>
         <div className="team-avatars">
           <img src="images/team/blair-avatar.png" alt="" />
@@ -17,7 +17,7 @@ function Team() {
         </div>
       </div>
       <div className='center'>
-        <h3>Current Members</h3>
+        <h3 className='heading-3'>Current Members</h3>
         <div className='team-wrapper'>
           <TeamCard Image = "images/team/blair.png" Name = "Blair Simmons" Role = "Project Manager" Email = "blair.simmons@nyu.edu"/>
           <TeamCard Image = "images/team/chaski.png" Name = "Chaski No" Role = "Technical Project Manager" Email = "chaski@nyu.edu"/>
@@ -28,7 +28,7 @@ function Team() {
         </div>
       </div>
       <div className='center'>
-        <h3>Past Members</h3>
+        <h3 className='heading-3'>Past Members</h3>
         <div className="team-wrapper">
           <TeamCard Name = "Rashida Kamal" Role = "Technical Project Manager" />
           <TeamCard Name = "Spencer Ratanavanh" Role = "Researcher" />

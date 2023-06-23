@@ -1,4 +1,5 @@
 import Navbar from './Navbar';
+import Footer from './Footer';
 import Home from './pages/Home/Home';
 import Team from './pages/Team/Team';
 import Contribute from './pages/Contribute/Contribute';
@@ -22,6 +23,7 @@ function App() {
           <Route path="/syllabus-guide" element={<SyllabusGuide/>}/>
         </Routes>
       </div>
+      <Footer/>
     </div>
   );
 }

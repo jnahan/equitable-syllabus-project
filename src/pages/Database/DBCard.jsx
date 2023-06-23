@@ -19,8 +19,8 @@ function DBCard({data, loading}) {
                 <h4>{item.Resource}</h4>
                 <p>Researchers recently learned that Immigration and Customs Enforcement used facial recognition on millions of driver’s license photographs without the license-holders’ knowledge, the latest revelation about governments employing the technology in ways that threaten civil liberties.</p>
                 <div className="metadata chips">
-                    <p><span><img src={FormatIcon} alt="" /></span>{item.Format}</p>
-                    <p><span><img src={ContinentIcon} alt="" /></span>{item.Continent}</p>
+                    <p><span><img className="icon" src={FormatIcon} alt="" /></span>{item.Format}</p>
+                    <p><span><img className="icon" src={ContinentIcon} alt="" /></span>{item.Continent}</p>
                 </div>
               </div>
               {item.Image == "" ? "" : <img className="db-image" src={item.Image} alt="resource image" />}
