@@ -30,6 +30,9 @@ function Home() {
           <p>Research Database</p>
         </div>
       </div>
+      <div className="see-more-block">
+          <p id='see-more'>See more</p>
+      </div>
       <div className="hero--imgs">
         <img src="images/home/hero-research-service.png" alt="research service" />
         <img src="images/home/hero-syllabus-guide.png" alt="syllabus guide" />

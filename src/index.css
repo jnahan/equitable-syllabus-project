@@ -144,9 +144,6 @@ p{
 .subtitle-section h2{
   margin-bottom: 24px;
 }
-.subtitle-section p{
-  margin-bottom: 80px;
-}
 .section-text{
   flex: 1;
   justify-content: flex-end;
@@ -161,6 +158,7 @@ p{
   width: 100%;
   border-radius: 32px;
 }
+/* TODO fix alignment */
 .section-content{
   display: flex;
   align-items: center;
@@ -330,8 +328,18 @@ img{
   background-color: var(--blue);
   margin-right: 8px;
 }
-
+/* TODO fix sticky not working */
+.see-more-block{
+  text-align: center;
+  background-color: #fff;
+  margin-bottom: 25px;
+  padding-top: 25px;
+  position: sticky;
+  position: -webkit-sticky;
+  bottom: 0;
+}
 .home--card-wrapper{
+  margin-top: 80px;
   justify-content: center;
   display: flex;
   flex-direction: row;
@@ -485,7 +493,7 @@ img{
   display: flex;
   gap: 12px;
 }
-/* figure out how to change link color */
+/* TODO figure out how to change link color */
 .footer li a{
   font-size: var(--body-default);
 }
