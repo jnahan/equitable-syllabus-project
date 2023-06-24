@@ -5,7 +5,7 @@ import TableOfContents from './TableOfContents';
 
 function SyllabusGuide() {
   const [postContent, setPostContent] = useState("");
-  const fileName = "markdown.md"
+  const fileName = "syllabus-guide.md"
 
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -25,8 +25,8 @@ function SyllabusGuide() {
     <div className='top-margin'>
       <div className='section sg-content'>
         <div className="sg-left">
-          <div className="headline">
-            <h1>5 Principles</h1>
+          <div className="sg-heading">
+            <h1>Syllabus Guide</h1>
             <button className="primary-bttn">Propose A Change</button>
           </div>
           <Markdown className='md'>{postContent}</Markdown>

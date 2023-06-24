@@ -1,65 +1,65 @@
-#5 Principles for Inclusive Teaching
-
 Following the 5 Principles for Inclusive Teaching outlined by the [Guide for Inclusive Teaching at Columbia](https://drive.google.com/file/d/17cqlVGVS_1KDH9O4ZgVy-NoH8sq5w96f/view?usp=sharing), Blair Simmons, Mimi Yin, Chaski No and Sophia Edwards of the Equitable Syllabus Project research team compiled these tips and suggestions for corresponding strategies for crafting of inclusive and thoughtful syllabi:
 
-###Principle 1 - Establish and support a class climate that fosters belonging for all students:**
+## **5 Principles for Inclusive Teaching**
+
+### **Principle 1 - Establish and support a class climate that fosters belonging for all students:**
 
 * Use welcoming language to build teacher-student rapport -  create invitations, not commands
 * Create open channels to facilitate students’ communication regarding their needs to maximize learning potential
 * Present participation as being present in class (in whatever forms feel comfortable to students)
 
-###Principle 2 - Set explicit student expectations:** 
+### **Principle 2 - Set explicit student expectations:** 
 
 * Set clear expectations as to what kinds of prior knowledge or skills are needed for a student to succeed
 * Articulate evaluation criteria transparently and specifically
 * Encourage student agency by providing multiple assessment options
 
-###Principle 3 - Select course content that recognizes diversity and acknowledges barriers to inclusion:**
+### **Principle 3 - Select course content that recognizes diversity and acknowledges barriers to inclusion:**
 
 * Incorporate course components that provide flexibility for different learning styles and abilities
 * Provide diverse examples of exemplary work
 
-###Principle 4 - Design all course elements for accessibility:**
+### **Principle 4 - Design all course elements for accessibility:**
 
 * Make course materials easily accessible (i.e. not behind paywalls or requiring students to go through multiple hoops to access the content)
 * Provide supportive scaffolding for students by emphasizing process and outlining steps to take towards achieving the goals defined by the syllabus
 * Offer consistent and timely goal-oriented feedback
 
-###Principle 5 - Reflect on one’s beliefs about teaching to maximize self-awareness and commitment to inclusion:**
+### **Principle 5 - Reflect on one’s beliefs about teaching to maximize self-awareness and commitment to inclusion:**
 
 * Emphasize the importance of collaboration between teachers and students in creating a healthy learning environment
 * Acknowledge that students bring different styles and methods of understanding into the classroom
 
-#Sample Statements
+## **Sample Statements**
 
-###Diverse Perspectives and Learning Modes
+### **Diverse Perspectives and Learning Modes**
 
 _Your success in this class is important to me. We all learn differently and require different kinds of accommodations. If there are aspects of this course that prevent you from learning or exclude you in any way, I invite you to communicate this with me. Together we’ll develop strategies to meet both your needs and the requirements of the course._
 
-###Participation
+### **Participation**
 
 _I am committed to facilitating the fullest possible participation of all my students. Acknowledging that being present is a form of participation in itself, and that engaged listening is not a passive form of participation either, I welcome my students to communicate with me what kinds of engagement are best for them so I can take that into account. I will provide clear expectations and examples around participation to help ensure everyone’s voice has a place in this space.  _
 
   
 _Examples of modes of participation can look like: asking questions, going to office hours, sending and reading emails, class group discussion, arriving on time, going to class, taking notes, listening to peers, submitting responses to a form (anonymous or not), following instructions, active listening, etc._
 
-###Open Office Hours
+### **Open Office Hours**
 
 _You all enter this classroom with different sets of skills. In virtue of this fact, I open my office to you as an extension of the classroom. I am available for you during that time and if you can’t make it to the scheduled times, you are welcome to make an appointment with me at any time. There’s no incorrect way to approach office hours, and they can be as formal or informal as you would like. In this class, we will not shy away from difficult conversations and work closely together to cultivate a space of openness and mutual support. I welcome you to contact me outside of class and office hours. You may email me, call me, or schedule an appointment._ 
 
-###Extensions
+### **Extensions**
 
 _An assignment extension may be granted upon request. If you request an extension, your grade will not be affected. However, if you do not request an extension, the grading rules above apply. _
 
-###Communication
+### **Communication**
 
 _You must check your email (or other stated class form of communication) for important updates about class._
 
-###Incompletes
+### **Incompletes**
 
 _Incomplete grades may only be given to students who have completed more than half of the class assignments. Incomplete grades are given at the discretion of the professor since managing incomplete grades is often additional uncompensated labor for the instructor._
 
-###Attendance
+### **Attendance**
 
 X=
 
@@ -96,7 +96,7 @@ There are no excused absences and unexcused absences. There are only absences. Y
 **_Optional makeup work statement: While there is no distinction in this course between excused and unexcused absences, you may inquire with me about makeup work if you have more than X absences. Makeup work may be content you can consume, having a conversation with someone in class, additional office hours, writing a paper or an additional project. Not all course content can be made up. Please clarify with your instructor._**
 
 
-#Required Syllabus Statements
+## **Required Syllabus Statements**
 
 
 ### **Statement Of Academic Integrity**
@@ -144,4 +144,3 @@ Tisch School of the Arts is dedicated to providing its students with a learning 
 ### **Statement Of Principle**
 
 Teachers and students work together to create a supportive learning environment. The educational experience in the classroom is one that is enhanced by integrating varying perspectives and learning modes brought by students. 
-
