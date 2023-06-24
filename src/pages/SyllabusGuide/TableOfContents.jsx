@@ -5,7 +5,7 @@ import { useState } from 'react';
 function TableOfContents() {
 
   return (
-    <div className="toc toc-fix">
+    <div className="toc">
       <ul>
         <li>
           <HashLink className='section-title' to="/syllabus-guide/#5-principles-for-inclusive-teaching">

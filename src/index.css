@@ -713,6 +713,11 @@ img{
   border: 1px solid var(--grey--light);
   border-radius: 12px;
   min-width: 320px;
+  top: 40px;
+  right: 0;  
+  position: sticky;
+  max-height: 100vh;
+  overflow-y: auto;
 }
 .toc ul li{
   list-style: none;
@@ -731,12 +736,4 @@ img{
   font-weight: 600;
   margin-left: 0px;
   margin-bottom: 16px;
-}
-
-.toc-fix{
-  top: 40px;
-  right: 0;  
-  position: sticky;
-  max-height: 100vh;
-  overflow-y: auto;
 }
