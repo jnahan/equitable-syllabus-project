@@ -12,6 +12,19 @@ import Accordion from './Accordion'
 import SparkleLarge from '../../icons/sparkle-large.svg'
 import SparkleSmall from '../../icons/sparkle-small.svg'
 
+/*
+  TODOS:
+  - update faq answers
+  - address css todos
+  - research database sort and filter
+  - syllabus guide propose change link
+  - fix broken syllabus guide links
+  - animation
+  - make site mobile responsive
+  - update site metadata
+*/
+
+
 function Home() {
   const navigate = useNavigate();
 
