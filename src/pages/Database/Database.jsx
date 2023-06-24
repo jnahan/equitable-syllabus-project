@@ -32,9 +32,9 @@ function Database() {
         <div className='db-content'>
             <div className="sort-categories">
                 <ul>
-                    <p>Featured</p>
-                    <p>Date Added</p>
-                    <p>Title</p>
+                    <li><p>Featured</p></li>
+                    <li><p>Date Added</p></li>
+                    <li><p>Title</p></li>
                 </ul>
                 <p>{`${data.length} results`}</p>
             </div>

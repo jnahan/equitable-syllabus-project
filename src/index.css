@@ -589,7 +589,7 @@ img{
   margin-top: 48px;
 }
 .db-card{
-  padding: 32px 0;
+  padding: 24px 0;
   display: flex;
   gap: 48px;
   border-bottom: 1px solid var(--grey--light);
@@ -607,6 +607,7 @@ img{
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
+  margin-bottom: 10px;
 }
 .metadata{
   display: flex;
@@ -617,16 +618,30 @@ img{
 .db-card h4{
   margin-bottom: 4px;
 }
-.db-card p{
-  font-size: var(--body-small--regular);
+.db-card p:not(.body-default){
+  font-size: var(--body-small);
   margin-bottom: 12px;
 }
+
 .chips p{
+  display: flex;
   background-color: var(--grey--lightest);
   border-radius: 16px;
   align-items: center;
-  gap: 8px;
+  gap: 4px;
   padding: 4px 8px;
+  margin-top: 24px;
+}
+.sort-categories{
+  display: flex;
+  justify-content: space-between;
+}
+.sort-categories ul{
+  display: flex;
+  gap: 12px;
+}
+.sort-categories ul li{
+  list-style: none;
 }
 
 
