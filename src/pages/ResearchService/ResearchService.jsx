@@ -1,7 +1,13 @@
 import React from 'react'
 import InfoCard from '../../InfoCard'
+import { useEffect } from 'react'
 
 function ResearchService() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  });
+
   return (
     <div className='top-margin'>
       <div className="section">

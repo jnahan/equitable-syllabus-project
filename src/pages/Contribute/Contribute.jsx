@@ -1,6 +1,12 @@
 import React from 'react'
+import { useEffect } from 'react';
 
 function Contribute() {
+  
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  });
+
   return (
     <div className='top-margin'>
         <div className="section section-column">

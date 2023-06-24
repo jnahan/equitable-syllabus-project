@@ -23,7 +23,7 @@ function DBCard({data, loading}) {
                     <p><span><img className="icon" src={ContinentIcon} alt="" /></span>{item.Continent}</p>
                 </div>
               </div>
-              {item.Image == "" ? "" : <img className="db-image" src={item.Image} alt="resource image" />}
+              {item.Image === "" ? "" : <img className="db-image" src={item.Image} alt="resource" />}
             </div>
           )
         }))

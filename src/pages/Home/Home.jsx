@@ -1,5 +1,7 @@
 import React from 'react'
+import { useNavigate } from "react-router-dom";
 import HomeCard from './HomeCard'
+
 import EquityIcon from '../../icons/equity.svg'
 import InclusivityIcon from '../../icons/inclusivity.svg'
 import EmpowermentIcon from '../../icons/empowerment.svg'
@@ -11,6 +13,8 @@ import SparkleLarge from '../../icons/sparkle-large.svg'
 import SparkleSmall from '../../icons/sparkle-small.svg'
 
 function Home() {
+  const navigate = useNavigate();
+
   return (
     <>
     <div className="hero-wrapper top-margin">
@@ -21,8 +25,8 @@ function Home() {
         <h1 className="heading-1">Making Education More Inclusive</h1>
         <p className='subtitle'>Free tools and frameworks to help you create an equity-aligned syllabus</p>
         <div className="hero--bttn-wrapper">
-          <button className="bttn-primary">Syllabus Guide</button>
-          <button className="bttn-secondary">Research Database</button>
+          <button onClick={() => navigate("/syllabus-guide")} className="bttn-primary">Syllabus Guide</button>
+          <button onClick={() => navigate("/research-database")}className="bttn-secondary">Research Database</button>
         </div>
         <div className="handwritten-text">
           <p>Research Service</p>
@@ -62,14 +66,14 @@ function Home() {
         <div className="section-text">
           <h3 className="heading-3">Syllabus Guide</h3>
           <p className='body-large'>A template and reference to help you develop your course syllabus. The syllabus guide fosters critical pedagogy by identifying structural and rhetorical shortcomings in the syllabus.</p>
-          <button className="primary-bttn">View Syllabus Guide</button>
+          <button onClick={() => navigate("/syllabus-guide")} className="primary-bttn">View Syllabus Guide</button>
         </div>
       </div>
       <div className="section-content">
         <div className="section-text">
           <h3 className="heading-3">Research Database</h3>
           <p className='body-large'>Our database of equity-centered resources helps you incorporate diverse voices into your syllabus. We compiled resources from Black, Brown, and Indigenous people, as well as other historically underrepresented groups.</p>
-          <button className="primary-bttn">View Syllabus Guide</button>
+          <button onClick={() => navigate("/research-database")} className="primary-bttn">View Research Database</button>
         </div>
         <div className="section-img db-wrapper">
           <img src="/images/home/database.png" alt="" />
@@ -85,14 +89,14 @@ function Home() {
         <div className="section-text">
           <h3 className="heading-3">Research Assistance Service</h3>
           <p className='body-large'>Get help creating your syllabus. The Equitable Syllabus Team will recommend resources and identity ways to bridge equity gaps in the course material.</p>
-          <button className="primary-bttn">Get Research Service</button>
+          <button onClick={() => navigate("/research-service")} className="primary-bttn">Get Research Service</button>
         </div>
       </div>
       <div className="section-content">
         <div className="section-text">
           <h3 className="heading-3">Syllabus Review Workshop</h3>
           <p className='body-large'>Join our collaborative workshop sessions and rework your syllabus to promote equity-aligned practice and curricula</p>
-          <button className="primary-bttn">Learn About Our Workshop</button>
+          <button onClick={() => navigate("/syllabus-workshop")} className="primary-bttn">Learn About Our Workshop</button>
         </div>
         <div className="section-img">
           <img src="/images/home/syllabus-workshop.png" alt="" />

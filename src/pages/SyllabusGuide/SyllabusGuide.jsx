@@ -8,6 +8,10 @@ function SyllabusGuide() {
   const fileName = "markdown.md"
 
   useEffect(() => {
+    window.scrollTo(0, 0)
+  });
+
+  useEffect(() => {
     import(`../../markdown/${fileName}`)
       .then(res => {
         fetch(res.default)

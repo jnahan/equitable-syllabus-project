@@ -17,9 +17,9 @@ function Accordion() {
           <div className="accordion-item" key={i}>
             <div className="accordion-question" onClick={() => toggle(i)}>
               <h4>{item.question}</h4>
-              <span>{open == i ? "-" : "+"}</span>
+              <span>{open === i ? "-" : "+"}</span>
             </div>
-            <div className={open == i ? "accordion-answer" : "accordion-hidden"}>
+            <div className={open === i ? "accordion-answer" : "accordion-hidden"}>
               <p>{item.answer}</p>
             </div>
           </div>
