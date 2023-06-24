@@ -714,3 +714,21 @@ img{
   border-radius: 12px;
   min-width: 320px;
 }
+.toc ul li{
+  list-style: none;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+.toc ul li a:not(.section-title){
+  font-size: var(--body-small);
+  margin-left: 24px;
+}
+.toc ul{
+  margin-bottom: 24px;
+}
+.section-title{
+  font-size: var(--body-default);
+  font-weight: 600;
+  margin-left: 0px;
+  margin-bottom: 16px;
+}

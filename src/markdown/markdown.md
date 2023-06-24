@@ -105,7 +105,7 @@ _There are no excused absences and unexcused absences. There are only absences. 
 #Required Syllabus Statements
 
 
-### **Statement of Academic Integrity**
+### **Statement Of Academic Integrity**
 
 Plagiarism is presenting someone else’s work as though it were your own. More specifically, plagiarism is to present as your own: A sequence of words quoted without quotation marks from another writer or a paraphrased passage from another writer’s work or facts, ideas or images composed by someone else. 
 
@@ -116,33 +116,33 @@ Collaboration is highly valued and often necessary to produce great work. Studen
 [Link to Suggested Practices for Syllabus Accessibility Statements ](https://docs.google.com/document/d/1RgmYE1-OQYBfMsArLuN6VJa1rIKMVMLE/edit#)
 
 
-### **Statement on Accessibility**
+### **Statement On Accessibility**
 
 It’s crucial for our community to create and uphold learning environments that empower students of all abilities. We are committed to create an environment that enables open dialogue about the various temporary and long term needs of students and participants for their academic success. We encourage all students and participants to discuss with faculty and staff possible accommodations that would best support their learning.  Students may also contact the Moses Center for Student Accessibility (212-998-4980) for resources and support.  
 
 [Link to the Moses Center for Student Accessibility ](https://www.nyu.edu/students/communities-and-groups/student-accessibility.html))
 
 
-### **Statement on Counseling and Wellness**
+### **Statement On Counseling and Wellness**
 
 Your health and safety are a priority at NYU. Emphasizing the importance of the wellness of each individual within our community, students are encouraged to utilize the resources and support services available to them 24 hours a day, 7 days a week via the NYU Wellness Exchange Hotline at 212-443-9999. Additional support is available over email at [wellness.exchange@nyu.edu](mailto:wellness.exchange@nyu.edu) and within the NYU Wellness Exchange app. 
 
 [Link to the NYU Counseling and Wellness Center](https://www.nyu.edu/students/health-and-wellness/services/counseling-services.html)
 
 
-### **Statement on Use of Electronic Devices**
+### **Statement On Use of Electronic Devices**
 
 Laptops and other electronic devices are essential tools for learning and interaction in classrooms. However, they can create distractions that hinder students' ability to actively participate and engage. Please be mindful of the ways in which these devices can affect the learning environment. 
 
 
-### **Statement on Title IX**
+### **Statement On Title IX**
 
 Tisch School of the Arts is dedicated to providing its students with a learning environment that is rigorous, respectful, supportive and nurturing so that they can engage in the free exchange of ideas and commit themselves fully to the study of their discipline. To that end, Tisch is committed to enforcing University policies prohibiting all forms of sexual misconduct as well as discrimination on the basis of sex and gender. Detailed information regarding these policies and the resources that are available to students through the Title IX office can be found by using the following link: 
 
 [Link to the NYU Title IX Office ](https://www.nyu.edu/about/policies-guidelines-compliance/equal-opportunity/title9.html)
 
 
-### **Statement of Principle**
+### **Statement Of Principle**
 
 Teachers and students work together to create a supportive learning environment. The educational experience in the classroom is one that is enhanced by integrating varying perspectives and learning modes brought by students. 
 
