@@ -6,6 +6,7 @@ import Contribute from './pages/Contribute/Contribute';
 import ResearchService from './pages/ResearchService/ResearchService';
 import Database from './pages/Database/Database';
 import SyllabusGuide from './pages/SyllabusGuide/SyllabusGuide';
+import SyllabusWorkshop from './pages/SyllabusWorkshop/SyllabusWorkshop';
 import { Route, Routes } from "react-router-dom"
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path="/research-service" element={<ResearchService/>}/>
           <Route path="/research-database" element={<Database/>}/>
           <Route path="/syllabus-guide" element={<SyllabusGuide/>}/>
+          <Route path="/syllabus-workshop" element={<SyllabusWorkshop/>}/>
         </Routes>
       </div>
       <Footer/>

@@ -145,6 +145,19 @@ button{
   justify-content: flex-start;
   gap: 48px;
 }
+.section-center{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section-center h3{
+  margin-bottom: 16px;
+}
+.section-center p{
+  text-align: center;
+  margin-bottom: 80px;
+}
 .section-content h3{
   margin-bottom: 16px;
 }
@@ -201,7 +214,28 @@ img{
   box-shadow: 0px 4px 64px 0px rgba(113, 96, 132, 0.16);
 }
 /*site wide*/
-
+.info-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+.info-card-wrapper{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+}
+.info-card-img img{
+  height: 280px;
+  width: auto;
+  padding: 32px;
+}
+.info-card p{
+  text-align: center;
+}
 .hero--imgs img:nth-child(1){
   width: 100px;
   height: auto;
@@ -618,4 +652,8 @@ img{
 }
 .team-mission{
   gap: 32px;
+}
+.team-avatars{
+  display: flex;
+  flex-direction: row;
 }

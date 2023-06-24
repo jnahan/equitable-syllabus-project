@@ -1,4 +1,5 @@
 import React from 'react'
+import InfoCard from '../../InfoCard'
 
 function ResearchService() {
   return (
@@ -15,9 +16,14 @@ function ResearchService() {
           </div>
         </div>
       </div>
-      <div className="section">
+      <div className="section section-center">
         <h3 className="heading-3">Our Research Service Takes Just a Few Steps</h3>
         <p className='body-large'>The research process can last anywhere from 3 weeks to multiple months of sustained engagement.</p>
+        <div className="info-card-wrapper">
+          <InfoCard Image="images/rs-1.png" Heading="Intake" Text="Faculty pinpoints specific areas of their syllabus the researcher can focus on"/>
+          <InfoCard Image="images/rs-2.png" Heading="Research" Text="Researcher compiles syllabus recommendations and plans regular check-ins"/>
+          <InfoCard Image="images/rs-3.png" Heading="Resources" Text="Researcher prepares an initial set of resource for the syllabus and continues communication as needed."/>
+        </div>
       </div>
       <div className="section">
         <div className="section-content">
