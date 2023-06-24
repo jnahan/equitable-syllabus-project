@@ -3,7 +3,7 @@ import InfoCard from '../../InfoCard'
 
 function SyllabusWorkshop() {
   return (
-    <div>
+    <div className='top-margin'>
         <div className="section section-center">
         <h3 className="heading-3">Syllabus Review Workshop</h3>
         <p className='body-large'>Our syllabus review workshop provides faculty a 90-minute structured session to work on concrete syllabi, applying an equity lens. Each participant brings one syllabus to work on.</p>

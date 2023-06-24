@@ -3,7 +3,7 @@ import TeamCard from './TeamCard'
 
 function Team() {
   return (
-    <div>
+    <div className='top-margin'>
       <div className='section section-center-2'>
         <h1 className="heading-2">Equitable Syllabus Project Team</h1>
         <p className='body-large'>The Equitable Syllabus Project team strives to help faculty re-engage their course material with an equitable lens.</p>

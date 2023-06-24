@@ -3,7 +3,7 @@ import InfoCard from '../../InfoCard'
 
 function ResearchService() {
   return (
-    <div>
+    <div className='top-margin'>
       <div className="section">
         <div className="section-content">
           <div className="section-text">

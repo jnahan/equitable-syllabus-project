@@ -13,7 +13,7 @@ import SparkleSmall from '../../icons/sparkle-small.svg'
 function Home() {
   return (
     <>
-    <div className="hero-wrapper">
+    <div className="hero-wrapper top-margin">
       <div className="hero">
         <div className="hero--chip">
           <p className='body-default'><span className='dot-large'></span>Built for ITP/IMA professors</p>

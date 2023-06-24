@@ -18,21 +18,21 @@ function SyllabusGuide() {
   }, []);
 
   return (
-    <div className='section sg-content'>
-      <div className="sg-left">
-        <div className="headline">
-          <h1>5 Principles</h1>
-          <button className="primary-bttn">Propose A Change</button>
+    <div className='top-margin'>
+      <div className='section sg-content'>
+        <div className="sg-left">
+          <div className="headline">
+            <h1>5 Principles</h1>
+            <button className="primary-bttn">Propose A Change</button>
+          </div>
+          <Markdown className='md'>{postContent}</Markdown>
         </div>
-        <Markdown className='md'>{postContent}</Markdown>
-      </div>
-      <div className="sg-right">
-        <TableOfContents />
+        <div className="sg-right">
+          <TableOfContents />
+        </div>
       </div>
     </div>
   )
-
-
 }
 
 export default SyllabusGuide

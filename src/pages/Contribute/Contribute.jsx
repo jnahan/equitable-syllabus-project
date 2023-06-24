@@ -2,7 +2,7 @@ import React from 'react'
 
 function Contribute() {
   return (
-    <div>
+    <div className='top-margin'>
         <div className="section section-column">
           <div>
             <h3 className="heading-3">Join the effort to build an equitable classroom</h3>
