@@ -683,8 +683,8 @@ img{
 
 .md h3{
   font-size: var(--heading-5);
-  margin-bottom: 16px;
-  margin-top: 24px;
+  margin-bottom: 12px;
+  margin-top: 28px;
 }
 
 .md li{
@@ -731,4 +731,12 @@ img{
   font-weight: 600;
   margin-left: 0px;
   margin-bottom: 16px;
+}
+
+.toc-fix{
+  top: 40px;
+  right: 0;  
+  position: sticky;
+  max-height: 100vh;
+  overflow-y: auto;
 }

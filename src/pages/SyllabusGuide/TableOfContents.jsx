@@ -1,9 +1,11 @@
 import React from 'react'
 import { HashLink } from 'react-router-hash-link';
+import { useState } from 'react';
 
 function TableOfContents() {
+
   return (
-    <div className='toc'>
+    <div className="toc toc-fix">
       <ul>
         <li>
           <HashLink className='section-title' to="/syllabus-guide/#5-principles-for-inclusive-teaching">
