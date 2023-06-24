@@ -1,43 +1,148 @@
-# 💜 Facilitation and Getting Help
+#5 Principles for Inclusive Teaching
 
-As we are individually responsible for upholding ethical standards of learning and making, we are also responsible for holding ourselves and each other accountable. Voicing concerns and addressing issues is part of how we keep each other safe, foster open communication, and strive to grow and learn as a community.  
+Following the 5 Principles for Inclusive Teaching outlined by the [Guide for Inclusive Teaching at Columbia](https://drive.google.com/file/d/17cqlVGVS_1KDH9O4ZgVy-NoH8sq5w96f/view?usp=sharing), Blair Simmons, Mimi Yin, Chaski No and Sophia Edwards of the Equitable Syllabus Project research team compiled these tips and suggestions for corresponding strategies for crafting of inclusive and thoughtful syllabi:
 
-We recognize that violations -- whether of this code of conduct, or of other institutional, personal, or professional standards -- can take many forms. Violations can come from any community member and be experienced by any community member (including but not limited to interactions between students and faculty or the reverse, faculty and faculty, staff and students, faculty and staff, and various interactions of our community with guests inside and/or outside of the classroom, in physical and digital spaces. 
+###Principle 1 - Establish and support a class climate that fosters belonging for all students:**
 
-In the event of any unresolved dispute, conflict, or code of conduct violation, we encourage community members to take any or all of the following actions: 
+* Use welcoming language to build teacher-student rapport -  create invitations, not commands
+* Create open channels to facilitate students’ communication regarding their needs to maximize learning potential
+* Present participation as being present in class (in whatever forms feel comfortable to students)
 
-## Report to the NYU Bias Response Line:
-The NYU Bias Response Line provides a mechanism through which members of the NYU community can share or report experiences and concerns of bias, discrimination, or harassing behavior that may occur within our community.
+###Principle 2 - Set explicit student expectations:** 
 
-Experienced administrators in the Office of Equal Opportunity (OEO) receive and assess reports, and then help facilitate responses, which may include referral to another University school or unit, or investigation if warranted according to the University's existing Non-Discrimination and Anti-Harassment Policy.
+* Set clear expectations as to what kinds of prior knowledge or skills are needed for a student to succeed
+* Articulate evaluation criteria transparently and specifically
+* Encourage student agency by providing multiple assessment options
 
-The Bias Response Line is designed to enable the University to provide an open forum that helps to ensure that our community is equitable and inclusive.
+###Principle 3 - Select course content that recognizes diversity and acknowledges barriers to inclusion:**
 
-- [https://www.nyu.edu/about/policies-guidelines-compliance/equal-opportunity/bias-response.html](https://www.nyu.edu/about/policies-guidelines-compliance/equal-opportunity/bias-response.html)
-- Phone: 212-998-2277
-- Email: [bias.response@nyu.edu](mailto:bias.response@nyu.edu)
-- Online Form: [https://nyu.qualtrics.com/SE/?SID=SV_55x3HRqPYDsI0uN](https://nyu.qualtrics.com/SE/?SID=SV_55x3HRqPYDsI0uN)
+* Incorporate course components that provide flexibility for different learning styles and abilities
+* Provide diverse examples of exemplary work
 
-## Sexual Misconduct and Title IX
+###Principle 4 - Design all course elements for accessibility:**
 
-Tisch School of the Arts is dedicated to providing its students with a learning environment that is rigorous, respectful, supportive and nurturing so that they can engage in the free exchange of ideas and commit themselves fully to the study of their discipline. To that end Tisch is committed to enforcing University policies prohibiting all forms of sexual misconduct as well as discrimination on the basis of sex and gender. 
+* Make course materials easily accessible (i.e. not behind paywalls or requiring students to go through multiple hoops to access the content)
+* Provide supportive scaffolding for students by emphasizing process and outlining steps to take towards achieving the goals defined by the syllabus
+* Offer consistent and timely goal-oriented feedback
 
-Detailed information regarding these policies and the resources that are available to students through the Title IX office can be found by using the following links: 
-- [Title IX at NYU](https://www.nyu.edu/about/policies-guidelines-compliance/equal-opportunity/title9.html)
-- [Sexual Misconduct Rights and Resources Quick Reference](https://www.nyu.edu/content/dam/nyu/equalOpp/documents/Quick%20Ref%20-%20Rights%20and%20Resources%20-%20Responding%20to%20Sexual%20Misconduct%20v.20170417.pdf)
+###Principle 5 - Reflect on one’s beliefs about teaching to maximize self-awareness and commitment to inclusion:**
 
-## The Wellness Exchange
+* Emphasize the importance of collaboration between teachers and students in creating a healthy learning environment
+* Acknowledge that students bring different styles and methods of understanding into the classroom
 
-The Wellness Exchange is your mental health resource at NYU. Call the **24-hour hotline at (212) 443-9999** or chat via the Wellness Exchange app anytime to speak with a certified counselor about any day-to-day challenges or health concerns.
+#Sample Statements
 
-## Emergency
+###Diverse Perspectives and Learning Modes
 
-Please call 911 directly to report criminal activity (e.g. physical assault, sexual assault, theft), or to report a dangerous physical situation (e.g. fire, serious injury, fear that someone will hurt themselves or someone else).
+_Your success in this class is important to me. We all learn differently and require different kinds of accommodations. If there are aspects of this course that prevent you from learning or exclude you in any way, I invite you to communicate this with me. Together we’ll develop strategies to meet both your needs and the requirements of the course._
 
-## Reach out to ITP / IMA Equitable Working Group
-Our community members can also reach out to staff members of the Equitable Working Group:
-- Luisa Pereira, David Rios, Matt Romein, Sarah Rothberg, Dan Shiffman, Blair Simmons
+###Participation
 
-Any of the group members can be reached individually by email, or collectively at: equitable@itp.nyu.edu
+_I am committed to facilitating the fullest possible participation of all my students. Acknowledging that being present is a form of participation in itself, and that engaged listening is not a passive form of participation either, I welcome my students to communicate with me what kinds of engagement are best for them so I can take that into account. I will provide clear expectations and examples around participation to help ensure everyone’s voice has a place in this space.  _
 
-**NOTE: Reaching out to ITP / IMA Equitable Working Group is not a replacement for university’s bias response system and community members should whenever possible make use of the university-wide services**
+_Examples of modes of participation can look like: asking questions, going to office hours, sending and reading emails, class group discussion, arriving on time, going to class, taking notes, listening to peers, submitting responses to a form (anonymous or not), following instructions, active listening, etc._
+
+###Open Office Hours
+
+_You all enter this classroom with different sets of skills. In virtue of this fact, I open my office to you as an extension of the classroom. I am available for you during that time and if you can’t make it to the scheduled times, you are welcome to make an appointment with me at any time. There’s no incorrect way to approach office hours, and they can be as formal or informal as you would like. In this class, we will not shy away from difficult conversations and work closely together to cultivate a space of openness and mutual support. I welcome you to contact me outside of class and office hours. You may email me, call me, or schedule an appointment._ 
+
+###Extensions
+
+_An assignment extension may be granted upon request. If you request an extension, your grade will not be affected. However, if you do not request an extension, the grading rules above apply. _
+
+###Communication
+
+_You must check your email (or other stated class form of communication) for important updates about class._
+
+###Incompletes
+
+_Incomplete grades may only be given to students who have completed more than half of the class assignments. Incomplete grades are given at the discretion of the professor since managing incomplete grades is often additional uncompensated labor for the instructor._
+
+###Attendance
+
+_X=_
+
+
+    _Undergraduate:_
+
+
+        _4 unit - 14 week classes that meet twice a week: 4 absences_
+
+
+        _4 unit - 14 week classes that meet once a week: 2 absences_
+
+
+        _2 unit - 7 week classes that meet twice a week: 2 absences_
+
+
+        _2 unit - 7 week classes that meet once a week: 1 absences_
+
+
+        _1 unit - ______________________________: 0 absences_
+
+
+    _Graduate:_
+
+
+    _	4 unit - 14 week classes that meet once a week: 2 absences_
+
+
+        _2 unit - 7 week classes that meet twice a week: 2 absences_
+
+
+        _2 unit - 7 week classes that meet once a week: 1 absences_
+
+
+        _1 unit - ______________________________: 0 absences_
+
+_There are no excused absences and unexcused absences. There are only absences. You can have X amount of absences without your grade being affected. A passing grade requires at least 50% attendance. 2 late arrivals (more than 10 minutes after start time) will count as 1 absence. _
+
+**_Undergrad only: For example, X absences will result in your highest possible grade being a B instead of an A. _**
+
+**_Optional makeup work statement: While there is no distinction in this course between excused and unexcused absences, you may inquire with me about makeup work if you have more than X absences. Makeup work may be content you can consume, having a conversation with someone in class, additional office hours, writing a paper or an additional project. Not all course content can be made up. Please clarify with your instructor._**
+
+
+#Required Syllabus Statements
+
+
+### **Statement of Academic Integrity**
+
+Plagiarism is presenting someone else’s work as though it were your own. More specifically, plagiarism is to present as your own: A sequence of words quoted without quotation marks from another writer or a paraphrased passage from another writer’s work or facts, ideas or images composed by someone else. 
+
+Collaboration is highly valued and often necessary to produce great work. Students build their own work on that of other people and giving credit to the creator of the work you are incorporating into your own work is an act of integrity. Plagiarism, on the other hand, is a form of fraud. Proper acknowledgment and correct citation constitute the difference. 
+
+[Link to the Tisch Student Handbook ](https://tisch.nyu.edu/student-affairs/important-resources/tisch-policies-and-handbooks)
+
+[Link to Suggested Practices for Syllabus Accessibility Statements ](https://docs.google.com/document/d/1RgmYE1-OQYBfMsArLuN6VJa1rIKMVMLE/edit#)
+
+
+### **Statement on Accessibility**
+
+It’s crucial for our community to create and uphold learning environments that empower students of all abilities. We are committed to create an environment that enables open dialogue about the various temporary and long term needs of students and participants for their academic success. We encourage all students and participants to discuss with faculty and staff possible accommodations that would best support their learning.  Students may also contact the Moses Center for Student Accessibility (212-998-4980) for resources and support.  
+
+[Link to the Moses Center for Student Accessibility ](https://www.nyu.edu/students/communities-and-groups/student-accessibility.html))
+
+
+### **Statement on Counseling and Wellness**
+
+Your health and safety are a priority at NYU. Emphasizing the importance of the wellness of each individual within our community, students are encouraged to utilize the resources and support services available to them 24 hours a day, 7 days a week via the NYU Wellness Exchange Hotline at 212-443-9999. Additional support is available over email at [wellness.exchange@nyu.edu](mailto:wellness.exchange@nyu.edu) and within the NYU Wellness Exchange app. 
+
+[Link to the NYU Counseling and Wellness Center](https://www.nyu.edu/students/health-and-wellness/services/counseling-services.html)
+
+
+### **Statement on Use of Electronic Devices**
+
+Laptops and other electronic devices are essential tools for learning and interaction in classrooms. However, they can create distractions that hinder students' ability to actively participate and engage. Please be mindful of the ways in which these devices can affect the learning environment. 
+
+
+### **Statement on Title IX**
+
+Tisch School of the Arts is dedicated to providing its students with a learning environment that is rigorous, respectful, supportive and nurturing so that they can engage in the free exchange of ideas and commit themselves fully to the study of their discipline. To that end, Tisch is committed to enforcing University policies prohibiting all forms of sexual misconduct as well as discrimination on the basis of sex and gender. Detailed information regarding these policies and the resources that are available to students through the Title IX office can be found by using the following link: 
+
+[Link to the NYU Title IX Office ](https://www.nyu.edu/about/policies-guidelines-compliance/equal-opportunity/title9.html)
+
+
+### **Statement of Principle**
+
+Teachers and students work together to create a supportive learning environment. The educational experience in the classroom is one that is enhanced by integrating varying perspectives and learning modes brought by students. 
+

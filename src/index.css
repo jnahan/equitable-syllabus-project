@@ -672,7 +672,42 @@ img{
   border-radius: 12px;
   margin-bottom: 16px;
 }
+.md a{
+  font-weight: 700;
+  text-decoration: underline;
+  color: var(--accent);
+}
 
-/* .md h2{
-  margin-bottom: 32px;
-} */
+.md h3{
+  font-size: var(--heading-5);
+  margin-bottom: 16px;
+  margin-top: 24px;
+}
+
+.md li{
+  margin-left: 16px;
+}
+
+.headline{
+  display: flex;
+  justify-content: space-between;
+}
+
+.md h1{
+  margin-bottom: 48px;
+}
+
+#test{
+  background-color: red;
+}
+.sg-content{
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+}
+.toc{
+  padding: 24px 16px;
+  border: 1px solid var(--grey--light);
+  border-radius: 12px;
+  min-width: 320px;
+}
