@@ -14,13 +14,10 @@ import SparkleSmall from '../../icons/sparkle-small.svg'
 
 /*
   TODOS:
-  - image alt
-  - make team email a
   - update faq answers
   - address css todos
   - research database handle multi categories
   - syllabus guide propose change link
-  - fix broken syllabus guide links
   - animation
   - make site mobile responsive
   - update site metadata
