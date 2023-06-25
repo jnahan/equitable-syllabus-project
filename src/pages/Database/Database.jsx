@@ -25,7 +25,7 @@ function Database() {
 
     return (
     <div className='db top-margin'>
-        <div className="db-content">
+        <div className="db-content filter-wrapper">
             <DBFilter/>
         </div>
         <div className='vl'></div>
