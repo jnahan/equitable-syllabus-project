@@ -111,7 +111,7 @@ p{
 button{
   cursor: pointer;
 }
-.primary-bttn{
+.bttn--primary{
   padding: 12px 24px;
   border-radius: 8px;
   border: none;
@@ -120,7 +120,7 @@ button{
   font-size: 1.12rem;
   font-weight: 600;
 }
-.secondary-bttn{
+.bttn--secondary{
   padding: 16px 28px;
   border-radius: 8px;
   border: 1px solid var(--grey--dark);
@@ -150,9 +150,16 @@ button{
 
 /* link and nav */
 
+img{
+  display: block;
+}
 a{
   text-decoration: none;
   color: var(--black);
+}
+.logo{
+  font-size: 24px;
+  font-weight: 700;
 }
 
 /*nav*/
@@ -163,7 +170,8 @@ a{
   padding: 16px 160px;
   align-items: center;
 }
-.nav a{
+.nav__item a{
+  color: var(--grey--dark);
   display: flex;
   flex-direction: row;
   text-decoration: none;
@@ -173,81 +181,74 @@ a{
   padding: 0.25rem;
   align-items: stretch;
 }
-.nav li a{
-  color: var(--grey--dark);
-}
-.nav ul{
+.nav__menu{
   list-style: none;
   display: flex;
   gap: 1rem;
 }
+/* TODO */
 .nav .active{
   background-color: var(--accent-light);
 }
-.nav li:hover{
+.nav__item:hover{
   background-color: var(--accent-light);
-}
-.logo{
-  font-size: 24px;
-  font-weight: 700;
 }
 
 /*footer*/
-
 .footer{
   display: flex;
   justify-content: space-between;
   padding: 24px 160px 80px 160px;
 }
-.footer-links{
+.footer__right{
   display: flex;
   gap: 64px;
 }
-.footer ul{
+.footer__menu {
   list-style: none;
   flex-direction: column;
   display: flex;
   gap: 12px;
 }
-/* TODO figure out how to change link color */
-.footer li a{
+/* todo fix color here */
+.footer__link{
   font-size: var(--body-default);
 }
-.footer-description div{
-  border-left: 1px solid var(--grey--default);
-}
-.footer-description{
+.footer__left-info{
   margin-top: 8px;
   display: flex;
   flex-direction: row;
   gap: 12px;
 }
-
-/* assets */
-.vl {
+.footer__vl {
   width: 1px;
   border-left: 1px solid var(--grey--light);
   min-height: 100%;
 }
-.dot-large{
-  width: 12px;
-  height: 12px;
-  display: inline-block;
-  border-radius: 100%;
-  background-color: var(--blue);
-  margin-right: 8px;
-}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* section */
-.section--top{
-  margin-top: 80px;
-}
+
 .section{
   /* max-width: 1200px; */
   padding: 0px 160px;
   width: 100vw;
   margin: auto;
   margin-bottom: 160px;
+}
+.section--top{
+  margin-top: 80px;
 }
 .section-column{
   display: flex;
@@ -279,13 +280,13 @@ a{
   flex: 1;
   justify-content: flex-end;
 }
-.section-img{
+.section__img{
   max-height: 488px;
   overflow: hidden;
   justify-content: flex-end;
   flex: 1;
 }
-.section-img img{
+.section__img img{
   width: 100%;
   border-radius: 32px;
 }
@@ -297,13 +298,6 @@ a{
 }
 .subtitle-section h2{
   margin-bottom: 24px;
-}
-.testimonial-section{
-  display: flex;
-  justify-content: space-between;
-}
-.testimonial-section h2{
-  text-align: left;
 }
 .section-center-2{
   display: flex;
@@ -321,9 +315,7 @@ a{
   text-align: center;
 }
 
-img{
-  display: block;
-}
+
 .rs-wrapper{
   max-height: 100%;
 }
@@ -348,6 +340,22 @@ img{
   box-shadow: 0px 4px 64px 0px rgba(113, 96, 132, 0.16);
 }
 
+.info-card-wrapper{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+
+
+
+
+
+
+
+
 /* info card */
 .info-card{
   display: flex;
@@ -356,21 +364,28 @@ img{
   justify-content: center;
   flex: 1;
 }
-.info-card-wrapper{
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 24px;
-}
-.info-card-img img{
+.info-card__image{
   height: 280px;
   width: auto;
   padding: 32px;
 }
-.info-card p{
-  text-align: center;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* hero */
 .hero--imgs img:nth-child(1){
@@ -484,7 +499,14 @@ img{
   border: 1px solid var(--grey--light);
   border-radius: 32px;
 }
-
+.dot-large{
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  border-radius: 100%;
+  background-color: var(--blue);
+  margin-right: 8px;
+}
 
 /* TODO fix sticky not working */
 .see-more-block{
@@ -496,7 +518,7 @@ img{
   position: -webkit-sticky;
   bottom: 0;
 }
-.home--card-wrapper{
+.home-card-wrapper{
   margin-top: 80px;
   justify-content: center;
   display: flex;
@@ -505,7 +527,7 @@ img{
 }
 
 /* home card */
-.home--card{
+.home-card{
   border: 1px solid var(--grey--lightest);
   background-color: var(--white);
   box-shadow: var(--light-shadow);
@@ -516,22 +538,22 @@ img{
   gap: 12px;
   border-radius: 12px;
 }
-.home--card p{
+.home-card p{
   text-align: center;
 }
-.home--card:nth-child(1) img{
+.home-card:nth-child(1) img{
   background-color: var(--blue-light);
 }
-.home--card:nth-child(2) img{
+.home-card:nth-child(2) img{
   background-color: var(--purple-light);
 }
-.home--card:nth-child(3) img{
+.home-card:nth-child(3) img{
   background-color: var(--pink-light);
 }
-.home--card:nth-child(4) img{
+.home-card:nth-child(4) img{
   background-color: var(--yellow-light);
 }
-.home--card img{
+.home-card__icon{
   padding: 8px;
   border-radius: 100%;
 }
@@ -562,54 +584,69 @@ img{
 .testimonial-client p:nth-child(2){
   color: var(--grey--dark);
 }
-
-/* accordion */
-.accordion{
-  padding: 0px 200px;
-  transition: all 0.5s cubic-bezier(0,1,0,1);
-}
-.accordion-item{
-  padding: 32px 0px;
-  border-top: 1px solid var(--grey--light);
-  border-bottom: 1px solid var(--grey--light);
-}
-.accordion-question{
+.testimonial-section{
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
 }
-.accordion-hidden{
-  display: none;
+.testimonial-section h2{
+  text-align: left;
 }
 
-/*research database*/
-.icon{
-  width: 1.2em;
-  height: 1.2em;
-}
-.db__tab{
+
+
+
+
+
+
+/* TODO -> would it be better to make sg right div sticky instead of toc */
+/* syllabus guide */
+.syl-guide{
   display: flex;
   flex-direction: row;
-  align-items: center;
-  gap: 28px;
+  gap: 80px;
 }
-.db__tab p{
-  font-size: var(--body-small);
+.syl-guide__heading-wrapper{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+.syl-guide__heading{
+  font-size: var(--heading-3);
+  margin-bottom: 0;
+}
+.syl-guide-content a{
+  font-weight: 700;
+  text-decoration: underline;
+  color: var(--accent);
+}
+.syl-guide-content h3{
+  font-size: var(--body-large);
+  margin-bottom: 12px;
+  margin-top: 28px;
+}
+.syl-guide-content h3 strong{
+  font-weight: 600;
+}
+.syl-guide-content li{
+  margin-left: 16px;
+}
+.syl-guide-content h2{
+  margin-top: 48px;
+  margin-bottom: 16px;
+  font-size: var(--heading-4);
 }
 
 /* team */
-.team-avatars{
+.team__avatar-wrapper{
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-.team-avatars img{
+.team__avatar-wrapper img{
   max-width: 120px;
   height: auto;
 }
-.team-card-wrapper{
+.team__card-wrapper{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -621,43 +658,11 @@ img{
   justify-content: flex-start;
   width: calc(33.33% - 32px)
 }
-.team-card img{
+.team-card__img{
   max-width: 100%;
   height: auto;
   border-radius: 12px;
   margin-bottom: 16px;
-}
-
-/* syllabus guide */
-.md a{
-  font-weight: 700;
-  text-decoration: underline;
-  color: var(--accent);
-}
-.md h3{
-  font-size: var(--body-large);
-  margin-bottom: 12px;
-  margin-top: 28px;
-}
-.md h3 strong{
-  font-weight: 600;
-}
-.md li{
-  margin-left: 16px;
-}
-.md h2{
-  margin-top: 48px;
-  margin-bottom: 16px;
-  font-size: var(--heading-4);
-}
-.sg-heading h1{
-  font-size: var(--heading-3);
-  margin-bottom: 0;
-}
-.sg-content{
-  display: flex;
-  flex-direction: row;
-  gap: 80px;
 }
 
 /* table of contents */
@@ -671,33 +676,26 @@ img{
   position: sticky;
   max-height: 100vh;
   overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
-.toc ul li{
+.toc__section{
   list-style: none;
   cursor: pointer;
-  margin-bottom: 8px;
+  font-size: var(--body-default);
+  font-weight: 600;
 }
-.toc ul li a:not(.section-title){
+.toc__subsection{
+  list-style: none;
+  cursor: pointer;
   font-size: var(--body-small);
   margin-left: 24px;
 }
-.toc ul{
-  margin-bottom: 24px;
-}
-.toc ul:nth-child(4){
-  margin-bottom: 0px;
-}
-.section-title{
-  font-size: var(--body-default);
-  font-weight: 600;
-  margin-left: 0px;
-  margin-bottom: 16px;
-}
-
-.sg-heading{
+.toc__wrapper{
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 48px;
+  flex-direction: column;
+  gap: 8px;
 }
 
 /* database */
@@ -721,6 +719,11 @@ img{
 .db__tab{
   display: flex;
   justify-content: space-between;
+}
+.db__vl {
+  width: 1px;
+  border-left: 1px solid var(--grey--light);
+  min-height: 100%;
 }
 .tab__list{
   display: flex;

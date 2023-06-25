@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <nav className="nav">
         <Link to = "/" className="logo">Equitable Syllabus Project</Link>
-        <ul>
+        <ul className="nav__menu">
             <CustomLink to = "/team">Team</CustomLink>      
             <CustomLink to = "/contribute">Contribute</CustomLink>    
             <CustomLink to = "/research-service">Research Service</CustomLink>
@@ -21,7 +21,7 @@ function CustomLink({to, children, ...props}){
     const isActive = useMatch({ path: resolvedPath.pathname, end: true })
 
     return(
-        <li className={isActive ? "active" : ""}>
+        <li className={isActive ? "nav__item active" : "nav__item"}>
             <Link to = {to} {...props}>
                 {children}
             </Link>

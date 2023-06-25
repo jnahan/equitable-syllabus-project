@@ -8,7 +8,6 @@ import EmpowermentIcon from "../../icons/empowerment.svg"
 import GrowthIcon from "../../icons/growth.svg"
 import QuotePink from "../../icons/quotePink.svg"
 import QuoteYellow from "../../icons/quoteYellow.svg"
-import Accordion from "./Accordion"
 import SparkleLarge from "../../icons/sparkle-large.svg"
 import SparkleSmall from "../../icons/sparkle-small.svg"
 
@@ -63,7 +62,7 @@ function Home() {
     <div className="section ssubtitle-section">
       <h2 className="heading-2">A Syllabus is Much More Than A Contract Between Students and Teachers</h2>
       <p className="subtitle">An effective syllabus can foster...</p>
-      <div className="home--card-wrapper">   
+      <div className="home-card-wrapper">   
         <HomeCard icon={EquityIcon} heading="Equity" text="Level the playing field for student success"/>
         <HomeCard icon={InclusivityIcon} heading="Inclusivity" text="Create an inclusive learning environment"/>
         <HomeCard icon={EmpowermentIcon} heading="Empowerment" text="Empower students’ learning experience"/>
@@ -73,22 +72,22 @@ function Home() {
     <div className="section">
       <h2 className="heading-2">Syllabus Resources</h2>
       <div className="section-content">
-        <div className="section-img sg-wrapper">
+        <div className="section__img sg-wrapper">
           <img src="/images/home/syllabus-guide.png" alt="syllabus guide" />
         </div>
         <div className="section-text">
           <h3 className="heading-3">Syllabus Guide</h3>
           <p className="body-large">A template and reference to help you develop your course syllabus. The syllabus guide fosters critical pedagogy by identifying structural and rhetorical shortcomings in the syllabus.</p>
-          <button onClick={() => navigate("/syllabus-guide")} className="primary-bttn">View Syllabus Guide</button>
+          <button onClick={() => navigate("/syllabus-guide")} className="bttn--primary">View Syllabus Guide</button>
         </div>
       </div>
       <div className="section-content">
         <div className="section-text">
           <h3 className="heading-3">Research Database</h3>
           <p className="body-large">Our database of equity-centered resources helps you incorporate diverse voices into your syllabus. We compiled resources from Black, Brown, and Indigenous people, as well as other historically underrepresented groups.</p>
-          <button onClick={() => navigate("/research-database")} className="primary-bttn">View Research Database</button>
+          <button onClick={() => navigate("/research-database")} className="bttn--primary">View Research Database</button>
         </div>
-        <div className="section-img db-wrapper">
+        <div className="section__img db-wrapper">
           <img src="/images/home/database.png" alt="database" />
         </div>
       </div>
@@ -96,22 +95,22 @@ function Home() {
     <div className="section">
       <h2 className="heading-2">Syllabus Improvement Services</h2>
       <div className="section-content">
-        <div className="section-img rs-wrapper">
+        <div className="section__img rs-wrapper">
           <img src="/images/home/research-service.png" alt="research service" />
         </div>
         <div className="section-text">
           <h3 className="heading-3">Research Assistance Service</h3>
           <p className="body-large">Get help creating your syllabus. The Equitable Syllabus Team will recommend resources and identity ways to bridge equity gaps in the course material.</p>
-          <button onClick={() => navigate("/research-service")} className="primary-bttn">Get Research Service</button>
+          <button onClick={() => navigate("/research-service")} className="bttn--primary">Get Research Service</button>
         </div>
       </div>
       <div className="section-content">
         <div className="section-text">
           <h3 className="heading-3">Syllabus Review Workshop</h3>
           <p className="body-large">Join our collaborative workshop sessions and rework your syllabus to promote equity-aligned practice and curricula</p>
-          <button onClick={() => navigate("/syllabus-workshop")} className="primary-bttn">Learn About Our Workshop</button>
+          <button onClick={() => navigate("/syllabus-workshop")} className="bttn--primary">Learn About Our Workshop</button>
         </div>
-        <div className="section-img">
+        <div className="section__img">
           <img src="/images/home/syllabus-workshop.png" alt="syllabus workshop" />
         </div>
       </div>
@@ -136,10 +135,6 @@ function Home() {
           </div>
         </div>
       </div>
-    </div>
-    <div className="section">
-      <h2 className="heading-2">Questions & Answers</h2>
-      <Accordion />
     </div>
     </>
   )

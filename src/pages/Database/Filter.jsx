@@ -20,7 +20,7 @@ function Filter({formatList, setFormatList, contList, setContList, catList, setC
 
   return (
     <div className="filter">
-      <button onClick={() => navigate("/contribute")} className="primary-bttn filter__button">
+      <button onClick={() => navigate("/contribute")} className="bttn--primary filter__button">
         Suggest Resources
       </button>
       <div className="filter__title-wrapper">

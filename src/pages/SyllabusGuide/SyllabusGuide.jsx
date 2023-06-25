@@ -5,7 +5,7 @@ import TableOfContents from "./TableOfContents";
 
 function SyllabusGuide() {
   const [postContent, setPostContent] = useState("");
-  const fileName = "syllabus-guide.md"
+  const fileName = "syllabus-guide.syl-guide-content"
 
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -22,18 +22,16 @@ function SyllabusGuide() {
   }, []);
 
   return (
-    <div className="section--top">
-      <div className="section sg-content">
-        <div className="sg-left">
-          <div className="sg-heading">
-            <h1>Syllabus Guide</h1>
-            <button className="primary-bttn">Propose A Change</button>
-          </div>
-          <Markdown className="md">{postContent}</Markdown>
+    <div className="section section--top syl-guide">
+      <div>
+        <div className="syl-guide__heading-wrapper">
+          <h1 className="syl-guide-heading">Syllabus Guide</h1>
+          <button className="bttn--primary">Propose A Change</button>
         </div>
-        <div className="sg-right">
-          <TableOfContents />
-        </div>
+        <Markdown className="syl-guide-content">{postContent}</Markdown>
+      </div>
+      <div>
+        <TableOfContents />
       </div>
     </div>
   )

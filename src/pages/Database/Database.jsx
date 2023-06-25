@@ -44,7 +44,7 @@ function Database() {
                 setCatList = {setCatList}
             />
         </div>
-        <div className="vl"></div>
+        <div className="db__vl"></div>
         <div className="db__section">
             <div className="db__tab tab">
                 <ul className="tab__list">
