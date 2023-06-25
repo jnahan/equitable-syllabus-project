@@ -16,7 +16,7 @@ import SparkleSmall from '../../icons/sparkle-small.svg'
   TODOS:
   - update faq answers
   - address css todos
-  - research database sort and filter
+  - research database handle multi categories
   - syllabus guide propose change link
   - fix broken syllabus guide links
   - animation

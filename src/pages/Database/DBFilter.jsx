@@ -1,6 +1,5 @@
 import React from 'react'
 import { useNavigate } from "react-router-dom";
-import { useState } from 'react';
 import CheckList from './CheckList'
 
 import FilterIcon from '../../icons/filter.svg'

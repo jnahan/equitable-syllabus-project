@@ -8,6 +8,7 @@ function Database() {
     const [data, setData] = useState([])
     const [loading, setLoading] = useState(true)
     const [url, setUrl] = useState('https://sheetdb.io/api/v1/vv1l83xybuwf3')
+    const [resultCount, setResultCount] = useState(0);
     // const [nextUrl, setNextUrl] = useState();
     // const [prevUrl, setPrevUrl] = useState();
 
@@ -20,6 +21,7 @@ function Database() {
         const res = await axios.get(url);
         setLoading(false);
         setData(res.data);
+        setResultCount(data.length)
     }
 
     useEffect(() => {
@@ -46,12 +48,15 @@ function Database() {
                     <li><p>Date Added</p></li>
                     <li><p>Title</p></li>
                 </ul>
+                <p>{`${resultCount} results`}</p>
             </div>
             <DBCard 
                 formatList = {formatList}
                 contList = {contList}
                 catList = {catList}
-                data = {data} loading = {loading} 
+                setResultCount = {setResultCount}
+                data = {data} 
+                loading = {loading} 
             />
         </div>
     </div>
