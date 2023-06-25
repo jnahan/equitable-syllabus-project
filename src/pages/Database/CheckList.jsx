@@ -29,7 +29,7 @@ function CheckList({category, labels, checkedList, setCheckedList}) {
     <div className='check-list'>
         <div className="check-list-heading" onClick={toggle}>
             <h5 className='body-default'>{category}</h5>
-            <img src={open ? UpIcon : DownIcon} alt="" />
+            <img src={open ? UpIcon : DownIcon} alt="toggle" />
         </div>
         <div className={open ? "check-wrapper" : "hide-list"}>
         {labels.map((item, index) => {

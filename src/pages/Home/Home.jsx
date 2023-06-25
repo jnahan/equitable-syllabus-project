@@ -14,6 +14,8 @@ import SparkleSmall from '../../icons/sparkle-small.svg'
 
 /*
   TODOS:
+  - image alt
+  - make team email a
   - update faq answers
   - address css todos
   - research database handle multi categories
@@ -74,7 +76,7 @@ function Home() {
       <h2 className="heading-2">Syllabus Resources</h2>
       <div className="section-content">
         <div className="section-img sg-wrapper">
-          <img src="/images/home/syllabus-guide.png" alt="" />
+          <img src="/images/home/syllabus-guide.png" alt="syllabus guide" />
         </div>
         <div className="section-text">
           <h3 className="heading-3">Syllabus Guide</h3>
@@ -89,7 +91,7 @@ function Home() {
           <button onClick={() => navigate("/research-database")} className="primary-bttn">View Research Database</button>
         </div>
         <div className="section-img db-wrapper">
-          <img src="/images/home/database.png" alt="" />
+          <img src="/images/home/database.png" alt="database" />
         </div>
       </div>
     </div>
@@ -97,7 +99,7 @@ function Home() {
       <h2 className="heading-2">Syllabus Improvement Services</h2>
       <div className="section-content">
         <div className="section-img rs-wrapper">
-          <img src="/images/home/research-service.png" alt="" />
+          <img src="/images/home/research-service.png" alt="research service" />
         </div>
         <div className="section-text">
           <h3 className="heading-3">Research Assistance Service</h3>
@@ -112,7 +114,7 @@ function Home() {
           <button onClick={() => navigate("/syllabus-workshop")} className="primary-bttn">Learn About Our Workshop</button>
         </div>
         <div className="section-img">
-          <img src="/images/home/syllabus-workshop.png" alt="" />
+          <img src="/images/home/syllabus-workshop.png" alt="syllabus workshop" />
         </div>
       </div>
     </div>
@@ -120,7 +122,7 @@ function Home() {
       <h2 className="heading-2">What ITP/IMA Professors Say</h2>
       <div className="testimonial-wrapper">
         <div className="testimonial">
-          <img src={QuotePink} alt="" />
+          <img src={QuotePink} alt="quote" />
           <p className='body-large'>“Working with Divya was a great experience - the syllabus for the class was one which had undergone many iterations over the years, with several faculty adding to it, so it was nice to have the opportunity to review it with fresh eyes, and especially through the lens of equity and inclusion. I came away with a few new references to add to the course materials, and overall appreciated talking through the underlying assumptions of the course.”</p>
           <div className="testimonial-client">
             <p className='body-large semibold'>Sarah Rothberg</p>
@@ -128,7 +130,7 @@ function Home() {
           </div>
         </div>
         <div className="testimonial">
-          <img src={QuoteYellow} alt="" />
+          <img src={QuoteYellow} alt="quote" />
           <p className='body-large'>“Designing a syllabus can be a lonely process. However, it can be different with ESP! I worked with a student researcher to find more example projects and readings by underrepresented groups to include in my syllabus. On top of practical help from the student researcher, it was a good opportunity for me to be more intentional and conscious about including diverse voices and role models in my course. More than others, I felt supported throughout the process!”</p>
           <div className="testimonial-client">
             <p className='body-large semibold'>Yeseul Song</p>

@@ -24,7 +24,7 @@ function DBFilter({formatList, setFormatList, contList, setContList, catList, se
       <button onClick={() => navigate("/contribute")}className='primary-bttn'>Suggest Resources</button>
       <div className="filter-title">
         <div className="filter-heading">
-          <img src={FilterIcon} alt="" />
+          <img src={FilterIcon} alt="filter" />
           <p className='body-large bold'>Filter Results</p>
         </div>
         <div className="clear-wrapper" onClick={resetChecked}>

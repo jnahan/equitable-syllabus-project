@@ -8,12 +8,12 @@ function Team() {
         <h1 className="heading-2">Equitable Syllabus Project Team</h1>
         <p className='body-large'>The Equitable Syllabus Project team strives to help faculty re-engage their course material with an equitable lens.</p>
         <div className="team-avatars">
-          <img src="images/team/blair-avatar.png" alt="" />
-          <img src="images/team/chaski-avatar.png" alt="" />
-          <img src="images/team/divya-avatar.png" alt="" />
-          <img src="images/team/jenna-avatar.png" alt="" />
-          <img src="images/team/kayley-avatar.png" alt="" />
-          <img src="images/team/sophia-avatar.png" alt="" />
+          <img src="images/team/blair-avatar.png" alt="Blair Simmons" />
+          <img src="images/team/chaski-avatar.png" alt="Chaski No" />
+          <img src="images/team/divya-avatar.png" alt="Divya Mehra" />
+          <img src="images/team/jenna-avatar.png" alt="Jenna Han" />
+          <img src="images/team/kayley-avatar.png" alt="Kayley Chery" />
+          <img src="images/team/sophia-avatar.png" alt="Sophia Edwards" />
         </div>
       </div>
       <div className="section">
