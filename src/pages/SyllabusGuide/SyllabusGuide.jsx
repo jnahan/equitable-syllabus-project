@@ -5,7 +5,7 @@ import TableOfContents from "./TableOfContents";
 
 function SyllabusGuide() {
   const [postContent, setPostContent] = useState("");
-  const fileName = "syllabus-guide.syl-guide-content"
+  const fileName = "syllabus-guide.md"
 
   useEffect(() => {
     window.scrollTo(0, 0)
