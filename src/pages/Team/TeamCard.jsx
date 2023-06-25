@@ -1,14 +1,14 @@
 import React from 'react'
 
-function TeamCard({Image, Name, Role, Email}) {
+function TeamCard({image, name, role, email}) {
   return (
     <div className='team-card'>
       <div className="team-card-img">
-        {Image === "" ? "" : <img src={Image} alt={Name} />}
+        {image === "" ? "" : <img src={image} alt={name} />}
       </div>
-      <h4 className='heading-4'>{Name}</h4>
-      <p>{Role}</p>
-      <a href={`mailto:${Email}`}>{Email}</a>
+      <h4 className='heading-4'>{name}</h4>
+      <p>{role}</p>
+      <a href={`mailto:${email}`}>{email}</a>
     </div>
   )
 }

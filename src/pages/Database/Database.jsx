@@ -23,13 +23,17 @@ function Database() {
         setData(res.data);
         setResultCount(data.length)
     }
+    
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    });
 
     useEffect(() => {
         dataFun();
     }, [url])
     
     return (
-    <div className='db top-margin'>
+    <div className='db section--top'>
         <div className="db-content filter-wrapper">
             <DBFilter
                 formatList = {formatList}

@@ -11,7 +11,7 @@ function DBCard({data, loading, formatList, contList, catList, setResultCount}) 
         data
         .filter((item) => (formatList.length !== 0 ? formatList.includes(item.Format) : true))
         .filter((item) => (contList.length !== 0 ? contList.includes(item.Continent) : true))
-        .filter((item) => (catList.length != 0 ? catList.includes(item.Category) : true))
+        .filter((item) => (catList.length !== 0 ? catList.includes(item.Category) : true))
         .map(((item, index, arr) => {
           if (index === 0){
             setResultCount(arr.length)

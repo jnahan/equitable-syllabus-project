@@ -1,13 +1,13 @@
 import React from 'react'
 
-function InfoCard({Image, Heading, Text}) {
+function InfoCard({image, heading, text}) {
   return (
     <div className='info-card'>
         <div className="info-card-img">
-            <img src={Image} alt={Heading} />
+            <img src={image} alt={heading} />
         </div>
-        <h2 className='heading-4'>{Heading}</h2>
-        <p className='body-default'>{Text}</p>
+        <h2 className='heading-4'>{heading}</h2>
+        <p className='body-default'>{text}</p>
     </div>
   )
 }

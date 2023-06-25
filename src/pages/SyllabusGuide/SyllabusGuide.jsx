@@ -22,7 +22,7 @@ function SyllabusGuide() {
   }, []);
 
   return (
-    <div className='top-margin'>
+    <div className='section--top'>
       <div className='section sg-content'>
         <div className="sg-left">
           <div className="sg-heading">

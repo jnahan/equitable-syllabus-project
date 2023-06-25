@@ -1,11 +1,11 @@
 import React from 'react'
 
-function HomeCard({Icon, Heading, Text}) {
+function HomeCard({icon, heading, text}) {
   return (
     <div className='home--card'>
-        <img className='home--card-image' src={Icon} alt={`${Heading} icon`} />
-        <h4 className="heading-4">{Heading}</h4>
-        <p>{Text}</p>
+        <img className='home--card-image' src={icon} alt={`${heading} icon`} />
+        <h4 className="heading-4">{heading}</h4>
+        <p>{text}</p>
     </div>
   )
 }

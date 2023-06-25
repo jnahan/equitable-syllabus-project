@@ -29,7 +29,7 @@ function Home() {
 
   return (
     <>
-    <div className="hero-wrapper top-margin">
+    <div className="hero-wrapper section--top">
       <div className="hero">
         <div className="hero--chip">
           <p className='body-default'><span className='dot-large'></span>Built for ITP/IMA professors</p>
@@ -59,14 +59,14 @@ function Home() {
         <img src={SparkleSmall} alt="small sparkle" />
       </div>
     </div>
-    <div className="section subtitle-section">
+    <div className="section ssubtitle-section">
       <h2 className="heading-2">A Syllabus is Much More Than A Contract Between Students and Teachers</h2>
       <p className="subtitle">An effective syllabus can foster...</p>
       <div className="home--card-wrapper">   
-        <HomeCard Icon={EquityIcon} Heading="Equity" Text="Level the playing field for student success"/>
-        <HomeCard Icon={InclusivityIcon} Heading="Inclusivity" Text="Create an inclusive learning environment"/>
-        <HomeCard Icon={EmpowermentIcon} Heading="Empowerment" Text="Empower students’ learning experience"/>
-        <HomeCard Icon={GrowthIcon} Heading="Growth" Text="Help students and faculty learn and grow together"/>
+        <HomeCard icon={EquityIcon} heading="Equity" text="Level the playing field for student success"/>
+        <HomeCard icon={InclusivityIcon} heading="Inclusivity" text="Create an inclusive learning environment"/>
+        <HomeCard icon={EmpowermentIcon} heading="Empowerment" text="Empower students’ learning experience"/>
+        <HomeCard icon={GrowthIcon} heading="Growth" text="Help students and faculty learn and grow together"/>
       </div>
     </div>
     <div className="section">
