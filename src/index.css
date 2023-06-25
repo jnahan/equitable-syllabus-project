@@ -788,6 +788,11 @@ img{
   flex-direction: column;
   gap: 16px;
 }
+.check-list-heading{
+  display: flex;
+  cursor: pointer;
+}
+
 /* .check-item input{
   -moz-appearance:none;
   -webkit-appearance:none;
@@ -804,3 +809,11 @@ img{
   border: none;
   outline: none;
 } */
+.hide-list{
+  display: none;
+}
+.filter-title{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}

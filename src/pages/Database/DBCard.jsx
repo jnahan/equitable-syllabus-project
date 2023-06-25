@@ -5,37 +5,22 @@ import CheckList from './CheckList'
 
 import { useState, useEffect } from 'react'
 
-function DBCard({data, loading}) {
+function DBCard({data, loading, formatList, contList, catList}) {
 
-  const [info, setInfo] = React.useState(data);
-  const aa = ["Europe", "North America"]
+  //TODO try to find a way to do this using setdata
 
-  const format = ["Article", "Collection", "Book", "Asset", "Website", "Video", "Audio", "Artwork", "Tool"]
-  const continent = ["North America", "Europe", "Africa", "Australia", "Asia"]
-  const category = ["Tech & Society", "Design", "Programming & Data", "Media Arts", "Project Development & Research"]
-  const [checkedList, setCheckedList] = useState([]);
-  const [contList, setContList] = useState([]);
-
-  useEffect(() =>{
-    console.log("changed")
-    console.log(checkedList)
-  }, checkedList)
-
-  console.log(info)
-  // data = data.filter((info) => (info.Continent === "Europe"))
-  if (checkedList.length != 0){
-    data = data.filter((info) => (checkedList.includes(info.Format)))
+  if (formatList.length != 0){
+    data = data.filter((info) => (formatList.includes(info.Format)))
   }
   if (contList.length != 0){
     data = data.filter((info) => (contList.includes(info.Continent)))
   }
-  // data = data.filter((info) => (aa.includes(info.Continent)))
+  if (catList.length != 0){
+    data = data.filter((info) => (catList.includes(info.Category)))
+  }
 
   return (
     <>
-      <CheckList labels={format} checkedList={checkedList} setCheckedList={setCheckedList}/>
-      <CheckList labels={continent} checkedList={contList} setCheckedList={setContList}/>
-
       {
         loading ? <h1>Loading...</h1> :
         data.map(((item, index) => {

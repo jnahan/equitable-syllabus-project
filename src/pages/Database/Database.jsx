@@ -8,15 +8,18 @@ function Database() {
     const [data, setData] = useState([])
     const [loading, setLoading] = useState(true)
     const [url, setUrl] = useState('https://sheetdb.io/api/v1/vv1l83xybuwf3')
-    const [nextUrl, setNextUrl] = useState();
-    const [prevUrl, setPrevUrl] = useState();
+    // const [nextUrl, setNextUrl] = useState();
+    // const [prevUrl, setPrevUrl] = useState();
+
+    const [formatList, setFormatList] = useState([]);
+    const [contList, setContList] = useState([]);
+    const [catList, setCatList] = useState([]);
 
     const dataFun = async()=>{
         setLoading(true);
         const res = await axios.get(url);
         setLoading(false);
         setData(res.data);
-        console.log(data);
     }
 
     useEffect(() => {
@@ -26,7 +29,14 @@ function Database() {
     return (
     <div className='db top-margin'>
         <div className="db-content filter-wrapper">
-            <DBFilter/>
+            <DBFilter
+                formatList = {formatList}
+                setFormatList = {setFormatList}
+                contList = {contList}
+                setContList = {setContList}
+                catList = {catList}
+                setCatList = {setCatList}
+            />
         </div>
         <div className='vl'></div>
         <div className='db-content'>
@@ -36,9 +46,13 @@ function Database() {
                     <li><p>Date Added</p></li>
                     <li><p>Title</p></li>
                 </ul>
-                <p>{`${data.length} results`}</p>
             </div>
-            <DBCard data = {data} loading = {loading} />
+            <DBCard 
+                formatList = {formatList}
+                contList = {contList}
+                catList = {catList}
+                data = {data} loading = {loading} 
+            />
         </div>
     </div>
     )
