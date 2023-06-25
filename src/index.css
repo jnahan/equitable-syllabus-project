@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Shadows+Into+Light&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Shadows+Into+Light&display=swap");
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 :root{
   /* color styles */
@@ -20,7 +20,7 @@
   --pink-light: rgba(252, 240, 249, 1);
   --yellow: rgba(249, 194, 111, 1);
   --yellow-light: rgba(255, 247, 220, 1);
-  --grey--lightest: rgba(248, 248, 248, 1);
+  --grey--lightest: rgb(245, 245, 245);
   --grey--light: rgba(239, 239, 239, 1);
   --grey--default: rgba(188, 188, 188, 1);
   --grey--dark: rgba(96, 96, 96, 1);
@@ -228,14 +228,6 @@ a{
   width: 1px;
   border-left: 1px solid var(--grey--light);
   min-height: 100%;
-}
-.dot {
-  height: 4px;
-  width: 4px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  margin-bottom: 10px;
 }
 .dot-large{
   width: 12px;
@@ -446,7 +438,7 @@ img{
 }
 .handwritten-text p{
   font-size: var(--handwritten);
-  font-family: 'Shadows Into Light', cursive;
+  font-family: "Shadows Into Light", cursive;
 }
 .handwritten-text p:nth-child(1){
   transform: rotate(-16deg);
@@ -597,77 +589,15 @@ img{
   width: 1.2em;
   height: 1.2em;
 }
-.sort-categories{
+.db__tab{
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 28px;
 }
-.sort-categories p{
+.db__tab p{
   font-size: var(--body-small);
 }
-
-/* database */
-.db{
-  border-top: 1px solid var(--grey--light);
-  margin: 0px 160px;
-  display: flex;
-  flex-direction: row;
-  gap: 64px;
-}
-.db-content{
-  margin-top: 48px;
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-}
-.db-card{
-  padding: 24px 0;
-  display: flex;
-  gap: 48px;
-  border-bottom: 1px solid var(--grey--light);
-}
-.db-image{
-  height: 150px;
-  width: 150px;
-  object-fit: cover;
-  border-radius: 8px;
-}
-.metadata{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 8px;
-}
-.db-card h4{
-  margin-bottom: 4px;
-  font-weight: 600;
-}
-.db-card p:not(.body-default){
-  font-size: var(--body-small);
-  margin-bottom: 12px;
-}
-.chips p{
-  display: flex;
-  background-color: var(--grey--lightest);
-  border-radius: 16px;
-  align-items: center;
-  gap: 4px;
-  padding: 4px 8px;
-  margin-top: 24px;
-}
-.sort-categories{
-  display: flex;
-  justify-content: space-between;
-}
-.sort-categories ul{
-  display: flex;
-  gap: 12px;
-}
-.sort-categories ul li{
-  list-style: none;
-}
-
 
 /* team */
 .team-avatars{
@@ -770,41 +700,133 @@ img{
   margin-bottom: 48px;
 }
 
-/* database filter */
+/* database */
+.db{
+  border-top: 1px solid var(--grey--light);
+  margin: 0px 160px;
+  display: flex;
+  flex-direction: row;
+  gap: 64px;
+}
+.db__section{
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.db__section--filter{
+  min-width: 240px;
+  display: flex;
+}
+.db__tab{
+  display: flex;
+  justify-content: space-between;
+}
+.tab__list{
+  display: flex;
+  gap: 12px;
+}
+.tab__item{
+  list-style: none;
+}
 
+/* database card */
+.db-card{
+  padding: 24px 0;
+  display: flex;
+  gap: 48px;
+  border-bottom: 1px solid var(--grey--light);
+}
+.db-card__image{
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.db-card__metadata{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+.db-card__dot {
+  height: 4px;
+  width: 4px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+.metadata--top{
+  margin-bottom: 12px;
+}
+.db-card__heading{
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+.db-card__category{
+  font-size: var(--body-small);
+  font-weight: 600;
+}
+.db-card__creator{
+  font-size: var(--body-small);
+}
+.db-card__wrapper{
+  font-size: var(--body-small);
+  margin-bottom: 12px;
+}
+.db-card__chip{
+  display: flex;
+  background-color: var(--grey--lightest);
+  border-radius: 16px;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px;
+  margin-top: 24px;
+  font-size: var(--body-small);
+}
+
+/* database filter */
 .filter{
   position: sticky;
   top: 40px;
   max-height: 100vh;
   overflow-y: auto;
-}
-.filter-wrapper{
-  min-width: 240px;
   display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
-.filter-heading{
+.filter__title{
   display: flex;
   gap: 8px;
   flex-direction: row;
   flex-grow: 2;
 }
-.filter button{
+.filter__button{
   padding: auto;
   width: 100%;
 }
-.check-list{
+.filter__title-wrapper{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.filter__chip{
+  background-color: var(--accent-light);
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 4px 8px;
+}
+.checkbox-list-wrapper{
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 32px;
 }
-.check-list-heading{
-  display: flex;
+
+/* checkbox */
+.checkbox{
   cursor: pointer;
 }
-.check-item{
-  cursor: pointer;
-}
-.check-item input{
+.checkbox__icon{
   -moz-appearance:none;
   -webkit-appearance:none;
   -o-appearance:none;
@@ -815,38 +837,26 @@ img{
   border: 1px solid var(--grey--default);
   outline: none;
 }
-.checked{
+.checkbox__icon--checked{
   background-color: var(--accent);
   border: none;
   outline: none;
 }
-.checked-list-wrapper{
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-}
-.hide-list{
-  display: none;
-}
-.filter-title{
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-}
-.check-wrapper{
+.checkbox-wrapper{
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
-/*
-  TODOS:
-  - remove unused css
-  - change some css names
-  - fix database css
-*/
-.clear-wrapper{
-  background-color: var(--accent-light);
+.checkbox-wrapper--hidden{
+  display: none;
+}
+.checkbox-list{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.checkbox-list__title{
+  display: flex;
+  justify-content: space-between;
   cursor: pointer;
-  border-radius: 4px;
-  padding: 4px 8px;
 }

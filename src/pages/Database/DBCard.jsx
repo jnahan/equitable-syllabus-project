@@ -1,6 +1,6 @@
-import React from 'react'
-import FormatIcon from '../../icons/format.svg'
-import ContinentIcon from '../../icons/continent.svg'
+import React from "react"
+import FormatIcon from "../../icons/format.svg"
+import ContinentIcon from "../../icons/continent.svg"
 
 function DBCard({data, loading, formatList, contList, catList, setResultCount}) {
 
@@ -19,24 +19,24 @@ function DBCard({data, loading, formatList, contList, catList, setResultCount}) 
           return(
             <a href={item.Link} key={index}>
               <div className="db-card">
-                <div className="db-info">
-                  <div className="metadata">
-                    <p>{item.Category}</p>
-                    <span className="dot"></span>
-                    <p>{item.Creator}</p>
+                <div className="db-card__info">
+                  <div className="db-card__metadata metadata--top">
+                    <p className="db-card__category">{item.Category}</p>
+                    <span className="db-card__dot"></span>
+                    <p className="db-card__creator">{item.Creator}</p>
                   </div>
-                  <h4 className='heading-5'>{item.Resource}</h4>
-                  <p className='body-default'>Researchers recently learned that Immigration and Customs Enforcement used facial recognition on millions of driver’s license photographs without the license-holders’ knowledge, the latest revelation about governments employing the technology in ways that threaten civil liberties.</p>
-                  <div className="metadata chips">
+                  <h4 className="heading-5 db-card__heading">{item.Resource}</h4>
+                  <p className="body-default">Researchers recently learned that Immigration and Customs Enforcement used facial recognition on millions of driver’s license photographs without the license-holders’ knowledge, the latest revelation about governments employing the technology in ways that threaten civil liberties.</p>
+                  <div className="db-card__metadata">
                     {item.Format !== "" ?
-                      <p><span><img className="icon" src={FormatIcon} alt="format" /></span>{item.Format}</p> : ""
+                      <div className="db-card__chip"><span><img className="icon" src={FormatIcon} alt="format" /></span>{item.Format}</div> : ""
                     }
                     {item.Continent !== "" ?
-                      <p><span><img className="icon" src={ContinentIcon} alt="continent" /></span>{item.Continent}</p> : ""
+                      <div className="db-card__chip"><span><img className="icon" src={ContinentIcon} alt="continent" /></span>{item.Continent}</div> : ""
                     }
                   </div>
                 </div>
-                {item.Image === "" ? "" : <img className="db-image" src={item.Image} alt="resource" />}
+                {item.Image === "" ? "" : <img className="db-card__image" src={item.Image} alt="resource" />}
               </div>
             </a>
           )

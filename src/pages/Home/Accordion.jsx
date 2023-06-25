@@ -1,5 +1,5 @@
-import React from 'react'
-import { useState } from 'react'
+import React from "react"
+import { useState } from "react"
 
 function Accordion() {
   const [open, setOpen] = useState(null);
@@ -12,7 +12,7 @@ function Accordion() {
   }
 
   return (
-    <div className='accordion'>
+    <div className="accordion">
       {accordionData.map((item, i) => (
           <div className="accordion-item" key={i}>
             <div className="accordion-question" onClick={() => toggle(i)}>
@@ -47,7 +47,7 @@ const accordionData = [
   },
   {
     question: "How do we address the tension in this work?",
-    answer: "In creating an archive that brings together historically misrepresented perspectives, each decision we made regarding how to document and organize the identity information of the creators of our resources was considered carefully. Our practice is mutable and grounded in our ongoing discussions. Each decision is subject to change based on these ongoing dialogues about the implications of creating an archive such as this. We kept a running list documenting our choices as the project has taken shape, including which metadata is kept internal, which metadata is public-facing, and how these decisions ensure a robust and wide selection of voices for those who use our tool. "
+    answer: "In creating an archive that brings together historically misrepresented perspectives, each decision we made regarding how to document and organize the identity information of the creators of our resources was considered carefully. Our practice is mutable and grounded in our ongoing discussions. Each decision is subject to change based on these ongoing dialogues about the implications of creating an archive such as this. We kept a running list documenting our choices as the project has taken shape, including which db-card__metadata is kept internal, which db-card__metadata is public-facing, and how these decisions ensure a robust and wide selection of voices for those who use our tool. "
   }
 ]
 export default Accordion

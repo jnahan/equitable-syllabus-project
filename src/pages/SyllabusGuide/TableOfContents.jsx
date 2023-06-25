@@ -1,6 +1,6 @@
-import React from 'react'
-import { HashLink } from 'react-router-hash-link';
-import { useState } from 'react';
+import React from "react"
+import { HashLink } from "react-router-hash-link";
+import { useState } from "react";
 
 function TableOfContents() {
 
@@ -8,12 +8,12 @@ function TableOfContents() {
     <div className="toc">
       <ul>
         <li>
-            <a className='section-title'>🗣 Propose A Change</a>
+            <a className="section-title">🗣 Propose A Change</a>
         </li>
       </ul>
       <ul>
         <li>
-          <HashLink className='section-title' to="/syllabus-guide/#5-principles-for-inclusive-teaching">
+          <HashLink className="section-title" to="/syllabus-guide/#5-principles-for-inclusive-teaching">
             💡 5 Principles for Inclusive Teaching
           </HashLink>
         </li>
@@ -45,7 +45,7 @@ function TableOfContents() {
       </ul>
       <ul>
         <li>
-          <HashLink className='section-title' to="/syllabus-guide/#sample-statements">
+          <HashLink className="section-title" to="/syllabus-guide/#sample-statements">
             📝 Sample Statements
           </HashLink>
         </li>
@@ -87,7 +87,7 @@ function TableOfContents() {
       </ul>
       <ul>
         <li>
-          <HashLink className='section-title' to="/syllabus-guide/#required-syllabus-statements">
+          <HashLink className="section-title" to="/syllabus-guide/#required-syllabus-statements">
             📝 Required Statements
           </HashLink>
         </li>

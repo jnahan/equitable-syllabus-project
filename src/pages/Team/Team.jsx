@@ -1,12 +1,12 @@
-import React from 'react'
-import TeamCard from './TeamCard'
+import React from "react"
+import TeamCard from "./TeamCard"
 
 function Team() {
   return (
-    <div className='section--top'>
-      <div className='section section-center-2'>
+    <div className="section--top">
+      <div className="section section-center-2">
         <h1 className="heading-2">Equitable Syllabus Project Team</h1>
-        <p className='body-large'>The Equitable Syllabus Project team strives to help faculty re-engage their course material with an equitable lens.</p>
+        <p className="body-large">The Equitable Syllabus Project team strives to help faculty re-engage their course material with an equitable lens.</p>
         <div className="team-avatars">
           <img src="images/team/blair-avatar.png" alt="Blair Simmons" />
           <img src="images/team/chaski-avatar.png" alt="Chaski No" />

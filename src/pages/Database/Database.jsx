@@ -1,13 +1,13 @@
-import React from 'react'
-import { useState, useEffect } from 'react';
-import axios from 'axios';
-import DBCard from './DBCard';
-import DBFilter from './DBFilter';
+import React from "react"
+import { useState, useEffect } from "react";
+import axios from "axios";
+import DBCard from "./DBCard";
+import Filter from "./Filter";
 
 function Database() {
     const [data, setData] = useState([])
     const [loading, setLoading] = useState(true)
-    const [url, setUrl] = useState('https://sheetdb.io/api/v1/vv1l83xybuwf3')
+    const [url, setUrl] = useState("https://sheetdb.io/api/v1/vv1l83xybuwf3")
     const [resultCount, setResultCount] = useState(0);
     // const [nextUrl, setNextUrl] = useState();
     // const [prevUrl, setPrevUrl] = useState();
@@ -33,9 +33,9 @@ function Database() {
     }, [url])
     
     return (
-    <div className='db section--top'>
-        <div className="db-content filter-wrapper">
-            <DBFilter
+    <div className="db section--top">
+        <div className="db__section db__section--filter">
+            <Filter
                 formatList = {formatList}
                 setFormatList = {setFormatList}
                 contList = {contList}
@@ -44,13 +44,13 @@ function Database() {
                 setCatList = {setCatList}
             />
         </div>
-        <div className='vl'></div>
-        <div className='db-content'>
-            <div className="sort-categories">
-                <ul>
-                    <li><p>Featured</p></li>
-                    <li><p>Date Added</p></li>
-                    <li><p>Title</p></li>
+        <div className="vl"></div>
+        <div className="db__section">
+            <div className="db__tab tab">
+                <ul className="tab__list">
+                    <li className="tab__item"><p>Featured</p></li>
+                    <li className="tab__item"><p>Date Added</p></li>
+                    <li className="tab__item"><p>Title</p></li>
                 </ul>
                 <p>{`${resultCount} results`}</p>
             </div>

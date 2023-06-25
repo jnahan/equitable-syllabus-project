@@ -130,7 +130,7 @@ Your health and safety are a priority at NYU. Emphasizing the importance of the 
 
 ### **Statement On Use Of Electronic Devices**
 
-Laptops and other electronic devices are essential tools for learning and interaction in classrooms. However, they can create distractions that hinder students' ability to actively participate and engage. Please be mindful of the ways in which these devices can affect the learning environment. 
+Laptops and other electronic devices are essential tools for learning and interaction in classrooms. However, they can create distractions that hinder students" ability to actively participate and engage. Please be mindful of the ways in which these devices can affect the learning environment. 
 
 
 ### **Statement On Title IX**

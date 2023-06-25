@@ -1,10 +1,10 @@
-import React from 'react'
-import { Link, useMatch, useResolvedPath } from 'react-router-dom'
+import React from "react"
+import { Link, useMatch, useResolvedPath } from "react-router-dom"
 
 function Navbar() {
   return (
-    <nav className='nav'>
-        <Link to = "/" className='logo'>Equitable Syllabus Project</Link>
+    <nav className="nav">
+        <Link to = "/" className="logo">Equitable Syllabus Project</Link>
         <ul>
             <CustomLink to = "/team">Team</CustomLink>      
             <CustomLink to = "/contribute">Contribute</CustomLink>    
