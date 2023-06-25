@@ -13,6 +13,12 @@ function DBFilter({formatList, setFormatList, contList, setContList, catList, se
 
   const navigate = useNavigate();
 
+  function resetChecked(){
+    setFormatList([]);
+    setContList([]);
+    setCatList([]);
+  } 
+
   return (
     <div className='filter'>
       <button onClick={() => navigate("/contribute")}className='primary-bttn'>Suggest Resources</button>
@@ -21,7 +27,7 @@ function DBFilter({formatList, setFormatList, contList, setContList, catList, se
           <img src={FilterIcon} alt="" />
           <p className='body-large bold'>Filter Results</p>
         </div>
-        <div className="clear-wrapper">
+        <div className="clear-wrapper" onClick={resetChecked}>
           <p>Clear</p>
         </div>
       </div>

@@ -34,9 +34,9 @@ function CheckList({category, labels, checkedList, setCheckedList}) {
         <div className={open ? "check-wrapper" : "hide-list"}>
         {labels.map((item, index) => {
             return(
-                <div className="check-item" key={index}>
-                    <label> {item}
-                    <input className={checkedList.includes(item) ? "checked" : ""}type="checkbox" value={item} onChange={handleChange}/> 
+                <div className="check-item" key={index} onChange={handleChange}>
+                    <label > {item}
+                    <input className={checkedList.includes(item) ? "checked" : ""}type="checkbox" value={item} /> 
                     </label>
                 </div>
             )

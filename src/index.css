@@ -6,9 +6,6 @@
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
 }
-html {
-  font-size: 16px;
-} 
 :root{
   /* Color styles */
   --black: rgba(17, 17, 17, 1);
@@ -776,14 +773,19 @@ img{
 .filter{
   position: sticky;
   top: 40px;
+  max-height: 100vh;
+  overflow-y: auto;
 }
 .filter-wrapper{
   min-width: 240px;
+  display: flex;
 }
 
 .filter-heading{
   display: flex;
   gap: 8px;
+  flex-direction: row;
+  flex-grow: 2;
 }
 
 .filter button{
@@ -797,6 +799,10 @@ img{
 }
 .check-list-heading{
   display: flex;
+  cursor: pointer;
+}
+
+.check-item{
   cursor: pointer;
 }
 
@@ -815,6 +821,11 @@ img{
   background-color: var(--accent);
   border: none;
   outline: none;
+}
+.checked-list-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 .hide-list{
   display: none;
@@ -835,3 +846,9 @@ img{
   - change some css names
   - fix database css
 */
+.clear-wrapper{
+  background-color: var(--accent-light);
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 4px 8px;
+}
