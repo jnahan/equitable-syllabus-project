@@ -7,23 +7,17 @@ import { useState, useEffect } from 'react'
 
 function DBCard({data, loading, formatList, contList, catList}) {
 
-  //TODO try to find a way to do this using setdata
-
-  if (formatList.length != 0){
-    data = data.filter((info) => (formatList.includes(info.Format)))
-  }
-  if (contList.length != 0){
-    data = data.filter((info) => (contList.includes(info.Continent)))
-  }
-  if (catList.length != 0){
-    data = data.filter((info) => (catList.includes(info.Category)))
-  }
+  //address items with multiple categories
 
   return (
     <>
       {
         loading ? <h1>Loading...</h1> :
-        data.map(((item, index) => {
+        data
+        .filter((item) => (formatList.length != 0 ? formatList.includes(item.Format) : true))
+        .filter((item) => (contList.length != 0 ? contList.includes(item.Continent) : true))
+        .filter((item) => (catList.length != 0 ? catList.includes(item.Category) : true))
+        .map(((item, index) => {
           return(
             <a href={item.Link} key={index}>
               <div className="db-card">

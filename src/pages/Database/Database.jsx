@@ -25,7 +25,7 @@ function Database() {
     useEffect(() => {
         dataFun();
     }, [url])
-
+    
     return (
     <div className='db top-margin'>
         <div className="db-content filter-wrapper">

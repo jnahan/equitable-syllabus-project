@@ -770,6 +770,10 @@ img{
 
 /* database filter */
 
+.filter{
+  position: sticky;
+  top: 40px;
+}
 .filter-wrapper{
   min-width: 240px;
 }
