@@ -65,6 +65,7 @@
 .heading-3{
   font-size: var(--heading-3);
   font-weight: 700;
+  margin-bottom: 16px;
 }
 .heading-4{
   font-size: var(--heading-4);
@@ -100,6 +101,10 @@ p{
   font-size: var(--body-default);
   font-weight: 400;
 }
+.logo{
+  font-size: 24px;
+  font-weight: 700;
+}
 .text-center{
   text-align: center;
 }
@@ -129,7 +134,7 @@ button{
   font-size: 18px;
   font-weight: bold;
 }
-.hero .bttn-primary{
+.bttn--primary-hero{
   background-color: var(--accent);
   color: var(--white);
   padding: 20px 48px;
@@ -138,7 +143,7 @@ button{
   font-size: 1.25rem;
   font-weight: 700;
 }
-.hero .bttn-secondary{
+.bttn--secondary-hero{
   background-color: var(--white);
   color: var(--accent);
   padding: 20px 48px;
@@ -149,17 +154,12 @@ button{
 }
 
 /* link and nav */
-
 img{
   display: block;
 }
 a{
   text-decoration: none;
   color: var(--black);
-}
-.logo{
-  font-size: 24px;
-  font-weight: 700;
 }
 
 /*nav*/
@@ -226,22 +226,22 @@ a{
   min-height: 100%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
+/* info card */
+.info-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+.info-card__image{
+  height: 280px;
+  width: auto;
+  padding: 32px;
+}
 
 /* section */
-
 .section{
-  /* max-width: 1200px; */
   padding: 0px 160px;
   width: 100vw;
   margin: auto;
@@ -257,26 +257,20 @@ a{
   justify-content: flex-start;
   gap: 48px;
 }
-.section-center{
+.section--center{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.section-center h3{
-  margin-bottom: 16px;
-}
-.section-center p{
+.section--center p{
   text-align: center;
   margin-bottom: 64px;
 }
-.section-content h3{
-  margin-bottom: 16px;
-}
-.section-content p{
+.section__content p{
   margin-bottom: 32px;
 }
-.section-text{
+.section__text{
   flex: 1;
   justify-content: flex-end;
 }
@@ -291,7 +285,7 @@ a{
   border-radius: 32px;
 }
 /* TODO fix alignment */
-.section-content{
+.section__content{
   display: flex;
   align-items: center;
   gap: 120px;
@@ -299,7 +293,7 @@ a{
 .subtitle-section h2{
   margin-bottom: 24px;
 }
-.section-center-2{
+.section--center-2{
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -307,11 +301,11 @@ a{
   gap: 32px;
   margin-bottom: 80px;
 }
-.section-center-2 h1{
+.section--center-2 h1{
   text-align: center;
   margin: 0;
 }
-.section-center-2 p{
+.section--center-2 p{
   text-align: center;
 }
 
@@ -348,47 +342,8 @@ a{
   gap: 24px;
 }
 
-
-
-
-
-
-
-
-
-/* info card */
-.info-card{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  flex: 1;
-}
-.info-card__image{
-  height: 280px;
-  width: auto;
-  padding: 32px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* hero */
-.hero--imgs img:nth-child(1){
+.hero__img:nth-child(1){
   width: 100px;
   height: auto;
   border-radius: 100%;
@@ -399,7 +354,7 @@ a{
   top: 132px;
   left: 120px;
 }
-.hero--imgs img:nth-child(2){
+.hero__img:nth-child(2){
   background-color: white;
   width: 240px;
   height: auto;
@@ -411,7 +366,7 @@ a{
   top: 320px;
   left: 60px;
 }
-.hero--imgs img:nth-child(3){
+.hero__img:nth-child(3){
   width: 300px;
   height: auto;
   box-shadow: var(--shadow);
@@ -422,7 +377,7 @@ a{
   top: 72px;
   right: 20px;
 }
-.hero--imgs img:nth-child(4){
+.hero__img:nth-child(4){
   width: 212px;
   height: auto;
   box-shadow: var(--shadow);
@@ -433,54 +388,54 @@ a{
   top: 260px;
   right: 0px;
 }
-.hero--imgs img:nth-child(5){
+.hero__img:nth-child(5){
   position: absolute;
   top: 360px;
   right: 220px;
   transform: rotate(12deg);
 }
-.hero--imgs img:nth-child(6){
+.hero__img:nth-child(6){
   position: absolute;
   top: 420px;
   right: 280px;
   transform: rotate(4deg);
 }
-.hero--imgs img:nth-child(7){
+.hero__img:nth-child(7){
   position: absolute;
   top: 80px;;
   left: 80px;
   transform: rotate(-24deg);
 }
-.handwritten-text p{
+.hero__handwritten{
   font-size: var(--handwritten);
   font-family: "Shadows Into Light", cursive;
 }
-.handwritten-text p:nth-child(1){
+.hero__handwritten:nth-child(1){
   transform: rotate(-16deg);
   position: absolute;
   top: 240px;
   left: 120px;
 }
-.handwritten-text p:nth-child(2){
+.hero__handwritten:nth-child(2){
   transform: rotate(10deg);
   position: absolute;
   top: 460px;
   left: 160px;
 }
-.handwritten-text p:nth-child(3){
+.hero__handwritten:nth-child(3){
   transform: rotate(-8deg);
   position: absolute;
   top: 216px;
   right: 180px;
 }
-.hero--bttn-wrapper{
+.hero__bttn-wrapper{
   margin-top: 64px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 12px;
 }
-.hero-wrapper{
+.section--hero{
   margin: auto;
   width: 100%;
   position: relative;
@@ -492,14 +447,14 @@ a{
   margin-top: 80px;
   max-width: 690px;
 }
-.hero--chip{
+.hero__chip{
   display: table;
   margin: auto;
   padding: 12px 32px;
   border: 1px solid var(--grey--light);
   border-radius: 32px;
 }
-.dot-large{
+.hero__dot{
   width: 12px;
   height: 12px;
   display: inline-block;
@@ -509,7 +464,7 @@ a{
 }
 
 /* TODO fix sticky not working */
-.see-more-block{
+.hero__bottom-block{
   text-align: center;
   background-color: #fff;
   margin-bottom: 25px;
@@ -518,7 +473,7 @@ a{
   position: -webkit-sticky;
   bottom: 0;
 }
-.home-card-wrapper{
+.home__card-wrapper{
   margin-top: 80px;
   justify-content: center;
   display: flex;
@@ -575,28 +530,22 @@ a{
 .testimonial:nth-child(2){
   background-color: var(--yellow-light);
 }
-.testimonial-client{
+.testimonial__client-wrapper{
   margin-top: 48px;
 }
-.testimonial img{
+.testimonial__img{
   margin-bottom: 16px;
 }
-.testimonial-client p:nth-child(2){
+.testimonial__position{
   color: var(--grey--dark);
 }
-.testimonial-section{
+.section--testimonial{
   display: flex;
   justify-content: space-between;
 }
-.testimonial-section h2{
+.section--testimonial h2{
   text-align: left;
 }
-
-
-
-
-
-
 
 /* TODO -> would it be better to make sg right div sticky instead of toc */
 /* syllabus guide */
