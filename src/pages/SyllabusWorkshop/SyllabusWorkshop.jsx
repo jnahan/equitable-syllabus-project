@@ -11,7 +11,7 @@ function SyllabusWorkshop() {
   return (
     <div className="section--top">
         <div className="section section--center">
-        <h3 className="heading-3">Syllabus Review Workshop</h3>
+        <h3 className="section__title">Syllabus Review Workshop</h3>
         <p className="body-large">Our syllabus review workshop provides faculty a 90-minute structured session to work on concrete syllabi, applying an equity lens. Each participant brings one syllabus to work on.</p>
         <div className="info-card-wrapper">
           <InfoCard image="images/sr-1.png" heading="Reflection" text="Use the Cue Syllabus Review Tool to label each section of your syllabus."/>

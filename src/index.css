@@ -29,8 +29,8 @@
   /* text-size styles */
   /* base size: body-default--regular (16px) */
   --heading-1: 4.5rem;
-  --heading-2: 3rem;
-  --heading-3: 2.25rem;
+  --section__heading: 3rem;
+  --section__title: 2.25rem;
   --heading-4: 1.5rem;
   --heading-5: 1.25rem;
   --subtitle: 1.5rem;
@@ -56,14 +56,14 @@
   margin-bottom: 24px;
   text-align: center;
 }
-.heading-2{
-  font-size: var(--heading-2);
+.section__heading{
+  font-size: var(--section__heading);
   font-weight: 700;
   text-align: center;
   margin-bottom: 80px;
 }
-.heading-3{
-  font-size: var(--heading-3);
+.section__title{
+  font-size: var(--section__title);
   font-weight: 700;
   margin-bottom: 16px;
 }
@@ -290,23 +290,8 @@ a{
   align-items: center;
   gap: 120px;
 }
-.subtitle-section h2{
+.section__heading-subtitle{
   margin-bottom: 24px;
-}
-.section--center-2{
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  gap: 32px;
-  margin-bottom: 80px;
-}
-.section--center-2 h1{
-  text-align: center;
-  margin: 0;
-}
-.section--center-2 p{
-  text-align: center;
 }
 
 
@@ -493,7 +478,7 @@ a{
   gap: 12px;
   border-radius: 12px;
 }
-.home-card p{
+.home-card__text{
   text-align: center;
 }
 .home-card:nth-child(1) img{
@@ -510,7 +495,8 @@ a{
 }
 .home-card__icon{
   padding: 8px;
-  border-radius: 100%;
+  border-radius: 50%;
+  overflow: visible;
 }
 
 /* testimonial */
@@ -543,8 +529,11 @@ a{
   display: flex;
   justify-content: space-between;
 }
-.section--testimonial h2{
+.section__heading-left{
   text-align: left;
+}
+.section--team{
+  margin-bottom: 120px;
 }
 
 /* TODO -> would it be better to make sg right div sticky instead of toc */
@@ -560,7 +549,7 @@ a{
   margin-bottom: 48px;
 }
 .syl-guide__heading{
-  font-size: var(--heading-3);
+  font-size: var(--section__title);
   margin-bottom: 0;
 }
 .syl-guide-content a{

@@ -14,7 +14,6 @@ import SparkleSmall from "../../icons/sparkle-small.svg"
 /*
   TODOS:
   - maybe add loading skeleton
-  - update faq answers
   - address css todos
   - research database handle multi categories
   - syllabus guide propose change link
@@ -62,7 +61,7 @@ function Home() {
       </div>
     </div>
     <div className="section subtitle-section">
-      <h2 className="heading-2">A Syllabus is Much More Than A Contract Between Students and Teachers</h2>
+      <h2 className="section__heading section__heading-subtitle">A Syllabus is Much More Than A Contract Between Students and Teachers</h2>
       <p className="subtitle">An effective syllabus can foster...</p>
       <div className="home__card-wrapper">   
         <HomeCard icon={EquityIcon} heading="Equity" text="Level the playing field for student success"/>
@@ -72,20 +71,20 @@ function Home() {
       </div>
     </div>
     <div className="section">
-      <h2 className="heading-2">Syllabus Resources</h2>
+      <h2 className="section__heading">Syllabus Resources</h2>
       <div className="section__content">
         <div className="section__img sg-wrapper">
           <img src="/images/home/syllabus-guide.png" alt="syllabus guide" />
         </div>
         <div className="section__text">
-          <h3 className="heading-3">Syllabus Guide</h3>
+          <h3 className="section__title">Syllabus Guide</h3>
           <p className="body-large">A template and reference to help you develop your course syllabus. The syllabus guide fosters critical pedagogy by identifying structural and rhetorical shortcomings in the syllabus.</p>
           <button onClick={() => navigate("/syllabus-guide")} className="bttn--primary">View Syllabus Guide</button>
         </div>
       </div>
       <div className="section__content">
         <div className="section__text">
-          <h3 className="heading-3">Research Database</h3>
+          <h3 className="section__title">Research Database</h3>
           <p className="body-large">Our database of equity-centered resources helps you incorporate diverse voices into your syllabus. We compiled resources from Black, Brown, and Indigenous people, as well as other historically underrepresented groups.</p>
           <button onClick={() => navigate("/research-database")} className="bttn--primary">View Research Database</button>
         </div>
@@ -95,20 +94,20 @@ function Home() {
       </div>
     </div>
     <div className="section">
-      <h2 className="heading-2">Syllabus Improvement Services</h2>
+      <h2 className="section__heading">Syllabus Improvement Services</h2>
       <div className="section__content">
         <div className="section__img rs-wrapper">
           <img src="/images/home/research-service.png" alt="research service" />
         </div>
         <div className="section__text">
-          <h3 className="heading-3">Research Assistance Service</h3>
+          <h3 className="section__title">Research Assistance Service</h3>
           <p className="body-large">Get help creating your syllabus. The Equitable Syllabus Team will recommend resources and identity ways to bridge equity gaps in the course material.</p>
           <button onClick={() => navigate("/research-service")} className="bttn--primary">Get Research Service</button>
         </div>
       </div>
       <div className="section__content">
         <div className="section__text">
-          <h3 className="heading-3">Syllabus Review Workshop</h3>
+          <h3 className="section__title">Syllabus Review Workshop</h3>
           <p className="body-large">Join our collaborative workshop sessions and rework your syllabus to promote equity-aligned practice and curricula</p>
           <button onClick={() => navigate("/syllabus-workshop")} className="bttn--primary">Learn About Our Workshop</button>
         </div>
@@ -118,7 +117,7 @@ function Home() {
       </div>
     </div>
     <div className="section section--testimonial">
-      <h2 className="heading-2">What ITP/IMA Professors Say</h2>
+      <h2 className="section__heading section__heading-left">What ITP/IMA Professors Say</h2>
       <div className="testimonial-wrapper">
         <div className="testimonial">
           <img className="testimonial__img" src={QuotePink} alt="quote" />

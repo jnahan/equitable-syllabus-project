@@ -12,7 +12,7 @@ function Contribute() {
       <div className="section">
         <div className="section__content">
           <div className="section__text">
-            <h3 className="heading-3">Join the effort to build an equitable classroom</h3>
+            <h3 className="section__title">Join the effort to build an equitable classroom</h3>
             <p className="body-large">Recommend resources to our database by filling out our resource recommendation form. Your contributions will assist ITP/IMA faculties in creating a more equitable syllabus!</p>
           <a href="https://forms.gle/N4XM29AnpRHr1my8A"><button className="bttn--primary">Resource Recommendation Form</button></a>
           </div>
