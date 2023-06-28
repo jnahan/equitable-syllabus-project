@@ -430,6 +430,7 @@ a{
   padding: 12px 32px;
   border: 1px solid var(--grey--light);
   border-radius: 32px;
+  margin-bottom: 12px;
 }
 .hero__dot{
   width: 12px;
@@ -631,21 +632,17 @@ a{
   margin: 0px 160px;
   display: flex;
   flex-direction: row;
-  gap: 64px;
 }
 .db__section{
-  margin-top: 48px;
+  margin: 48px 0 64px 48px;
   display: flex;
   flex-direction: column;
-  gap: 32px;
-}
-.db__section--filter{
-  min-width: 240px;
-  display: flex;
+  padding-right: 12px;
 }
 .db__tab{
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid var(--grey--light);
 }
 .db__vl {
   width: 1px;
@@ -654,15 +651,21 @@ a{
 }
 .tab__list{
   display: flex;
-  gap: 12px;
+  gap: 16px;
+  cursor: pointer;
 }
 .tab__item{
   list-style: none;
+  padding-bottom: 16px;
+  font-size: var(--body-small);
 }
-
+.tab__item--selected{
+  border-bottom: 1px solid var(--black);
+}
+.tab__count{
+  font-size: var(--body-small);
+}
 /* database card */
-
-/* TODO add these chasses */
 .skeleton{
   animation: skeleton-loading 1s linear infinite alternate;
 }
@@ -695,7 +698,7 @@ a{
 }
 
 .db-card{
-  padding: 24px 0;
+  padding: 32px 0;
   display: flex;
   gap: 32px;
   border-bottom: 1px solid var(--grey--light);
@@ -757,15 +760,22 @@ a{
   font-size: var(--body-small);
 }
 
-/* database filter */
+.db__section--filter{
+  min-width: 280px;
+  margin: 32px 0;
+  display: flex;
+}
 .filter{
-  overflow: scroll;
+  overflow-y: scroll;
+  position: -webkit-sticky;
   position: sticky;
   top: 40px;
   max-height: 100vh;
   display: flex;
   flex-direction: column;
   gap: 24px;
+  padding-right: 32px;
+  padding-bottom: 120px;
 }
 .filter__title{
   display: flex;
@@ -811,6 +821,7 @@ a{
   outline: none;
 }
 .checkbox__icon--checked{
+  background: url("./icons/check.svg") no-repeat left center; 
   background-color: var(--accent);
   border: none;
   outline: none;
@@ -833,7 +844,11 @@ a{
   justify-content: space-between;
   cursor: pointer;
 }
-
+@media screen and (min-width: 1600px){
+  .section{
+    max-width: 1200px;
+  }
+}
 @media screen and (max-width: 1200px) {
   .section{
     padding: 0px 10%;
