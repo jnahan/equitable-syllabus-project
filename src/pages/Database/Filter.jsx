@@ -6,7 +6,7 @@ import FilterIcon from "../../icons/filter.svg"
 function Filter({formatList, setFormatList, contList, setContList, catList, setCatList}) {
 
   //filter categories
-  const format = ["Article", "Collection", "Book", "Asset", "Website", "Video", "Audio", "Artwork", "Tool"]
+  const format = ["Article", "Collection", "Book", "Website", "Video", "Audio", "Artwork", "Tool"]
   const continent = ["North America", "Europe", "Africa", "Australia", "Asia"]
   const category = ["Tech & Society", "Design", "Programming & Data", "Media Arts", "Project Development & Research"]
 

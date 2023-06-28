@@ -1,4 +1,5 @@
 import React from "react"
+import { useEffect } from "react";
 import FormatIcon from "../../icons/format.svg"
 import ContinentIcon from "../../icons/continent.svg"
 
@@ -6,7 +7,7 @@ function DBCard({data, loading, formatList, contList, catList, setResultCount}) 
 
   function getDBSkeleton(){
     var cards = [];
-    
+
     for (let i = 0; i<10; i++){
       cards.push(
         <div className="db-card">

@@ -9,12 +9,13 @@ function Database() {
     const [loading, setLoading] = useState(true)
     const [url, setUrl] = useState("https://sheetdb.io/api/v1/vv1l83xybuwf3")
     const [resultCount, setResultCount] = useState(0);
-    const [nextUrl, setNextUrl] = useState();
-    const [prevUrl, setPrevUrl] = useState();
 
     const [formatList, setFormatList] = useState([]);
     const [contList, setContList] = useState([]);
     const [catList, setCatList] = useState([]);
+
+    const [sort, setSort] = useState(0);
+    const [prevSort, setPrevSort] = useState(0);
 
     const dataFun = async()=>{
         setLoading(true);
@@ -28,7 +29,14 @@ function Database() {
             }
         })
         setLoading(false);
-        setData(res.data);
+        const revArray = [...res.data].slice().reverse();
+        const nameArray = [...res.data].sort((a, b) => {
+            var a1 = a.Resource.toLowerCase();
+            var b1 = b.Resource.toLowerCase();
+            return a1<b1 ? -1 : a1> b1? 1 : 0;
+        })
+        const dataList = [res.data, revArray, nameArray]
+        setData([...dataList])
         setResultCount(data.length)
     }
     
@@ -56,18 +64,33 @@ function Database() {
         <div className="db__section">
             <div className="db__tab tab">
                 <ul className="tab__list">
-                    <li className="tab__item"><p>Featured</p></li>
-                    <li className="tab__item"><p>Date Added</p></li>
-                    <li className="tab__item"><p>Title</p></li>
+                    <li className={sort === 0 ? "tab__item tab__item--selected" :"tab__item"} onClick={() => {
+                        setPrevSort(sort);
+                        setSort(0);
+                    }}>
+                        Ascending Date
+                    </li>
+                    <li className={sort === 1 ? "tab__item tab__item--selected" :"tab__item"} onClick={() => {
+                        setPrevSort(sort);
+                        setSort(1)
+                    }}>
+                        Descending Date
+                    </li>
+                    <li className={sort === 2 ? "tab__item tab__item--selected" :"tab__item"} onClick={() => {
+                        setPrevSort(sort)
+                        setSort(2)
+                    }}>
+                        Title
+                    </li>
                 </ul>
-                <p>{`${resultCount} results`}</p>
+                <p className="tab__count">{`${resultCount} results`}</p>
             </div>
             <DBCard 
                 formatList = {formatList}
                 contList = {contList}
                 catList = {catList}
                 setResultCount = {setResultCount}
-                data = {data} 
+                data = {data[sort]} 
                 loading = {loading} 
             />
         </div>
