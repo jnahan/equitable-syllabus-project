@@ -23,8 +23,8 @@ function DBCard({data, loading, formatList, contList, catList, setResultCount}) 
         :
         data
         .filter((item) => (formatList.length !== 0 ? formatList.includes(item.Format) : true))
-        .filter((item) => (contList.length !== 0 ? contList.includes(item.Continent) : true))
-        .filter((item) => (catList.length !== 0 ? catList.includes(item.Category) : true))
+        .filter((item) => (contList.length !== 0 ? contList.includes(item.Continent || item.Continent[0] || item.Continent[1]) : true))
+        .filter((item) => (catList.length !== 0 ? catList.includes(item.Category[0] || item.Category[1]) : true))
         .map(((item, index, arr) => {
           if (index === 0){
             setResultCount(arr.length)
@@ -34,9 +34,21 @@ function DBCard({data, loading, formatList, contList, catList, setResultCount}) 
               <div className="db-card">
                 <div className="db-card__info">
                   <div className="db-card__metadata metadata--top">
-                    <p className="db-card__category">{item.Category}</p>
-                    <span className="db-card__dot"></span>
-                    <p className="db-card__creator">{item.Creator}</p>
+                  {item.Category[0] !== "" ?
+                    <>
+                      <p className="db-card__category">{item.Category[0]}</p>
+                      <span className="db-card__dot"></span>
+                    </> : ""
+                  }
+                  {item.Category.length == 2 && item.Category[1] !== "" ? 
+                    <>
+                      <p className="db-card__category">{item.Category[1]}</p>
+                      <span className="db-card__dot"></span>
+                    </> : ""
+                  }
+                  {item.Creator !== "" ?
+                    <p className="db-card__creator">{item.Creator}</p> : ""
+                  }
                   </div>
                   <h4 className="heading-5 db-card__heading">{item.Resource}</h4>
                   <p className="body-default">Researchers recently learned that Immigration and Customs Enforcement used facial recognition on millions of driver’s license photographs without the license-holders’ knowledge, the latest revelation about governments employing the technology in ways that threaten civil liberties.</p>
