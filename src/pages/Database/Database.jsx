@@ -5,17 +5,17 @@ import DBCard from "./DBCard";
 import Filter from "./Filter";
 
 function Database() {
+
     const [data, setData] = useState([])
     const [loading, setLoading] = useState(true)
-    const [url, setUrl] = useState("https://sheetdb.io/api/v1/vv1l83xybuwf3")
     const [resultCount, setResultCount] = useState(0);
 
     const [formatList, setFormatList] = useState([]);
     const [contList, setContList] = useState([]);
     const [catList, setCatList] = useState([]);
-
     const [sort, setSort] = useState(0);
-    const [prevSort, setPrevSort] = useState(0);
+
+    const url = process.env.REACT_APP_SHEETSDB_URL;
 
     const dataFun = async()=>{
         setLoading(true);
@@ -61,25 +61,16 @@ function Database() {
             />
         </div>
         <div className="db__vl"></div>
-        <div className="db__section">
-            <div className="db__tab tab">
+        <div className="db__section db__section--content">
+            <div className="db__tab">
                 <ul className="tab__list">
-                    <li className={sort === 0 ? "tab__item tab__item--selected" :"tab__item"} onClick={() => {
-                        setPrevSort(sort);
-                        setSort(0);
-                    }}>
+                    <li className={sort === 0 ? "tab__item tab__item--selected" :"tab__item"} onClick={() => setSort(0)}>
                         Ascending Date
                     </li>
-                    <li className={sort === 1 ? "tab__item tab__item--selected" :"tab__item"} onClick={() => {
-                        setPrevSort(sort);
-                        setSort(1)
-                    }}>
+                    <li className={sort === 1 ? "tab__item tab__item--selected" :"tab__item"} onClick={() => {setSort(1)}}>
                         Descending Date
                     </li>
-                    <li className={sort === 2 ? "tab__item tab__item--selected" :"tab__item"} onClick={() => {
-                        setPrevSort(sort)
-                        setSort(2)
-                    }}>
+                    <li className={sort === 2 ? "tab__item tab__item--selected" :"tab__item"} onClick={() => {setSort(2)}}>
                         Title
                     </li>
                 </ul>

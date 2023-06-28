@@ -1,4 +1,5 @@
 import React from "react"
+import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import HomeCard from "./HomeCard"
 
@@ -14,8 +15,7 @@ import SparkleSmall from "../../icons/sparkle-small.svg"
 
 /*
   TODOS:
-  - fix db sticky scrolling
-  - maybe add loading skeleton
+  - maybe make navbar sticky
   - address css todos
   - animation
   - make site mobile responsive
@@ -25,6 +25,10 @@ import SparkleSmall from "../../icons/sparkle-small.svg"
 function Home() {
   const navigate = useNavigate();
 
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  });
+  
   return (
     <>
     <div className="section section--top section--hero">

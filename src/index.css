@@ -639,10 +639,14 @@ a{
   flex-direction: column;
   padding-right: 12px;
 }
+.db__section--content{
+  flex: 1;
+}
 .db__tab{
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid var(--grey--light);
+  justify-content: space-between;
 }
 .db__vl {
   width: 1px;
@@ -759,9 +763,15 @@ a{
   margin-top: 24px;
   font-size: var(--body-small);
 }
+.db-card__no-results{
+  margin: auto;
+  margin-top: 240px;
+  text-align: center;
+}
 
 .db__section--filter{
-  min-width: 280px;
+  min-width: 320px;
+  max-width: 320px;
   margin: 32px 0;
   display: flex;
 }
@@ -819,12 +829,14 @@ a{
   border-radius: 4px;
   border: 1px solid var(--grey--default);
   outline: none;
+  cursor: pointer;
 }
 .checkbox__icon--checked{
   background: url("./icons/check.svg") no-repeat left center; 
   background-color: var(--accent);
   border: none;
   outline: none;
+  cursor: pointer;
 }
 .checkbox-wrapper{
   display: flex;
