@@ -23,7 +23,7 @@ function DBCard({data, loading, formatList, contList, catList, setResultCount}) 
         :
         data
         .filter((item) => (formatList.length !== 0 ? formatList.includes(item.Format) : true))
-        .filter((item) => (contList.length !== 0 ? contList.includes(item.Continent || item.Continent[0] || item.Continent[1]) : true))
+        .filter((item) => (contList.length !== 0 ? contList.includes(item.Continent[0]) || contList.includes(item.Continent[1]) : true))
         .filter((item) => (catList.length !== 0 ? catList.includes(item.Category[0] || item.Category[1]) : true))
         .map(((item, index, arr) => {
           if (index === 0){
@@ -34,13 +34,13 @@ function DBCard({data, loading, formatList, contList, catList, setResultCount}) 
               <div className="db-card">
                 <div className="db-card__info">
                   <div className="db-card__metadata metadata--top">
-                  {item.Category[0] !== "" ?
+                  {item.Category.length >= 1 ?
                     <>
                       <p className="db-card__category">{item.Category[0]}</p>
                       <span className="db-card__dot"></span>
                     </> : ""
                   }
-                  {item.Category.length == 2 && item.Category[1] !== "" ? 
+                  {item.Category.length == 2 ? 
                     <>
                       <p className="db-card__category">{item.Category[1]}</p>
                       <span className="db-card__dot"></span>
@@ -56,8 +56,11 @@ function DBCard({data, loading, formatList, contList, catList, setResultCount}) 
                     {item.Format !== "" ?
                       <div className="db-card__chip"><span><img className="icon" src={FormatIcon} alt="format" /></span>{item.Format}</div> : ""
                     }
-                    {item.Continent !== "" ?
-                      <div className="db-card__chip"><span><img className="icon" src={ContinentIcon} alt="continent" /></span>{item.Continent}</div> : ""
+                    {item.Continent.length >= 1 ?
+                      <div className="db-card__chip"><span><img className="icon" src={ContinentIcon} alt="continent" /></span>{item.Continent[0]}</div> : ""
+                    }
+                    {item.Continent.length == 2 ?
+                      <div className="db-card__chip"><span><img className="icon" src={ContinentIcon} alt="continent" /></span>{item.Continent[1]}</div> : ""
                     }
                   </div>
                 </div>

@@ -21,8 +21,12 @@ function Database() {
         const res = await axios.get(url);
         console.log(res.data);
         res.data.map((item) => {
-            item.Category = item.Category.split("; ")
-            item.Continent = item.Continent.split(", ")
+            if (item.Category != ""){
+                item.Category = item.Category.split("; ")
+            }
+            if (item.Continent != ""){
+                item.Continent = item.Continent.split(", ")
+            }
         })
         setLoading(false);
         setData(res.data);
