@@ -19,8 +19,8 @@ function ResearchService() {
               <button className="bttn--primary">Sign Up For Research Service</button>
             </a>
           </div>
-          <div className="section__img">
-            <img src="/images/rs.png" alt="research service" />
+          <div className="section__img-wrapper">
+            <img className="section__img" src="/images/rs.png" alt="research service" />
           </div>
         </div>
       </div>
@@ -42,8 +42,8 @@ function ResearchService() {
               <button className="bttn--primary">Sign Up For Research Service</button>
             </a>
           </div>
-          <div className="section__img">
-            <img src="/images/rs-illustration.png" alt="research service" />
+          <div className="section__img-wrapper">
+            <img className="section__img" src="/images/rs-illustration.png" alt="research service" />
           </div>
         </div>
       </div>

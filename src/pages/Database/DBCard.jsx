@@ -7,7 +7,20 @@ function DBCard({data, loading, formatList, contList, catList, setResultCount}) 
   return (
     <>
       {
-        loading ? <h1>Loading...</h1> :
+        loading ? 
+        <div className="db-card">
+          <div className="db-card__info">
+            <div className="db-card__metadata metadata--top">
+              <div className="skeleton skeleton-small"></div>
+            </div>
+              <div className="skeleton skeleton-small"></div>
+              <div className="skeleton skeleton-small"></div>
+            <div className="db-card__metadata">
+            </div>
+          </div>
+          <div className="db-card__image skeleton"></div>
+        </div>
+        :
         data
         .filter((item) => (formatList.length !== 0 ? formatList.includes(item.Format) : true))
         .filter((item) => (contList.length !== 0 ? contList.includes(item.Continent) : true))

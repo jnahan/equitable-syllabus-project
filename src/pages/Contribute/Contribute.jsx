@@ -16,8 +16,8 @@ function Contribute() {
             <p className="body-large">Recommend resources to our database by filling out our resource recommendation form. Your contributions will assist ITP/IMA faculties in creating a more equitable syllabus!</p>
           <a href="https://forms.gle/N4XM29AnpRHr1my8A"><button className="bttn--primary">Resource Recommendation Form</button></a>
           </div>
-          <div className="section__img">
-            <img src="/images/contribute.png" alt="contribute" />
+          <div className="section__img-wrapper">
+            <img className="section__img" src="/images/contribute.png" alt="contribute" />
           </div>
         </div>
       </div>

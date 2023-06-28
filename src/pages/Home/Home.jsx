@@ -2,6 +2,7 @@ import React from "react"
 import { useNavigate } from "react-router-dom";
 import HomeCard from "./HomeCard"
 
+import DownIcon from "../../icons/down.svg"
 import EquityIcon from "../../icons/equity.svg"
 import InclusivityIcon from "../../icons/inclusivity.svg"
 import EmpowermentIcon from "../../icons/empowerment.svg"
@@ -56,11 +57,12 @@ function Home() {
         <img className="hero__img" src={SparkleSmall} alt="small sparkle" />
         <img className="hero__img" src={SparkleSmall} alt="small sparkle" />
       </div>
-      <div className="hero__bottom-block">
-          <p id="see-more">See more</p>
-      </div>
+      <div className="hero__learn-more">
+      <img src={DownIcon} alt="" />
+      <p id="see-more">Learn More</p>
     </div>
-    <div className="section subtitle-section">
+    </div>
+    <div className="section">
       <h2 className="section__heading section__heading-subtitle">A Syllabus is Much More Than A Contract Between Students and Teachers</h2>
       <p className="subtitle">An effective syllabus can foster...</p>
       <div className="home__card-wrapper">   
@@ -73,8 +75,8 @@ function Home() {
     <div className="section">
       <h2 className="section__heading">Syllabus Resources</h2>
       <div className="section__content">
-        <div className="section__img sg-wrapper">
-          <img src="/images/home/syllabus-guide.png" alt="syllabus guide" />
+        <div className="section__img-wrapper section__img-wrapper-sg">
+          <img className="section__img section__img-sg" src="/images/home/syllabus-guide.png" alt="syllabus guide" />
         </div>
         <div className="section__text">
           <h3 className="section__title">Syllabus Guide</h3>
@@ -88,16 +90,16 @@ function Home() {
           <p className="body-large">Our database of equity-centered resources helps you incorporate diverse voices into your syllabus. We compiled resources from Black, Brown, and Indigenous people, as well as other historically underrepresented groups.</p>
           <button onClick={() => navigate("/research-database")} className="bttn--primary">View Research Database</button>
         </div>
-        <div className="section__img db-wrapper">
-          <img src="/images/home/database.png" alt="database" />
+        <div className="section__img-wrapper section__img-wrapper-db">
+          <img className="section__img section__img-db" src="/images/home/database.png" alt="database" />
         </div>
       </div>
     </div>
     <div className="section">
       <h2 className="section__heading">Syllabus Improvement Services</h2>
       <div className="section__content">
-        <div className="section__img rs-wrapper">
-          <img src="/images/home/research-service.png" alt="research service" />
+        <div className="section__img-wrapper section__img-wrapper-rs">
+          <img className="section__img" src="/images/home/research-service.png" alt="research service" />
         </div>
         <div className="section__text">
           <h3 className="section__title">Research Assistance Service</h3>
@@ -111,8 +113,8 @@ function Home() {
           <p className="body-large">Join our collaborative workshop sessions and rework your syllabus to promote equity-aligned practice and curricula</p>
           <button onClick={() => navigate("/syllabus-workshop")} className="bttn--primary">Learn About Our Workshop</button>
         </div>
-        <div className="section__img">
-          <img src="/images/home/syllabus-workshop.png" alt="syllabus workshop" />
+        <div className="section__img-wrapper">
+          <img className="section__img" src="/images/home/syllabus-workshop.png" alt="syllabus workshop" />
         </div>
       </div>
     </div>
