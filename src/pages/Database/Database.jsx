@@ -9,8 +9,8 @@ function Database() {
     const [loading, setLoading] = useState(true)
     const [url, setUrl] = useState("https://sheetdb.io/api/v1/vv1l83xybuwf3")
     const [resultCount, setResultCount] = useState(0);
-    // const [nextUrl, setNextUrl] = useState();
-    // const [prevUrl, setPrevUrl] = useState();
+    const [nextUrl, setNextUrl] = useState();
+    const [prevUrl, setPrevUrl] = useState();
 
     const [formatList, setFormatList] = useState([]);
     const [contList, setContList] = useState([]);
@@ -19,7 +19,6 @@ function Database() {
     const dataFun = async()=>{
         setLoading(true);
         const res = await axios.get(url);
-        console.log(res.data);
         res.data.map((item) => {
             if (item.Category != ""){
                 item.Category = item.Category.split("; ")

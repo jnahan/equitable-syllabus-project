@@ -21,7 +21,7 @@
   --yellow: rgba(249, 194, 111, 1);
   --yellow-light: rgba(255, 247, 220, 1);
   --grey--lightest: rgb(245, 245, 245);
-  --grey--light: rgba(239, 239, 239, 1);
+  --grey--light: rgb(234, 234, 234);
   --grey--default: rgba(188, 188, 188, 1);
   --grey--dark: rgba(96, 96, 96, 1);
   --grey--darkest: rgba(68, 68, 68, 1);
@@ -666,20 +666,30 @@ a{
 .skeleton{
   animation: skeleton-loading 1s linear infinite alternate;
 }
-.skeleton-small{
-  width: 24%;
-  height: 12px;
+.skeleton-metadata{
+  width: 80px;
+  min-height: 12px;
 }
-.skeleton-large{
-  width: 100%;
-  height: 12px;
+.skeleton-heading{
+  color: rgb(0,0,0,0);
+  height: 28px;
+  width: 80%;
+  margin-bottom: 12px;
+}
+.skeleton-description{
+  color: rgb(0,0,0,0);
+  height: 16px;
+  margin-bottom: 4px;
+}
+.skeleton-description-bottom{
+  width: 40%;
 }
 
 @keyframes skeleton-loading{
   0%{
-    background-color: var(--grey--default);
+    background-color: var(--grey--lightest);
   }
-  0%{
+  100%{
     background-color: var(--grey--light);
   }
 }
@@ -687,14 +697,14 @@ a{
 .db-card{
   padding: 24px 0;
   display: flex;
-  gap: 48px;
+  gap: 32px;
   border-bottom: 1px solid var(--grey--light);
+  width: 100%;
 }
 .db-card__image{
-  min-height: 100px;
-  min-width: 100px;
-  max-height: 100px;
-  min-height: 100px;
+  height: 136px;
+  min-width: 136px;
+  max-width: 136px;
   object-fit: cover;
   border-radius: 8px;
 }
@@ -703,6 +713,13 @@ a{
   flex-direction: row;
   align-items: center;
   gap: 8px;
+}
+.db-card__article{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
 }
 .db-card__dot {
   height: 4px;
@@ -742,10 +759,10 @@ a{
 
 /* database filter */
 .filter{
+  overflow: scroll;
   position: sticky;
   top: 40px;
   max-height: 100vh;
-  overflow-y: auto;
   display: flex;
   flex-direction: column;
   gap: 24px;

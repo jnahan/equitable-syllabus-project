@@ -14,6 +14,7 @@ import SparkleSmall from "../../icons/sparkle-small.svg"
 
 /*
   TODOS:
+  - fix db sticky scrolling
   - maybe add loading skeleton
   - address css todos
   - animation

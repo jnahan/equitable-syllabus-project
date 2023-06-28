@@ -4,22 +4,35 @@ import ContinentIcon from "../../icons/continent.svg"
 
 function DBCard({data, loading, formatList, contList, catList, setResultCount}) {
 
+  function getDBSkeleton(){
+    var cards = [];
+    
+    for (let i = 0; i<10; i++){
+      cards.push(
+        <div className="db-card">
+        <div className="db-card__info">
+          <div className="db-card__metadata metadata--top">
+            <div className="skeleton-metadata skeleton"></div>
+          </div>
+          <div>
+            <h4 className="skeleton-heading skeleton">Lorem ipsum dolor sit amet consectetur adipisicing elit</h4>
+            <p className="skeleton-description skeleton">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem nihil eligendi repellat incidunt provident quibusdam fuga ad eius.</p>
+            <p className="skeleton-description skeleton">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem nihil eligendi repellat incidunt provident quibusdam fuga ad eius.</p>
+            <p className="skeleton-description skeleton-description-bottom skeleton">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem nihil eligendi repellat incidunt provident quibusdam fuga ad eius.</p>
+          </div>
+        </div>
+        <div className="db-card__image skeleton"></div>
+      </div>
+      )
+    }
+    return cards
+  }
+
   return (
     <>
       {
         loading ? 
-        <div className="db-card">
-          <div className="db-card__info">
-            <div className="db-card__metadata metadata--top">
-              <div className="skeleton skeleton-small"></div>
-            </div>
-              <div className="skeleton skeleton-small"></div>
-              <div className="skeleton skeleton-small"></div>
-            <div className="db-card__metadata">
-            </div>
-          </div>
-          <div className="db-card__image skeleton"></div>
-        </div>
+          getDBSkeleton()
         :
         data
         .filter((item) => (formatList.length !== 0 ? formatList.includes(item.Format) : true))
@@ -50,8 +63,10 @@ function DBCard({data, loading, formatList, contList, catList, setResultCount}) 
                     <p className="db-card__creator">{item.Creator}</p> : ""
                   }
                   </div>
-                  <h4 className="heading-5 db-card__heading">{item.Resource}</h4>
-                  <p className="body-default">Researchers recently learned that Immigration and Customs Enforcement used facial recognition on millions of driver’s license photographs without the license-holders’ knowledge, the latest revelation about governments employing the technology in ways that threaten civil liberties.</p>
+                  <div className="db-card__article">
+                    <h4 className="heading-5 db-card__heading">{item.Resource}</h4>
+                    <p className="body-default">Researchers recently learned that Immigration and Customs Enforcement used facial recognition on millions of driver’s license photographs without the license-holders’ knowledge, the latest revelation about governments employing the technology in ways that threaten civil liberties.</p>
+                  </div>
                   <div className="db-card__metadata">
                     {item.Format !== "" ?
                       <div className="db-card__chip"><span><img className="icon" src={FormatIcon} alt="format" /></span>{item.Format}</div> : ""
