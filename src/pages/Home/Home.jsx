@@ -16,11 +16,8 @@ import SparkleSmall from "../../icons/sparkle-small.svg"
   TODOS:
   - maybe add loading skeleton
   - address css todos
-  - research database handle multi categories
-  - syllabus guide propose change link
   - animation
   - make site mobile responsive
-  - update site db-card__metadata
 */
 
 

@@ -26,7 +26,9 @@ function SyllabusGuide() {
       <div>
         <div className="syl-guide__heading-wrapper">
           <h1 className="syl-guide-heading">Syllabus Guide</h1>
-          <button className="bttn--primary">Propose A Change</button>
+          <a href="https://github.com/jenna5376/equitable-syllabus-project/edit/master/src/markdown/syllabus-guide.md">
+            <button className="bttn--primary">Propose A Change</button>
+          </a>
         </div>
         <Markdown className="syl-guide-content">{postContent}</Markdown>
       </div>
