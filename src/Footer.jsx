@@ -6,7 +6,7 @@ function Footer() {
     <footer className="footer">
       <div>
         <Link to = "/" className="logo">Equitable Syllabus Project</Link>
-        <div className="footer__left-info">
+        <div className="footer__left">
           <a href="mailto:esp@nyu.edu">esp@nyu.edu</a>
           <div className="footer__vl"></div>
           <p>ITP/IMA</p>

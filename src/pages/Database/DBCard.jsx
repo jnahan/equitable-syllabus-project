@@ -9,7 +9,7 @@ function DBCard({data, loading, formatList, contList, catList, setResultCount}) 
 
     for (let i = 0; i<10; i++){
       cards.push(
-        <div className="db-card">
+        <div className="db-card" key={i}>
         <div className="db-card__info">
           <div className="db-card__metadata metadata--top">
             <div className="skeleton-metadata skeleton"></div>
@@ -35,7 +35,7 @@ function DBCard({data, loading, formatList, contList, catList, setResultCount}) 
       .filter((item) => (contList.length !== 0 ? contList.includes(item.Continent[0]) || contList.includes(item.Continent[1]) : true))
       .filter((item) => (catList.length !== 0 ? catList.includes(item.Category[0] || item.Category[1]) : true))
       .map(((item, index) => {
-        if (item.Resource == "" || item.Link == "") return;
+        if (item.Resource === "" || item.Link === "") return <></>
         return(
           <a href={item.Link} key={index}>
             <div className="db-card">
@@ -47,7 +47,7 @@ function DBCard({data, loading, formatList, contList, catList, setResultCount}) 
                     <span className="db-card__dot"></span>
                   </> : ""
                 }
-                {item.Category.length == 2 ? 
+                {item.Category.length === 2 ? 
                   <>
                     <p className="db-card__category">{item.Category[1]}</p>
                     <span className="db-card__dot"></span>
@@ -68,7 +68,7 @@ function DBCard({data, loading, formatList, contList, catList, setResultCount}) 
                   {item.Continent.length >= 1 ?
                     <div className="db-card__chip"><span><img className="icon" src={ContinentIcon} alt="continent" /></span>{item.Continent[0]}</div> : ""
                   }
-                  {item.Continent.length == 2 ?
+                  {item.Continent.length === 2 ?
                     <div className="db-card__chip"><span><img className="icon" src={ContinentIcon} alt="continent" /></span>{item.Continent[1]}</div> : ""
                   }
                 </div>
@@ -84,10 +84,10 @@ function DBCard({data, loading, formatList, contList, catList, setResultCount}) 
   function getFeed(){
     let res = getFeedContent();
     setResultCount(res.length)
-    if (res.length == 0){
+    if (res.length === 0){
       return(
-        <div className="db-card__no-results">
-          <h2 className="heading-2">No results found</h2>
+        <div className="no-results">
+          <h2 className="no-results__heading">No results found</h2>
           <p>Try adjusting your filter for more results</p>
         </div>
       )

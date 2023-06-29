@@ -1,6 +1,5 @@
 import React from "react"
 import { HashLink } from "react-router-hash-link";
-import { useState } from "react";
 
 function TableOfContents() {
 
