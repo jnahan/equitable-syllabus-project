@@ -8,7 +8,7 @@ function TableOfContents() {
     <div className="toc">
       <ul className="toc__wrapper">
         <li className="toc__section">
-            <a className="section-title">🗣 Propose A Change</a>
+            <a className="section-title" href="https://github.com/jenna5376/equitable-syllabus-project/edit/master/src/markdown/syllabus-guide.md">🗣 Propose A Change</a>
         </li>
       </ul>
       <ul className="toc__wrapper">

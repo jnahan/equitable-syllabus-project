@@ -34,7 +34,8 @@ function DBCard({data, loading, formatList, contList, catList, setResultCount}) 
       .filter((item) => (formatList.length !== 0 ? formatList.includes(item.Format) : true))
       .filter((item) => (contList.length !== 0 ? contList.includes(item.Continent[0]) || contList.includes(item.Continent[1]) : true))
       .filter((item) => (catList.length !== 0 ? catList.includes(item.Category[0] || item.Category[1]) : true))
-      .map(((item, index, arr) => {
+      .map(((item, index) => {
+        if (item.Resource == "" || item.Link == "") return;
         return(
           <a href={item.Link} key={index}>
             <div className="db-card">
@@ -58,7 +59,7 @@ function DBCard({data, loading, formatList, contList, catList, setResultCount}) 
                 </div>
                 <div className="db-card__article">
                   <h4 className="heading-5 db-card__heading">{item.Resource}</h4>
-                  <p className="body-default">Researchers recently learned that Immigration and Customs Enforcement used facial recognition on millions of driver’s license photographs without the license-holders’ knowledge, the latest revelation about governments employing the technology in ways that threaten civil liberties.</p>
+      
                 </div>
                 <div className="db-card__metadata">
                   {item.Format !== "" ?

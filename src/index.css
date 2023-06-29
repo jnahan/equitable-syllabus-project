@@ -164,7 +164,7 @@ a{
   padding: 16px 160px;
   align-items: center;
 }
-.nav__item a{
+.nav__item{
   color: var(--grey--dark);
   display: flex;
   flex-direction: row;
@@ -172,17 +172,14 @@ a{
   height: 100%;
   display: flex;
   align-items: center;
-  padding: 0.25rem;
+  padding: 4px 8px;
   align-items: stretch;
+  border-radius: 4px;
 }
 .nav__menu{
   list-style: none;
   display: flex;
   gap: 1rem;
-}
-/* TODO */
-.nav .active{
-  background-color: var(--accent-light);
 }
 .nav__item:hover{
   background-color: var(--accent-light);
@@ -537,6 +534,7 @@ a{
   display: flex;
   justify-content: space-between;
   margin-bottom: 48px;
+  width: 100%;
 }
 .syl-guide__heading{
   font-size: var(--section__title);
@@ -706,6 +704,9 @@ a{
   display: flex;
   gap: 32px;
   border-bottom: 1px solid var(--grey--light);
+  width: 100%;
+}
+.db-card__info{
   width: 100%;
 }
 .db-card__image{
