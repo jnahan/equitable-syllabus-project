@@ -13,6 +13,16 @@ import QuoteYellow from "../../icons/quoteYellow.svg"
 import SparkleLarge from "../../icons/sparkle-large.svg"
 import SparkleSmall from "../../icons/sparkle-small.svg"
 
+import HeroDatabaseImg from "../../images/home/hero-database.png"
+import HeroFilterImg from "../../images/home/hero-filter.png"
+import HeroRSImg from "../../images/home/hero-research-service.png"
+import HeroSGImg from "../../images/home/hero-syllabus-guide.png"
+import SGImg from "../../images/home/syllabus-guide.png"
+import DBImg from "../../images/home/database.png"
+import RSImg from "../../images/home/research-service.png"
+import SWImg from "../../images/home/syllabus-workshop.png"
+
+
 function Home() {
   const navigate = useNavigate();
 
@@ -42,10 +52,10 @@ function Home() {
         </div>
       </div>
       <div className="hero__img-wrapper">
-        <img className="hero__img" src="images/home/hero-research-service.png" alt="research service" />
-        <img className="hero__img" src="images/home/hero-syllabus-guide.png" alt="syllabus guide" />
-        <img className="hero__img" src="images/home/hero-database.png" alt="research database feed" />
-        <img className="hero__img" src="images/home/hero-filter.png" alt="research database filter" />
+        <img className="hero__img" src={HeroRSImg} alt="research service" />
+        <img className="hero__img" src={HeroSGImg} alt="syllabus guide" />
+        <img className="hero__img" src={HeroDatabaseImg} alt="research database feed" />
+        <img className="hero__img" src={HeroFilterImg} alt="research database filter" />
         <img className="hero__img" src={SparkleLarge} alt="large sparkle" />
         <img className="hero__img" src={SparkleSmall} alt="small sparkle" />
         <img className="hero__img" src={SparkleSmall} alt="small sparkle" />
@@ -69,7 +79,7 @@ function Home() {
       <h2 className="section__heading">Syllabus Resources</h2>
       <div className="section__content">
         <div className="section__img-wrapper section__img-wrapper-sg">
-          <img className="section__img section__img-sg" src="./images/home/syllabus-guide.png" alt="syllabus guide" />
+          <img className="section__img section__img-sg" src={SGImg} alt="syllabus guide" />
         </div>
         <div className="section__text">
           <h3 className="section__title">Syllabus Guide</h3>
@@ -84,7 +94,7 @@ function Home() {
           <button onClick={() => navigate("/research-database")} className="bttn--primary">View Research Database</button>
         </div>
         <div className="section__img-wrapper section__img-wrapper-db">
-          <img className="section__img section__img-db" src="./images/home/database.png" alt="database" />
+          <img className="section__img section__img-db" src={DBImg} alt="database" />
         </div>
       </div>
     </div>
@@ -92,7 +102,7 @@ function Home() {
       <h2 className="section__heading">Syllabus Improvement Services</h2>
       <div className="section__content">
         <div className="section__img-wrapper section__img-wrapper-rs">
-          <img className="section__img" src="./images/home/research-service.png" alt="research service" />
+          <img className="section__img" src={RSImg} alt="research service" />
         </div>
         <div className="section__text">
           <h3 className="section__title">Research Assistance Service</h3>
@@ -107,7 +117,7 @@ function Home() {
           <button onClick={() => navigate("/syllabus-workshop")} className="bttn--primary">Learn About Our Workshop</button>
         </div>
         <div className="section__img-wrapper">
-          <img className="section__img" src="./images/home/syllabus-workshop.png" alt="syllabus workshop" />
+          <img className="section__img" src={SWImg} alt="syllabus workshop" />
         </div>
       </div>
     </div>

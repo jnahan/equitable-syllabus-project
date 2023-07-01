@@ -2,6 +2,11 @@ import React from "react"
 import InfoCard from "../../InfoCard"
 import { useEffect } from "react"
 
+import SR1Img from "../../images/sr-1.png"
+import SR2Img from "../../images/sr-2.png"
+import SR3Img from "../../images/sr-3.png"
+
+
 function SyllabusWorkshop() {
 
   useEffect(() => {

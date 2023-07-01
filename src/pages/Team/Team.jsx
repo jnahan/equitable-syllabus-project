@@ -1,6 +1,20 @@
 import React from "react"
 import TeamCard from "./TeamCard"
 
+import BlairAvatar from "../../images/team/blair-avatar.png"
+import ChaskiAvatar from "../../images/team/chaski-avatar.png"
+import DivyaAvatar from "../../images/team/divya-avatar.png"
+import JennaAvatar from "../../images/team/jenna-avatar.png"
+import KayleyAvatar from "../../images/team/kayley-avatar.png"
+import SophiaAvatar from "../../images/team/sophia-avatar.png"
+
+import Blair from "../../images/team/blair.png"
+import Chaski from "../../images/team/chaski.png"
+import Divya from "../../images/team/divya.png"
+import Jenna from "../../images/team/jenna.png"
+import Kayley from "../../images/team/kayley.png"
+import Sophia from "../../images/team/sophia.png"
+
 function Team() {
   return (
     <div className="section--top team">
@@ -8,23 +22,23 @@ function Team() {
         <h1 className="section__heading section__heading-subtitle">Equitable Syllabus Project Team</h1>
         <p className="body-large">The Equitable Syllabus Project team strives to help faculty re-engage their course material with an equitable lens.</p>
         <div className="team__avatar-wrapper">
-          <img className="team__avatar" src="images/team/blair-avatar.png" alt="Blair Simmons" />
-          <img className="team__avatar" src="images/team/chaski-avatar.png" alt="Chaski No" />
-          <img className="team__avatar" src="images/team/divya-avatar.png" alt="Divya Mehra" />
-          <img className="team__avatar" src="images/team/jenna-avatar.png" alt="Jenna Han" />
-          <img className="team__avatar" src="images/team/kayley-avatar.png" alt="Kayley Chery" />
-          <img className="team__avatar" src="images/team/sophia-avatar.png" alt="Sophia Edwards" />
+          <img className="team__avatar" src={BlairAvatar} alt="Blair Simmons" />
+          <img className="team__avatar" src={ChaskiAvatar} alt="Chaski No" />
+          <img className="team__avatar" src={DivyaAvatar} alt="Divya Mehra" />
+          <img className="team__avatar" src={JennaAvatar} alt="Jenna Han" />
+          <img className="team__avatar" src={KayleyAvatar} alt="Kayley Chery" />
+          <img className="team__avatar" src={SophiaAvatar} alt="Sophia Edwards" />
         </div>
       </div>
       <div className="section">
         <h2 className="section__title text-center">Current Members</h2>
         <div className="team__card-wrapper">
-          <TeamCard image = "images/team/blair.png" name = "Blair Simmons" role = "Project Manager" email = "blair.simmons@nyu.edu"/>
-          <TeamCard image = "images/team/chaski.png" name = "Chaski No" role = "Technical Project Manager" email = "chaski@nyu.edu"/>
-          <TeamCard image = "images/team/divya.png" name = "Divya Mehra" role = "Researcher" email = "dm4924@nyu.edu"/>
-          <TeamCard image = "images/team/jenna.png" name = "Jenna Han" role = "Web Designer" email = "jennahan@nyu.edu"/>
-          <TeamCard image = "images/team/kayley.png" name = "Kayley Chery" role = "Researcher" email = "kac7748@nyu.edu "/>
-          <TeamCard image = "images/team/sophia.png" name = "Sophia Edwards" role = "Researcher" email = "sge7432@nyu.edu"/>
+          <TeamCard image = {Blair} name = "Blair Simmons" role = "Project Manager" email = "blair.simmons@nyu.edu"/>
+          <TeamCard image = {Chaski} name = "Chaski No" role = "Technical Project Manager" email = "chaski@nyu.edu"/>
+          <TeamCard image = {Divya} name = "Divya Mehra" role = "Researcher" email = "dm4924@nyu.edu"/>
+          <TeamCard image = {Jenna} name = "Jenna Han" role = "Web Designer" email = "jennahan@nyu.edu"/>
+          <TeamCard image = {Kayley} name = "Kayley Chery" role = "Researcher" email = "kac7748@nyu.edu "/>
+          <TeamCard image = {Sophia} name = "Sophia Edwards" role = "Researcher" email = "sge7432@nyu.edu"/>
         </div>
       </div>
       <div className="section">

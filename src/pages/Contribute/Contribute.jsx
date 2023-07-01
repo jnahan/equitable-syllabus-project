@@ -1,6 +1,8 @@
 import React from "react"
 import { useEffect } from "react";
 
+import ContributeImg from "../../images/contribute.png"
+
 function Contribute() {
   
   useEffect(() => {
@@ -17,7 +19,7 @@ function Contribute() {
           <a href="https://forms.gle/N4XM29AnpRHr1my8A"><button className="bttn--primary">Resource Recommendation Form</button></a>
           </div>
           <div className="section__img-wrapper">
-            <img className="section__img" src="./images/contribute.png" alt="contribute" />
+            <img className="section__img" src={ContributeImg} alt="contribute" />
           </div>
         </div>
       </div>

@@ -2,6 +2,12 @@ import React from "react"
 import InfoCard from "../../InfoCard"
 import { useEffect } from "react"
 
+import RSImg from "../../images/rs.png"
+import RS1Img from "../../images/rs-1.png"
+import RS2Img from "../../images/rs-2.png"
+import RS3Img from "../../images/rs-3.png"
+import RSIllustImg from "../../images/rs-illustration.png"
+
 function ResearchService() {
 
   useEffect(() => {
@@ -20,7 +26,7 @@ function ResearchService() {
             </a>
           </div>
           <div className="section__img-wrapper">
-            <img className="section__img" src="./images/rs.png" alt="research service" />
+            <img className="section__img" src={RSImg} alt="research service" />
           </div>
         </div>
       </div>
@@ -28,9 +34,9 @@ function ResearchService() {
         <h3 className="section__title section__title--center">Our Research Service Takes Just a Few Steps</h3>
         <p className="body-large">The research process can last anywhere from 3 weeks to multiple months of sustained engagement.</p>
         <div className="info-card-wrapper">
-          <InfoCard image="images/rs-1.png" heading="Intake" text="Faculty pinpoints specific areas of their syllabus the researcher can focus on"/>
-          <InfoCard image="images/rs-2.png" heading="Research" text="Researcher compiles syllabus recommendations and plans regular check-ins"/>
-          <InfoCard image="images/rs-3.png" heading="Resources" text="Researcher prepares an initial set of resource for the syllabus and continues communication as needed."/>
+          <InfoCard image={RS1Img} heading="Intake" text="Faculty pinpoints specific areas of their syllabus the researcher can focus on"/>
+          <InfoCard image={RS2Img} heading="Research" text="Researcher compiles syllabus recommendations and plans regular check-ins"/>
+          <InfoCard image={RS3Img} heading="Resources" text="Researcher prepares an initial set of resource for the syllabus and continues communication as needed."/>
         </div>
       </div>
       <div className="section">
@@ -43,7 +49,7 @@ function ResearchService() {
             </a>
           </div>
           <div className="section__img-wrapper">
-            <img className="section__img" src="./images/rs-illustration.png" alt="research service" />
+            <img className="section__img" src={RSIllustImg} alt="research service" />
           </div>
         </div>
       </div>
