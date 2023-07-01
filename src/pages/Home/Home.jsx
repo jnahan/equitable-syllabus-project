@@ -59,7 +59,7 @@ function Home() {
         <img className="hero__img" src={SparkleSmall} alt="small sparkle" />
         <img className="hero__img" src={SparkleSmall} alt="small sparkle" />
       </div>
-      <div className="hero__learn-more">
+    <div className="learn-more">
       <img src={DownIcon} alt="" />
       <p id="see-more">Learn More</p>
     </div>
@@ -121,7 +121,7 @@ function Home() {
       </div>
     </div>
     <div className="section section--testimonial">
-      <h2 className="section__heading section__heading-left">What ITP/IMA Professors Say</h2>
+      <h2 className="section__heading section__heading-left testimonial__heading">What ITP/IMA Professors Say</h2>
       <div className="testimonial-wrapper">
         <div className="testimonial">
           <img className="testimonial__img" src={QuotePink} alt="quote" />

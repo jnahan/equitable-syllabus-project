@@ -8,7 +8,7 @@
 }
 :root{
   /* color styles */
-  --black: rgba(17, 17, 17, 1);
+  --black: rgba(20, 20, 20, 1);
   --white: rgba(255, 255, 255, 1);
   --accent: rgba(77, 64, 228, 1);
   --accent-light: rgba(232, 235, 252, 1);
@@ -35,17 +35,23 @@
   --heading-4: 1.5rem;
   --heading-5: 1.25rem;
   --subtitle: 1.5rem;
-  --logo: 1.5rem;
+  --logo: 1.375rem;
   --handwritten: 1.25rem;
   --body-large: 1.12rem;
   --body-default: 1rem;
   --body-small: 0.88rem;
 
   /* effect styles */
-  --shadow:  0px 8px 17.99991798400879px rgba(0, 0, 0, 0.08);
-  --light-shadow:  0px 8.999958992004395px 17.99991798400879px rgba(0, 0, 0, 0.04);
+  --shadow: 0px 8px 18px rgba(0, 0, 0, 0.08);
+  --light-shadow: 0px 8px 18px rgba(0, 0, 0, 0.04);
+
+  /* padding */
+  --max-width: 1120px
 }
 
+h1, h2, h3, h4, h5, p{
+  color: var(--black);
+}
 /* text */
 .hero__heading{
   font-size: var(--hero__heading);
@@ -97,7 +103,7 @@ p{
   font-weight: 400;
 }
 .logo{
-  font-size: 24px;
+  font-size: var(--logo);
   font-weight: 700;
 }
 .text-center{
@@ -128,9 +134,14 @@ button{
   color: var(--white);
   font-size: 1.12rem;
   font-weight: 600;
+
+  transition-property: all;
+  transition-duration: 0.15s;
+  transition-delay: 0;
+  
 }
 .bttn--primary:hover{
-  background-color: var(--accent-dark);
+  transform: translateY(-4px);
 }
 .bttn--secondary{
   padding: 16px 28px;
@@ -140,9 +151,12 @@ button{
   color: var(--accent);
   font-size: 18px;
   font-weight: bold;
+  transition-property: all;
+  transition-duration: 0.15s;
+  transition-delay: 0;
 }
 .bttn--secondary:hover{
-  background-color: var(--accent-light);
+  transform: translateY(-4px);
 }
 .bttn--primary--nav{
   padding: 10px 16px;
@@ -169,10 +183,12 @@ button{
 }
 
 /*nav*/
-.nav{
+.header--nav{
   display: flex;
   justify-content: space-between;
-  padding: 16px 160px;
+  padding: 24px 0px;
+  margin: auto;
+  max-width: var(--max-width);
   align-items: center;
 }
 .nav__menu{
@@ -192,16 +208,28 @@ button{
   padding: 4px 8px;
   align-items: stretch;
   border-radius: 4px;
+  transition-property: background-color;
+  transition-duration: 0.15s;
+  transition-delay: 0;
 }
 .nav__item:hover{
   background-color: var(--accent-light);
+}
+.nav__bttn{
+  color: none;
+  background-color: var(--white);
+  outline: none;
+  border: none;
+  display: none;
 }
 
 /*footer*/
 .footer{
   display: flex;
   justify-content: space-between;
-  padding: 24px 160px 80px 160px;
+  max-width: var(--max-width);
+  padding: 24px 0 80px 0;
+  margin: auto;
 }
 .footer__left{
   margin-top: 8px;
@@ -255,7 +283,7 @@ button{
 
 /* section */
 .section{
-  padding: 0px 160px;
+  max-width: var(--max-width);
   width: 100vw;
   margin: auto;
   margin-bottom: 160px;
@@ -313,21 +341,50 @@ button{
   background-color: var(--blue-light);
   border-radius: 32px;
 }
+
+/* utility classes */
+/* animation */
+@keyframes slideSG {
+  from {
+    transform: translateX(100px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
 .section__img-sg{
   border-radius: 12px;
   box-shadow: 0px 0px 64px 0px rgba(81, 109, 146, 0.16);
-  padding-left: 72px;
-  padding-top: 72px;
+  margin-left: 72px;
+  margin-top: 72px;
+  animation-name: slideSG;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode:backwards;
 }
 .section__img-wrapper-db{
   background-color: var(--purple-light);
   border-radius: 32px;
 }
+
+/* the animation should have own class */
+@keyframes slideDatabase {
+  from {
+    transform: translateY(-200px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
 .section__img-db{
   border-radius: 12px;
   box-shadow: 0px 4px 64px 0px rgba(113, 96, 132, 0.16);
-  padding-left: 64px;
-  padding-top: 84px;
+  margin-left: 64px;
+  margin-top: 84px;
+  animation-name: slideDatabase;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode:backwards;
 }
 .section__img-wrapper-rs{
   max-height: 100%;
@@ -335,6 +392,7 @@ button{
 
 /* hero */
 .section--hero{
+  max-width: 100%;
   margin: auto;
   width: 100%;
   position: relative;
@@ -454,7 +512,9 @@ button{
   top: 216px;
   right: 180px;
 }
-.hero__learn-more{
+
+/* learn more */
+.learn-more{
   display: flex;
   flex-direction: row;
   gap: 4px;
@@ -507,6 +567,13 @@ button{
 .section--testimonial{
   display: flex;
   justify-content: space-between;
+  gap: 32px;
+  position: relative;
+}
+.testimonial__heading{
+  align-self: flex-start;
+  position: sticky;
+  top: 120px;
 }
 .testimonial-wrapper{
   max-width: 50%;
@@ -640,7 +707,8 @@ button{
 /* database */
 .db{
   border-top: 1px solid var(--grey--light);
-  margin: 0px 160px;
+  margin: auto;
+  max-width: var(--max-width);
   display: flex;
   flex-direction: row;
 }
@@ -885,21 +953,67 @@ button{
 /* media queries */
 @media screen and (min-width: 1600px){
   .section{
-    max-width: 1200px;
+    padding: 0;
+    max-width: var(--max-width);
   }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px){
+  .section__content{
+    gap: 32px;
+  }
+  .hero__img-wrapper{
+    display: none;
+  }
+  .hero__handwritten-wrapper{
+    display: none;
+  }
   .section{
-    padding: 0px 10%;
-    width: 100vw;
-    margin: auto;
-    margin-bottom: 160px;
+    padding: 0;
+    max-width: var(--max-width);
   }
-}
-@media screen and (max-width: 1000px) {
-  .home__card-wrapper{
+  .nav{
+    display: none;
+  }
+  .nav--responsive{
+    display: block;
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
+  }
+  .nav__bttn{
+    display: block;
+  }
+  .nav{
+		position: fixed;
+    top: -100vh;
+		left: 0;
+		height: 50%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: top;
+		gap: 16px;
+		background-color: var(--white);
+		transition: 1s;
+    z-index: 1;
+	}
+  .nav__menu{
+    display: flex;
+    flex-direction: column;
+  }
+  .nav--responsive{
+    transform: translateY(100vh);
+  }
+  .nav__close{
+    position: absolute;
+    top: 24px;
+    right: 24px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .home__card-wrapper{
+    flex-wrap: wrap;
   }
   .hero__img-wrapper{
     display: none;

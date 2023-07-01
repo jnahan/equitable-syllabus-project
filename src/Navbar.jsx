@@ -1,18 +1,37 @@
 import React from "react"
 import { Link } from "react-router-dom"
+import { useRef } from "react"
+import MenuIcon from "./icons/menu.svg"
 
 function Navbar() {
+  const navRef = useRef()
+  const showNavbar = () => {
+    navRef.current.classList.toggle("nav--responsive")
+  }
+
   return (
-    <nav className="nav">
-        <Link to = "/" className="logo">Equitable Syllabus Project</Link>
+    <header className="header--nav">
+      <Link to = "/" className="logo">Equitable Syllabus Project</Link>
+      <nav className="nav" ref = {navRef}>
         <ul className="nav__menu">
-            <Link className="nav__item" to = "/team">Team</Link>      
-            <Link className="nav__item" to = "/contribute">Contribute</Link>    
-            <Link className="nav__item" to = "/research-service">Research Service</Link>
-            <Link className = "bttn--secondary bttn--secondary--nav" to = "/research-database">Research Database</Link>
-            <Link className="bttn--primary bttn--primary--nav" to = "/syllabus-guide">Syllabus Guide</Link>          
+        <button
+          className="nav__bttn nav__close"
+          onClick={showNavbar}>
+          <img src={MenuIcon} alt="" />
+        </button>
+          <Link className="nav__item" to = "/team">Team</Link>      
+          <Link className="nav__item" to = "/contribute">Contribute</Link>    
+          <Link className="nav__item" to = "/research-service">Research Service</Link>
+          <Link className = "bttn--secondary bttn--secondary--nav" to = "/research-database">Research Database</Link>
+          <Link className="bttn--primary bttn--primary--nav" to = "/syllabus-guide">Syllabus Guide</Link>       
         </ul>
-    </nav>
+      </nav>
+      <button
+        className="nav__bttn"
+        onClick={showNavbar}>
+        <img src={MenuIcon} alt="" />
+      </button>
+    </header>
   )
 }
 

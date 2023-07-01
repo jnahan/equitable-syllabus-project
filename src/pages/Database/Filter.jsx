@@ -28,7 +28,7 @@ function Filter({formatList, setFormatList, contList, setContList, catList, setC
           <img src={FilterIcon} alt="filter" />
           <p className="body-large bold">Filter Results</p>
         </div>
-        <div className={formatList.length != 0 || contList.length != 0 || catList.length !=0 ?"filter__chip" : "filter__chip filter__chip-inactive"} onClick={resetChecked}>
+        <div className={formatList.length !== 0 || contList.length !== 0 || catList.length !==0 ?"filter__chip" : "filter__chip filter__chip-inactive"} onClick={resetChecked}>
           Clear
         </div>
       </div>
