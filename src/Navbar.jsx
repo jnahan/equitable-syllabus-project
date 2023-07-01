@@ -19,6 +19,7 @@ function Navbar() {
           onClick={showNavbar}>
           <img src={MenuIcon} alt="" />
         </button>
+          <Link to = "/" className="logo logo--responsive">Equitable Syllabus Project</Link>
           <Link className="nav__item" to = "/team">Team</Link>      
           <Link className="nav__item" to = "/contribute">Contribute</Link>    
           <Link className="nav__item" to = "/research-service">Research Service</Link>

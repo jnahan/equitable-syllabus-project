@@ -222,6 +222,9 @@ button{
   border: none;
   display: none;
 }
+.logo--responsive{
+  display: none;
+}
 
 /*footer*/
 .footer{
@@ -983,6 +986,9 @@ button{
   .nav__bttn{
     display: block;
   }
+  .logo--responsive{
+    display: block;
+  }
   .nav{
 		position: fixed;
     top: -100vh;
@@ -1045,5 +1051,17 @@ button{
   }
   .section__title{
     font-size: 1.5rem;
+  }
+  .testimonial__heading{
+    position: static;
+  }
+  .footer{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .footer__right{
+    flex-direction: column;
+    gap: 40px;
   }
 }
