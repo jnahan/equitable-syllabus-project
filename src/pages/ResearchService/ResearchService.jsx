@@ -20,7 +20,7 @@ function ResearchService() {
             </a>
           </div>
           <div className="section__img-wrapper">
-            <img className="section__img" src="/images/rs.png" alt="research service" />
+            <img className="section__img" src="./images/rs.png" alt="research service" />
           </div>
         </div>
       </div>
@@ -43,7 +43,7 @@ function ResearchService() {
             </a>
           </div>
           <div className="section__img-wrapper">
-            <img className="section__img" src="/images/rs-illustration.png" alt="research service" />
+            <img className="section__img" src="./images/rs-illustration.png" alt="research service" />
           </div>
         </div>
       </div>

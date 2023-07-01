@@ -17,7 +17,7 @@ function Contribute() {
           <a href="https://forms.gle/N4XM29AnpRHr1my8A"><button className="bttn--primary">Resource Recommendation Form</button></a>
           </div>
           <div className="section__img-wrapper">
-            <img className="section__img" src="/images/contribute.png" alt="contribute" />
+            <img className="section__img" src="./images/contribute.png" alt="contribute" />
           </div>
         </div>
       </div>

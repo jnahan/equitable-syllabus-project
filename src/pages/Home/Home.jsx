@@ -69,7 +69,7 @@ function Home() {
       <h2 className="section__heading">Syllabus Resources</h2>
       <div className="section__content">
         <div className="section__img-wrapper section__img-wrapper-sg">
-          <img className="section__img section__img-sg" src="/images/home/syllabus-guide.png" alt="syllabus guide" />
+          <img className="section__img section__img-sg" src="./images/home/syllabus-guide.png" alt="syllabus guide" />
         </div>
         <div className="section__text">
           <h3 className="section__title">Syllabus Guide</h3>
@@ -84,7 +84,7 @@ function Home() {
           <button onClick={() => navigate("/research-database")} className="bttn--primary">View Research Database</button>
         </div>
         <div className="section__img-wrapper section__img-wrapper-db">
-          <img className="section__img section__img-db" src="/images/home/database.png" alt="database" />
+          <img className="section__img section__img-db" src="./images/home/database.png" alt="database" />
         </div>
       </div>
     </div>
@@ -92,7 +92,7 @@ function Home() {
       <h2 className="section__heading">Syllabus Improvement Services</h2>
       <div className="section__content">
         <div className="section__img-wrapper section__img-wrapper-rs">
-          <img className="section__img" src="/images/home/research-service.png" alt="research service" />
+          <img className="section__img" src="./images/home/research-service.png" alt="research service" />
         </div>
         <div className="section__text">
           <h3 className="section__title">Research Assistance Service</h3>
@@ -107,7 +107,7 @@ function Home() {
           <button onClick={() => navigate("/syllabus-workshop")} className="bttn--primary">Learn About Our Workshop</button>
         </div>
         <div className="section__img-wrapper">
-          <img className="section__img" src="/images/home/syllabus-workshop.png" alt="syllabus workshop" />
+          <img className="section__img" src="./images/home/syllabus-workshop.png" alt="syllabus workshop" />
         </div>
       </div>
     </div>
