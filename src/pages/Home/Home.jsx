@@ -13,15 +13,6 @@ import QuoteYellow from "../../icons/quoteYellow.svg"
 import SparkleLarge from "../../icons/sparkle-large.svg"
 import SparkleSmall from "../../icons/sparkle-small.svg"
 
-/*
-  TODOS:
-  - maybe make navbar sticky
-  - address css todos
-  - animation
-  - make site mobile responsive
-*/
-
-
 function Home() {
   const navigate = useNavigate();
 

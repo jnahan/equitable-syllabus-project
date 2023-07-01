@@ -1217,6 +1217,9 @@ button{
   :root{
     --padding: 0 24px;;
   }
+  .hero{
+    margin: 0;
+  }
   .hero__img:nth-child(6){
     display: none;
   }
