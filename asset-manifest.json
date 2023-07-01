@@ -1,8 +1,36 @@
 {
   "files": {
-    "main.css": "/equitable-syllabus-project/static/css/main.900961b6.css",
-    "main.js": "/equitable-syllabus-project/static/js/main.8901e22f.js",
-    "static/js/125.0c0543a0.chunk.js": "/equitable-syllabus-project/static/js/125.0c0543a0.chunk.js",
+    "main.css": "/equitable-syllabus-project/static/css/main.f68547b7.css",
+    "main.js": "/equitable-syllabus-project/static/js/main.4d677f79.js",
+    "static/js/125.232b5e66.chunk.js": "/equitable-syllabus-project/static/js/125.232b5e66.chunk.js",
+    "static/media/syllabus-workshop.png": "/equitable-syllabus-project/static/media/syllabus-workshop.8b85a03c4a77a57660a7.png",
+    "static/media/database.png": "/equitable-syllabus-project/static/media/database.31b2f763f0a13c65c713.png",
+    "static/media/research-service.png": "/equitable-syllabus-project/static/media/research-service.a27e668f2d380bae467e.png",
+    "static/media/kayley.png": "/equitable-syllabus-project/static/media/kayley.9436a1e2710b9a421e2b.png",
+    "static/media/rs.png": "/equitable-syllabus-project/static/media/rs.87a6e9c9be2ad572dc92.png",
+    "static/media/syllabus-guide.png": "/equitable-syllabus-project/static/media/syllabus-guide.93483d3014c0bf56783b.png",
+    "static/media/jenna.png": "/equitable-syllabus-project/static/media/jenna.697e73daa67c72e7687d.png",
+    "static/media/blair.png": "/equitable-syllabus-project/static/media/blair.663edc0ee7100779dd39.png",
+    "static/media/sophia.png": "/equitable-syllabus-project/static/media/sophia.e1be235c99a1b3e37e99.png",
+    "static/media/chaski.png": "/equitable-syllabus-project/static/media/chaski.595f6d75866c937fb849.png",
+    "static/media/divya.png": "/equitable-syllabus-project/static/media/divya.83a4d986e6f28ca59596.png",
+    "static/media/contribute.png": "/equitable-syllabus-project/static/media/contribute.e1c59254203bc33194c6.png",
+    "static/media/rs-3.png": "/equitable-syllabus-project/static/media/rs-3.882946768e310d78b4df.png",
+    "static/media/rs-illustration.png": "/equitable-syllabus-project/static/media/rs-illustration.3ca68b7d103499438ad9.png",
+    "static/media/hero-database.png": "/equitable-syllabus-project/static/media/hero-database.a292d54a83bcd3ebbd45.png",
+    "static/media/rs-2.png": "/equitable-syllabus-project/static/media/rs-2.482621552859eecb5d7a.png",
+    "static/media/sr-1.png": "/equitable-syllabus-project/static/media/sr-1.0f79be832adc8ea0f124.png",
+    "static/media/rs-1.png": "/equitable-syllabus-project/static/media/rs-1.f8e7614f9d9bed0b1a02.png",
+    "static/media/sr-3.png": "/equitable-syllabus-project/static/media/sr-3.3e058eb16d95828114e6.png",
+    "static/media/sr-2.png": "/equitable-syllabus-project/static/media/sr-2.77ea3c5913d04b592d26.png",
+    "static/media/hero-research-service.png": "/equitable-syllabus-project/static/media/hero-research-service.decf2617a39dded23c16.png",
+    "static/media/sophia-avatar.png": "/equitable-syllabus-project/static/media/sophia-avatar.e008bbc3b91f6744f5eb.png",
+    "static/media/hero-syllabus-guide.png": "/equitable-syllabus-project/static/media/hero-syllabus-guide.7c4ce7fd7efdd38083e0.png",
+    "static/media/kayley-avatar.png": "/equitable-syllabus-project/static/media/kayley-avatar.f094684172d91ae9ece1.png",
+    "static/media/blair-avatar.png": "/equitable-syllabus-project/static/media/blair-avatar.8aeeee904d36dac04bf5.png",
+    "static/media/hero-filter.png": "/equitable-syllabus-project/static/media/hero-filter.99c53c749e93918fc86b.png",
+    "static/media/divya-avatar.png": "/equitable-syllabus-project/static/media/divya-avatar.26bc71d63adbf04bcd2b.png",
+    "static/media/jenna-avatar.png": "/equitable-syllabus-project/static/media/jenna-avatar.dd90817b0db079c1f08d.png",
     "static/media/syllabus-guide.md": "/equitable-syllabus-project/static/media/syllabus-guide.67e1f3a932ca0985ab20.md",
     "static/media/quotePink.svg": "/equitable-syllabus-project/static/media/quotePink.8e1bb8d445970aa8ccab3677a13f051a.svg",
     "static/media/quoteYellow.svg": "/equitable-syllabus-project/static/media/quoteYellow.89f0bd4d88500d3691e44b0d6436b695.svg",
@@ -20,11 +48,11 @@
     "static/media/down.svg": "/equitable-syllabus-project/static/media/down.fadd957d8adba897f15e4fe0e91d8bbb.svg",
     "static/media/equity.svg": "/equitable-syllabus-project/static/media/equity.f6683de2c45fbccb74feb7f902011990.svg",
     "static/media/up.svg": "/equitable-syllabus-project/static/media/up.f121adb2139d21e8246e0c4106e9cd92.svg",
-    "main.900961b6.css.map": "/equitable-syllabus-project/static/css/main.900961b6.css.map",
-    "main.8901e22f.js.map": "/equitable-syllabus-project/static/js/main.8901e22f.js.map"
+    "main.f68547b7.css.map": "/equitable-syllabus-project/static/css/main.f68547b7.css.map",
+    "main.4d677f79.js.map": "/equitable-syllabus-project/static/js/main.4d677f79.js.map"
   },
   "entrypoints": [
-    "static/css/main.900961b6.css",
-    "static/js/main.8901e22f.js"
+    "static/css/main.f68547b7.css",
+    "static/js/main.4d677f79.js"
   ]
 }
