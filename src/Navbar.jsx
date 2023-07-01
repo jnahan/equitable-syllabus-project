@@ -12,26 +12,20 @@ function Navbar() {
   return (
     <header className="header--nav">
       <Link to = "/" className="logo">Equitable Syllabus Project</Link>
-      <nav className="nav" ref = {navRef}>
-        <ul className="nav__menu">
-        <button
-          className="nav__bttn nav__close"
-          onClick={showNavbar}>
-          <img src={MenuIcon} alt="" />
-        </button>
-          <Link to = "/" className="logo logo--responsive">Equitable Syllabus Project</Link>
-          <Link className="nav__item" to = "/team">Team</Link>      
-          <Link className="nav__item" to = "/contribute">Contribute</Link>    
-          <Link className="nav__item" to = "/research-service">Research Service</Link>
-          <Link className = "bttn--secondary bttn--secondary--nav" to = "/research-database">Research Database</Link>
-          <Link className="bttn--primary bttn--primary--nav" to = "/syllabus-guide">Syllabus Guide</Link>       
-        </ul>
-      </nav>
       <button
         className="nav__bttn"
         onClick={showNavbar}>
         <img src={MenuIcon} alt="" />
       </button>
+      <nav className="nav" ref = {navRef}>
+        <ul className="nav__menu">
+          <Link onClick={showNavbar} className="nav__item" to = "/team">Team</Link>      
+          <Link onClick={showNavbar} className="nav__item" to = "/contribute">Contribute</Link>    
+          <Link onClick={showNavbar} className="nav__item" to = "/research-service">Research Service</Link>
+          <Link onClick={showNavbar} className = "bttn--secondary bttn--secondary--nav" to = "/research-database">Research Database</Link>
+          <Link onClick={showNavbar} className="bttn--primary bttn--primary--nav" to = "/syllabus-guide">Syllabus Guide</Link>       
+        </ul>
+      </nav>
     </header>
   )
 }

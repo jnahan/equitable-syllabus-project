@@ -39,7 +39,7 @@ function Home() {
           </p>
         </div>
         <h1 className="hero__heading">Making Education More Inclusive</h1>
-        <p className="subtitle">Free tools and frameworks to help you create an equity-aligned syllabus</p>
+        <p className="hero__subtitle subtitle">Free tools and frameworks to help you create an equity-aligned syllabus</p>
         <div className="hero__bttn-wrapper">
           <button onClick={() => navigate("/syllabus-guide")} className="bttn--primary bttn--primary--hero">Syllabus Guide</button>
           <button onClick={() => navigate("/research-database")}className="bttn--secondary bttn--secondary--hero">Research Database</button>

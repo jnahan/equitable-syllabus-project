@@ -25,7 +25,7 @@ function ResearchService() {
         </div>
       </div>
       <div className="section section--center">
-        <h3 className="section__title">Our Research Service Takes Just a Few Steps</h3>
+        <h3 className="section__title section__title--center">Our Research Service Takes Just a Few Steps</h3>
         <p className="body-large">The research process can last anywhere from 3 weeks to multiple months of sustained engagement.</p>
         <div className="info-card-wrapper">
           <InfoCard image="images/rs-1.png" heading="Intake" text="Faculty pinpoints specific areas of their syllabus the researcher can focus on"/>
