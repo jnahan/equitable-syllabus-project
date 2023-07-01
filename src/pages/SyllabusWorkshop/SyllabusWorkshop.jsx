@@ -19,9 +19,9 @@ function SyllabusWorkshop() {
         <h3 className="section__title">Syllabus Review Workshop</h3>
         <p className="body-large">Our syllabus review workshop provides faculty a 90-minute structured session to work on concrete syllabi, applying an equity lens. Each participant brings one syllabus to work on.</p>
         <div className="info-card-wrapper">
-          <InfoCard image="images/sr-1.png" heading="Reflection" text="Use the Cue Syllabus Review Tool to label each section of your syllabus."/>
-          <InfoCard image="images/sr-2.png" heading="Discussion" text="Discuss strategies to implement Inclusive Teaching principles."/>
-          <InfoCard image="images/sr-3.png" heading="Syllabus Swap" text="Swap syllabi with a partner and provide suggestions to each other."/>
+          <InfoCard image={SR1Img} heading="Reflection" text="Use the Cue Syllabus Review Tool to label each section of your syllabus."/>
+          <InfoCard image={SR2Img} heading="Discussion" text="Discuss strategies to implement Inclusive Teaching principles."/>
+          <InfoCard image={SR3Img} heading="Syllabus Swap" text="Swap syllabi with a partner and provide suggestions to each other."/>
         </div>
       </div>
     </div>
