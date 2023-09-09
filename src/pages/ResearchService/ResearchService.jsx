@@ -36,7 +36,7 @@ function ResearchService() {
         <div className="info-card-wrapper">
           <InfoCard image={RS1Img} heading="Intake" text="Faculty pinpoints specific areas of their syllabus the researcher can focus on"/>
           <InfoCard image={RS2Img} heading="Research" text="Researcher compiles syllabus recommendations and plans regular check-ins"/>
-          <InfoCard image={RS3Img} heading="Resources" text="Researcher prepares an initial set of resource for the syllabus and continues communication as needed."/>
+          <InfoCard image={RS3Img} heading="Resources" text="Researcher prepares an initial set of resources for the syllabus and continues communication as needed."/>
         </div>
       </div>
       <div className="section">
