@@ -1,4 +1,4 @@
-Following the 5 Principles for Inclusive Teaching outlined by the [Guide for Inclusive Teaching at Columbia](https://drive.google.com/file/d/17cqlVGVS_1KDH9O4ZgVy-NoH8sq5w96f/view?usp=sharing), Blair Simmons, Mimi Yin, Chaski No and Sophia Edwards of the Equitable Syllabus Project research team compiled these tips and suggestions for corresponding strategies for crafting of inclusive and thoughtful syllabi:
+Following the 5 Principles for Inclusive Teaching outlined by the [Guide for Inclusive Teaching at Columbia](https://drive.google.com/file/d/17cqlVGVS_1KDH9O4ZgVy-NoH8sq5w96f/view?usp=sharing), Blair Simmons, Mimi Yin, Chaski No and Sophia Edwards of the Equitable Syllabus Project research team compiled these tips and suggestions for corresponding strategies for crafting inclusive and thoughtful syllabi.
 
 ## **5 Principles for Inclusive Teaching**
 
@@ -130,7 +130,7 @@ Your health and safety are a priority at NYU. Emphasizing the importance of the 
 
 ### **Statement On Use Of Electronic Devices**
 
-Laptops and other electronic devices are essential tools for learning and interaction in classrooms. However, they can create distractions that hinder students" ability to actively participate and engage. Please be mindful of the ways in which these devices can affect the learning environment. 
+Laptops and other electronic devices are essential tools for learning and interaction in classrooms. However, they can create distractions that hinder students' ability to actively participate and engage. Please be mindful of the ways in which these devices can affect the learning environment. 
 
 
 ### **Statement On Title IX**

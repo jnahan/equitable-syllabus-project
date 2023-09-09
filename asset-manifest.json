@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/equitable-syllabus-project/static/css/main.f68547b7.css",
-    "main.js": "/equitable-syllabus-project/static/js/main.d03445a0.js",
-    "static/js/125.232b5e66.chunk.js": "/equitable-syllabus-project/static/js/125.232b5e66.chunk.js",
+    "main.js": "/equitable-syllabus-project/static/js/main.18b6e8cc.js",
+    "static/js/125.c2d897a6.chunk.js": "/equitable-syllabus-project/static/js/125.c2d897a6.chunk.js",
     "static/media/syllabus-workshop.png": "/equitable-syllabus-project/static/media/syllabus-workshop.8b85a03c4a77a57660a7.png",
     "static/media/database.png": "/equitable-syllabus-project/static/media/database.31b2f763f0a13c65c713.png",
     "static/media/research-service.png": "/equitable-syllabus-project/static/media/research-service.a27e668f2d380bae467e.png",
@@ -31,7 +31,7 @@
     "static/media/hero-filter.png": "/equitable-syllabus-project/static/media/hero-filter.99c53c749e93918fc86b.png",
     "static/media/divya-avatar.png": "/equitable-syllabus-project/static/media/divya-avatar.26bc71d63adbf04bcd2b.png",
     "static/media/jenna-avatar.png": "/equitable-syllabus-project/static/media/jenna-avatar.dd90817b0db079c1f08d.png",
-    "static/media/syllabus-guide.md": "/equitable-syllabus-project/static/media/syllabus-guide.67e1f3a932ca0985ab20.md",
+    "static/media/syllabus-guide.md": "/equitable-syllabus-project/static/media/syllabus-guide.d2295c3d857c417e4e41.md",
     "static/media/quotePink.svg": "/equitable-syllabus-project/static/media/quotePink.8e1bb8d445970aa8ccab3677a13f051a.svg",
     "static/media/quoteYellow.svg": "/equitable-syllabus-project/static/media/quoteYellow.89f0bd4d88500d3691e44b0d6436b695.svg",
     "static/media/inclusivity.svg": "/equitable-syllabus-project/static/media/inclusivity.658de2a24b96bdd602856aba033fa810.svg",
@@ -49,10 +49,10 @@
     "static/media/equity.svg": "/equitable-syllabus-project/static/media/equity.f6683de2c45fbccb74feb7f902011990.svg",
     "static/media/up.svg": "/equitable-syllabus-project/static/media/up.f121adb2139d21e8246e0c4106e9cd92.svg",
     "main.f68547b7.css.map": "/equitable-syllabus-project/static/css/main.f68547b7.css.map",
-    "main.d03445a0.js.map": "/equitable-syllabus-project/static/js/main.d03445a0.js.map"
+    "main.18b6e8cc.js.map": "/equitable-syllabus-project/static/js/main.18b6e8cc.js.map"
   },
   "entrypoints": [
     "static/css/main.f68547b7.css",
-    "static/js/main.d03445a0.js"
+    "static/js/main.18b6e8cc.js"
   ]
 }
