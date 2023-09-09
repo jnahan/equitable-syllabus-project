@@ -37,7 +37,7 @@ function Team() {
           <TeamCard image = {Chaski} name = "Chaski No" role = "Technical Project Manager" email = "chaski@nyu.edu"/>
           <TeamCard image = {Divya} name = "Divya Mehra" role = "Researcher" email = "dm4924@nyu.edu"/>
           <TeamCard image = {Jenna} name = "Jenna Han" role = "Web Designer" email = "jennahan@nyu.edu"/>
-          <TeamCard image = {Kayley} name = "Kayley Chery" role = "Researcher" email = "kac7748@nyu.edu "/>
+          <TeamCard image = {Kayley} name = "Kayley Chery" role = "Research Specialist" email = "kac7748@nyu.edu "/>
           <TeamCard image = {Sophia} name = "Sophia Edwards" role = "Researcher" email = "sge7432@nyu.edu"/>
         </div>
       </div>
