@@ -33,7 +33,7 @@ function Team() {
       <div className="section">
         <h2 className="section__title text-center">Current Members</h2>
         <div className="team__card-wrapper">
-        <TeamCard image = {Blair} name = "Bianca " role = "Project Manager" email = "blair.simmons@nyu.edu"/>
+        <TeamCard image = {Blair} name = "Bianca Gan" role = "Resident Specialist" email = "blair.simmons@nyu.edu"/>
           <TeamCard image = {Blair} name = "Blair Simmons" role = "Project Manager" email = "blair.simmons@nyu.edu"/>
           <TeamCard image = {Jenna} name = "Jenna Han" role = "Web Designer" email = "jennahan@nyu.edu"/>
           <TeamCard image = {Kayley} name = "Kayley Chery" role = "Research Specialist" email = "kac7748@nyu.edu "/>
