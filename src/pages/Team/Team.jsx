@@ -23,11 +23,11 @@ function Team() {
         <p className="body-large">The Equitable Syllabus Project team strives to help faculty re-engage their course material with an equitable lens.</p>
         <div className="team__avatar-wrapper">
           <img className="team__avatar" src={BlairAvatar} alt="Blair Simmons" />
+          <img className="team__avatar" src={SophiaAvatar} alt="Sophia Edwards" />
+          <img className="team__avatar" src={KayleyAvatar} alt="Kayley Chery" />
+          <img className="team__avatar" src={JennaAvatar} alt="Jenna Han" />
           <img className="team__avatar" src={ChaskiAvatar} alt="Chaski No" />
           <img className="team__avatar" src={DivyaAvatar} alt="Divya Mehra" />
-          <img className="team__avatar" src={JennaAvatar} alt="Jenna Han" />
-          <img className="team__avatar" src={KayleyAvatar} alt="Kayley Chery" />
-          <img className="team__avatar" src={SophiaAvatar} alt="Sophia Edwards" />
         </div>
       </div>
       <div className="section">
