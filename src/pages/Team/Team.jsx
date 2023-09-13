@@ -34,8 +34,7 @@ function Team() {
         <h2 className="section__title text-center">Current Members</h2>
         <div className="team__card-wrapper">
           <TeamCard image = {Blair} name = "Blair Simmons" role = "Project Manager" email = "blair.simmons@nyu.edu"/>
-          <TeamCard image = {Chaski} name = "Chaski No" role = "Technical Project Manager" email = "chaski@nyu.edu"/>
-          <TeamCard image = {Divya} name = "Divya Mehra" role = "Researcher" email = "dm4924@nyu.edu"/>
+         
           <TeamCard image = {Jenna} name = "Jenna Han" role = "Web Designer" email = "jennahan@nyu.edu"/>
           <TeamCard image = {Kayley} name = "Kayley Chery" role = "Research Specialist" email = "kac7748@nyu.edu "/>
           <TeamCard image = {Sophia} name = "Sophia Edwards" role = "Researcher" email = "sge7432@nyu.edu"/>
@@ -44,6 +43,8 @@ function Team() {
       <div className="section">
         <h2 className="section__title text-center">Past Members</h2>
         <div className="team__card-wrapper">
+          <TeamCard image = {Chaski} name = "Chaski No" role = "Technical Project Manager" email = "chaski@nyu.edu"/>
+          <TeamCard image = {Divya} name = "Divya Mehra" role = "Researcher" email = "dm4924@nyu.edu"/>
           <TeamCard name = "Rashida Kamal" role = "Technical Project Manager" />
           <TeamCard name = "Spencer Ratanavanh" role = "Researcher" />
           <TeamCard name = "Polina Kolesnikova" role = "Researcher" />
