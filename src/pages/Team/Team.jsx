@@ -34,7 +34,6 @@ function Team() {
         <h2 className="section__title text-center">Current Members</h2>
         <div className="team__card-wrapper">
           <TeamCard image = {Blair} name = "Blair Simmons" role = "Project Manager" email = "blair.simmons@nyu.edu"/>
-         
           <TeamCard image = {Jenna} name = "Jenna Han" role = "Web Designer" email = "jennahan@nyu.edu"/>
           <TeamCard image = {Kayley} name = "Kayley Chery" role = "Research Specialist" email = "kac7748@nyu.edu "/>
           <TeamCard image = {Sophia} name = "Sophia Edwards" role = "Researcher" email = "sge7432@nyu.edu"/>
