@@ -21,7 +21,7 @@ function ResearchService() {
           <div className="section__text">
             <h3 className="section__title">Get Help Creating Your Syllabus</h3>
             <p className="body-large">We offer faculty members an opportunity to work with a research assistant that provides tailored recommendations and support to help you create a curriculum that empowers your students.</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfk9cYXGYmOj8tQz6Qy4ZxAOxJ59rJrYS7QVnmn8HnBDZ7yKg/viewform" rel="noopener noreferrer">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfwcSe5T5TAuvOmNY8ov4csUZ-h5krLJn8AL1OIn8VuL9xUUg/viewform?usp=sf_link" rel="noopener noreferrer">
               <button className="bttn--primary">Sign Up For Research Service</button>
             </a>
           </div>
@@ -44,7 +44,7 @@ function ResearchService() {
           <div className="section__text">
             <h3 className="section__title">Sign Up for Research Service Today</h3>
             <p className="body-large">Improve your syllabus for more equity and inclusivity. Fill out our intake form and a researcher will be assigned to you.</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfk9cYXGYmOj8tQz6Qy4ZxAOxJ59rJrYS7QVnmn8HnBDZ7yKg/viewform" rel="noopener noreferrer">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfwcSe5T5TAuvOmNY8ov4csUZ-h5krLJn8AL1OIn8VuL9xUUg/viewform?usp=sf_link" rel="noopener noreferrer">
               <button className="bttn--primary">Sign Up For Research Service</button>
             </a>
           </div>
