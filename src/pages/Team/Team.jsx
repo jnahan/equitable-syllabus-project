@@ -40,14 +40,14 @@ function Team() {
           <TeamCard image = {Jenna} name = "Jenna Han" role = "Web Designer" email = "jennahan@nyu.edu"/>
           <TeamCard image = {Kayley} name = "Kayley Chery" role = "Research Specialist" email = "kac7748@nyu.edu "/>
           <TeamCard image = {Sophia} name = "Sophia Edwards" role = "Student Lead" email = "sge7432@nyu.edu"/>
-          <TeamCard image = {Chaski} name = "Chaski No" role = "Technical Project Manager" email = "chaski@nyu.edu"/>
-          <TeamCard image = {Divya} name = "Divya Mehra" role = "Researcher" email = "dm4924@nyu.edu"/>
           <TeamCard image = {Bianca} name = "Bianca Gan" role = "Researcher" email = "bag5392@nyu.edu"/>
         </div>
       </div>
       <div className="section">
         <h2 className="section__title text-center">Alumni</h2>
         <div className="team__card-wrapper">
+          <TeamCard image = {Chaski} name = "Chaski No" role = "Technical Project Manager" email = "chaski@nyu.edu"/>
+          <TeamCard image = {Divya} name = "Divya Mehra" role = "Researcher" email = "dm4924@nyu.edu"/>
           <TeamCard name = "Rashida Kamal" role = "Technical Project Manager" />
           <TeamCard name = "Spencer Ratanavanh" role = "Researcher" />
           <TeamCard name = "Polina Kolesnikova" role = "Researcher" />
