@@ -28,9 +28,7 @@ function Team() {
           <img className="team__avatar" src={SophiaAvatar} alt="Sophia Edwards" />
           <img className="team__avatar" src={KayleyAvatar} alt="Kayley Chery" />
           <img className="team__avatar" src={JennaAvatar} alt="Jenna Han" />
-          <img className="team__avatar" src={ChaskiAvatar} alt="Chaski No" />
-          <img className="team__avatar" src={DivyaAvatar} alt="Divya Mehra" />
-          <img className="team__avatar" src={BiancaAvatar} alt="Divya Mehra" />
+          <img className="team__avatar" src={BiancaAvatar} alt="Bianca Gan" />
         </div>
       </div>
       <div className="section">
@@ -45,6 +43,10 @@ function Team() {
       </div>
       <div className="section">
         <h2 className="section__title text-center">Alumni</h2>
+        <div className="team__avatar-wrapper">
+          <img className="team__avatar" src={ChaskiAvatar} alt="Chaski No" />
+          <img className="team__avatar" src={DivyaAvatar} alt="Divya Mehra" />
+        </div>
         <div className="team__card-wrapper">
           <TeamCard image = {Chaski} name = "Chaski No" role = "Technical Project Manager" email = "chaski@nyu.edu"/>
           <TeamCard image = {Divya} name = "Divya Mehra" role = "Researcher" email = "dm4924@nyu.edu"/>
