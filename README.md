@@ -4,9 +4,15 @@
 
 [Check out the website here](https://itp.nyu.edu/esp/#/)
 
-The Equitable Syllabus Project at NYU’s ITP (Interactive Telecommunications Program) department provides resources to help faculty create inclusive and equitable syllabi. These resources include research service, syllabus guide, syllabus workshop, and curated database of resources representing minority groups.
+The Equitable Syllabus Project at NYU’s ITP (Interactive Telecommunications Program) department provides resources to help faculty create inclusive and equitable syllabus. This website provides a centralized location professors can visit to find and utilize these resources. 
 
-However, the lack of centralized access point for these resources made them difficult to utilize. Additionally, the database was on Google sheets, which made it difficult for faculty to find the information they needed. To solve this problem, I designed the Equitable Syllabus Project website to help professors take advantage of these tools and create a syllabus that can foster a more inclusive learning environment.
+The resources provided include:
+- Syllabus Guide: template to help professors develop their course syllabus
+- Research Database: filterable database of equity-centered resources
+- Research Assistance Service: get help finding resources for your syllabus
+- Syllabus Review Workshop: collaborative workshop sessions to rework your syllabus
+
+This project was designed in Figma and developed with React. SheetsDB API was used to create the database as the original database was hosted on Google Sheets, and this API allowed researchers to continue finding and logging new resources easily.
 
 ## How to run 🛠
 1. Installation: `npm install`
