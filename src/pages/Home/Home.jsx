@@ -106,14 +106,14 @@ function Home() {
         </div>
         <div className="section__text">
           <h3 className="section__title">Research Assistance Service</h3>
-          <p className="body-large">Get help creating your syllabus. The Equitable Syllabus Team will recommend resources and identity ways to bridge equity gaps in the course material.</p>
+          <p className="body-large">Get help creating your syllabus. The Equitable Syllabus Team will recommend resources and identify ways to bridge equity gaps in the course material.</p>
           <button onClick={() => navigate("/research-service")} className="bttn--primary">Get Research Service</button>
         </div>
       </div>
       <div className="section__content">
         <div className="section__text">
           <h3 className="section__title">Syllabus Review Workshop</h3>
-          <p className="body-large">Join our collaborative workshop sessions and rework your syllabus to promote equity-aligned practice and curricula</p>
+          <p className="body-large">Join our collaborative workshop sessions and rework your syllabus to promote equity-aligned practice and curriculum.</p>
           <button onClick={() => navigate("/syllabus-workshop")} className="bttn--primary">Learn About Our Workshop</button>
         </div>
         <div className="section__img-wrapper">
