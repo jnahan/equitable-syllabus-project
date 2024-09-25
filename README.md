@@ -1,7 +1,5 @@
 # Equitable Syllabus Project 📝
 
-[View full case study here](https://www.hanjenna.com/#/equitable-syllabus-project)
-
 [Check out the website here](https://itp.nyu.edu/esp/#/)
 
 The Equitable Syllabus Project at NYU’s ITP (Interactive Telecommunications Program) department provides resources to help faculty create inclusive and equitable syllabus. This website provides a centralized location professors can visit to find and utilize these resources. 
